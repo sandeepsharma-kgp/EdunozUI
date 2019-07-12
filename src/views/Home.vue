@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <card-bar></card-bar>
+    <popular-tech></popular-tech>
   </div>
 </template>
 
