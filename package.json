@@ -44,5 +44,17 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeepsharma-kgp/EdunozUI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandeepsharma-kgp/EdunozUI/issues"
+  },
+  "homepage": "https://github.com/sandeepsharma-kgp/EdunozUI#readme"
 }
