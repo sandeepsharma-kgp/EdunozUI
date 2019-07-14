@@ -1,7 +1,7 @@
 <template>
   <div
     class="container-fluid"
-    style="color: #0e6251; padding: 12px; background-color:#eceef8;"
+    style="color: #0e6251; padding: 12px; background-color:#f9f9f9;"
   >
     <h5 style="font-weight: bold;">Popular Technology</h5>
     <b-container fluid>
