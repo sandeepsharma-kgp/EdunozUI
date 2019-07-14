@@ -1,14 +1,14 @@
 <template>
-    <div class="jumbotron">
-        <b-carousel
+    <div>
+        <b-carousel 
       id="carousel-1"
       v-model="slide"
       :interval="4000"
       controls
       indicators
       background="#eceef8"
-      img-width="1024"
-      img-height="480"
+      img-width="1920"
+      img-height="320"
       style="text-shadow: 1px 1px 2px #333;"    
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
@@ -62,3 +62,8 @@
     </div> 
 
 </template>
+
+<style scoped>
+
+</style>
+
