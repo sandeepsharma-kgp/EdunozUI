@@ -1,47 +1,93 @@
 <template lang="en">
-    <b-container fluid style="background-color:#2A326D;">
-        <b-row align-v="center">
-            <b-col  class="card-container" lg>
+    <b-container fluid style="background-color:#2A326D; padding: 20px;">
+    <vueper-slides
+        class="no-shadow"
+      :visible-slides="5"
+      :slide-ratio="2/11"
+      :pauseOnHover="true"
+      :speed="1000"
+      :dragging-distance="70"
+      :autoplay="true"
+      :arrows="false"
+      :bullets="false"
+      :breakpoints="{
+        800: { visibleSlides: 2, slideRatio: 3 / 8 },
+        1025: { visibleSlides: 3, slideRatio: 1 / 4 },
+        450: { visibleSlides: 1, slideRatio: 3 / 4 }
+      }"
+      :class="my-slide-container"
+    > <vueper-slide :key=0 class="card-container">
+            <div  slot="slideContent" style="padding: none;">
+                <v-layout>
                 <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
-                <div>
+                <span>
                     {{text}}     
-                </div>
-            </b-col>
-            <b-col class="card-container" lg>
+                </span>
+                </v-layout>
+            </div>
+            </vueper-slide>
+             <vueper-slide :key=1 class="card-container">
+            <div  slot="slideContent" style="padding: none;">
+                <v-layout>
                 <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
-                <p>
+                <span>
                     {{text}}     
-                </p>
-                
-            </b-col>
-            <b-col class="card-container" lg>
+                </span>
+                </v-layout>
+            </div>
+            </vueper-slide>
+             <vueper-slide :key=2 class="card-container">
+            <div  slot="slideContent" style="padding: none;">
+                <v-layout>
                 <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
-                <p>
+                <span>
                     {{text}}     
-                </p>
-            </b-col>
-            <b-col class="card-container" lg>
-               <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
-                <p>
-                    {{text}}     
-                </p>
-            </b-col>
-            <b-col class="card-container" lg>
+                </span>
+                </v-layout>
+            </div>
+            </vueper-slide>
+             <vueper-slide :key=3 class="card-container">
+            <div  slot="slideContent" style="padding: none;">
+                <v-layout>
                 <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
-                <p>
+                <span>
                     {{text}}     
-                </p>
-            </b-col>
-        </b-row>
+                </span>
+                </v-layout>
+            </div>
+            </vueper-slide>
+             <vueper-slide :key=4 class="card-container">
+            <div  slot="slideContent" style="padding: none;">
+                <v-layout>
+                <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
+                <span>
+                    {{text}}     
+                </span>
+                </v-layout>
+            </div>
+            </vueper-slide>
+             <vueper-slide :key=5 class="card-container">
+            <div  slot="slideContent" style="padding: none;">
+                <v-layout>
+                <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
+                <span>
+                    {{text}}     
+                </span>
+                </v-layout>
+            </div>
+            </vueper-slide>
+        </vueper-slides>
     </b-container>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import { VueperSlides, VueperSlide } from "vueperslides";
+import "vueperslides/dist/vueperslides.css";
 export default {
-  name: "card-bar",
-  data() {
+    name: "card-bar",
+    components: { VueperSlides, VueperSlide },
+    data() {
     return {
       mainProps: {
         center: true,
@@ -62,15 +108,14 @@ export default {
 <style scoped>
 .card-container {
   background-color: #eceef8;
-  margin: 26px;
   border: #eceef8;
   border-radius: 12px;
-  padding: 8px;
   color: #0e6251;
   font-weight: bold;
+  text-align:unset;
+  width: 100px;
 }
 .card-container-img {
-  top: 0;
   width: 68px;
   height: 66px;
 }

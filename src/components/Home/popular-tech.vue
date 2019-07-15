@@ -85,4 +85,10 @@ export default {
   width: 350px;
   margin: 20px;
 }
+@media only screen and (max-width: 371px){
+  .tech-container-img{
+    width: 300px;
+  }
+  
+}
 </style>
