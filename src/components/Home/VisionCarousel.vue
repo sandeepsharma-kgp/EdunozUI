@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="padding:50px;">
         <b-carousel 
       id="carousel-1"
       v-model="slide"
@@ -33,7 +33,7 @@
       >
     </b-carousel-slide>
 
-    </b-carousel>   
+    </b-carousel>
     </div> 
 
 </template>

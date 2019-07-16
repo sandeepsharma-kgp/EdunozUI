@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <nav-bar></nav-bar>
-    <vision-carousel></vision-carousel>
+    <carousel-vis></carousel-vis>
     <webinar></webinar>
     <card-bar></card-bar>
     <popular-tech></popular-tech>
@@ -14,6 +14,8 @@
 <script>
 // @ is an alias to /src
 import cardBar from "../components/Home/card-bar.vue";
+import Carousel from "../components/Home/Carousel.vue";
+
 import popularTech from "../components/Home/popular-tech.vue";
 import ourBranches from "../components/Home/our-branches.vue";
 import moreAbout from "../components/Home/more-about-us.vue";
@@ -32,7 +34,8 @@ export default {
     "footer-bar": footerBar,
     "nav-bar": Navbar,
     "vision-carousel": VisionCarousel,
-    "webinar": Webinar
+    "webinar": Webinar,
+    "carousel-vis": Carousel
   }
 };
 </script>
