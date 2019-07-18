@@ -2,11 +2,11 @@
     <b-container fluid style="background-color:#2A326D; padding: 20px;">
     <vueper-slides
         class="no-shadow"
-      :visible-slides="5"
+      :visible-slides="4"
       :slide-ratio="2/11"
       :pauseOnHover="true"
       :speed="1000"
-      :dragging-distance="70"
+      :dragging-distance="50"
       :autoplay="true"
       :arrows="false"
       :bullets="false"
@@ -15,65 +15,52 @@
         1025: { visibleSlides: 3, slideRatio: 1 / 4 },
         450: { visibleSlides: 1, slideRatio: 3 / 4 }
       }"
-      :class="my-slide-container"
-    > <vueper-slide :key=0 class="card-container">
+    > <vueper-slide :key="1" class="card-container">
             <div  slot="slideContent" style="padding: none;">
-                <v-layout>
                 <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
                 <span>
                     {{text}}     
                 </span>
-                </v-layout>
+            </div>
+        </vueper-slide>
+        <vueper-slide :key="2" class="card-container">
+            <div  slot="slideContent" style="padding: none;">
+                <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
+                <span>
+                    {{text}}     
+                </span>
+            </div>
+        </vueper-slide>
+             <vueper-slide :key="3" class="card-container">
+            <div  slot="slideContent" style="padding: none;">
+                <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
+                <span>
+                    {{text}}     
+                </span>
             </div>
             </vueper-slide>
-             <vueper-slide :key=1 class="card-container">
+             <vueper-slide :key="4" class="card-container">
             <div  slot="slideContent" style="padding: none;">
-                <v-layout>
                 <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
                 <span>
                     {{text}}     
                 </span>
-                </v-layout>
             </div>
             </vueper-slide>
-             <vueper-slide :key=2 class="card-container">
+             <vueper-slide :key="5" class="card-container">
             <div  slot="slideContent" style="padding: none;">
-                <v-layout>
                 <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
                 <span>
                     {{text}}     
                 </span>
-                </v-layout>
             </div>
             </vueper-slide>
-             <vueper-slide :key=3 class="card-container">
+             <vueper-slide :key="6" class="card-container">
             <div  slot="slideContent" style="padding: none;">
-                <v-layout>
                 <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
                 <span>
                     {{text}}     
                 </span>
-                </v-layout>
-            </div>
-            </vueper-slide>
-             <vueper-slide :key=4 class="card-container">
-            <div  slot="slideContent" style="padding: none;">
-                <v-layout>
-                <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
-                <span>
-                    {{text}}     
-                </span>
-                </v-layout>
-            </div>
-            </vueper-slide>
-             <vueper-slide :key=5 class="card-container">
-            <div  slot="slideContent" style="padding: none;">
-                <v-layout>
-                <b-img-lazy class="card-container-img" v-bind="mainProps" :src="require('@/assets/images/profile_img_for_cardbar.png')"></b-img-lazy>
-                <span>
-                    {{text}}     
-                </span>
-                </v-layout>
             </div>
             </vueper-slide>
         </vueper-slides>
@@ -85,9 +72,9 @@
 import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
 export default {
-    name: "card-bar",
-    components: { VueperSlides, VueperSlide },
-    data() {
+  name: "card-bar",
+  components: { VueperSlides, VueperSlide },
+  data() {
     return {
       mainProps: {
         center: true,
@@ -112,7 +99,7 @@ export default {
   border-radius: 12px;
   color: #0e6251;
   font-weight: bold;
-  text-align:unset;
+  text-align: unset;
   width: 100px;
 }
 .card-container-img {
