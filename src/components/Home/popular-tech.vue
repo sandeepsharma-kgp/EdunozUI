@@ -3,7 +3,7 @@
     class="container-fluid"
     style="color: #0e6251; padding: 12px; background-color:#f9f9f9;"
   >
-    <h5 style="font-weight: bold;">Popular Technology</h5>
+    <h5 style="font-weight: bold; text-align: center;">Popular Technology</h5>
     <b-container fluid>
       <b-row align-h="center">
         <b-col>
@@ -81,8 +81,8 @@ export default {
 </script>
 <style scoped>
 .tech-container-img {
-  height: 100px;
-  width: 350px;
+  height: 80px;
+  width: 250px;
   margin: 20px;
 }
 @media only screen and (max-width: 371px){

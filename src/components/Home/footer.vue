@@ -10,28 +10,28 @@
                 <img
                 src="@/assets/icons/google-plus.png"
                 alt="Get Details"
-                 style="width:48px;height:48px; margin: 20px 20px 20px 0;"
+                 style="width:48px;height:48px; margin: 20px 5px 20px 0;"
                 />
              
                 </a><a href="default.asp">
                 <img
                 src="@/assets/icons/fb.png"
                 alt="Get Details"
-                style="width:48px;height:48px; margin: 20px"
+                style="width:48px;height:48px; margin: 5px"
                 />
              
                 </a><a href="default.asp">
                 <img
                 src="@/assets/icons/linkedin.png"
                 alt="Get Details"
-                style="width:48px;height:48px; margin: 20px"
+                style="width:48px;height:48px; margin: 5px"
                 />
               
                 </a><a href="default.asp">
                 <img
                 src="@/assets/icons/twitter.png"
                 alt="Get Details"
-                style="width:48px;height:48px; margin: 20px"
+                style="width:48px;height:48px; margin: 5px"
                 />
               
                 </a>

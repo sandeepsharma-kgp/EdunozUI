@@ -6,7 +6,7 @@ npm i --S vueperslides-->
     class="container-fluid"
     style="color: #0e6251; padding: 12px; background-color:#ffffff;"
   >
-    <h5 style="font-weight: bold;">Our Branches</h5>
+    <h5 style="font-weight: bold; text-align: center;">Our Branches</h5>
     <vueper-slides
       class="no-shadow"
       :visible-slides="4"
@@ -21,6 +21,9 @@ npm i --S vueperslides-->
       }"
       style="padding-bottom: 20px"
     >
+    <v-icon slot="arrow_left" color="black" large>arrow_left</v-icon>
+    <v-icon slot="arrow_right" color="black" large>arrow_right</v-icon>
+
       <vueper-slide :key="0">
         <div slot="slideContent">
           <h6 style="font-weight: bold; color: #D66D02">Our Branch</h6>

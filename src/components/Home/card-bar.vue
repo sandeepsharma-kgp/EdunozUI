@@ -12,9 +12,9 @@
       :arrows="false"
       :bullets="false"
       :breakpoints="{
-        800: { visibleSlides: 2, slideRatio: 3 / 8 },
-        1025: { visibleSlides: 3, slideRatio: 1 / 4 },
-        450: { visibleSlides: 1, slideRatio: 3 / 4 }
+        800: { visibleSlides: 1},
+        1025: { visibleSlides: 3},
+        450: { visibleSlides: 1}
       }"
     > <vueper-slide :key="1" class="card-container">
             <div  slot="slideContent" style="padding: none;">
@@ -103,9 +103,15 @@ export default {
   text-align: unset;
   width: 100px;
   margin-right: 40px;
+  overflow: auto;
 }
 .card-container-img {
   width: 68px;
   height: 66px;
+}
+@media only screen (max-width: 400px;){
+    .card-container{
+        margin-right: 0;
+    }
 }
 </style>
