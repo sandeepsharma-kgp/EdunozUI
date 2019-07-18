@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="signup-form">
-    <form>
+		<b-modal id="bv-modal-signin" hide-footer hide-header size="sm"> 
+    <div>
 		<div class="form-header">
 			 <p class="text-white" style="font-weight: bold; padding:0px; color:	#000000; font-size: 35px;">Sign In</p>
 			
@@ -9,9 +9,9 @@
 		<div class="form-group">
         <div class="btn-group" id="corner">
 		
-		<div><button type="button" class=" text-white btn-primary" style="width: 245px; height: 55px;">Sing in with facebook</button></div>
+		<div><button type="button" class=" text-white btn-primary" style="width: 145px; height: 55px;">Sing in with facebook</button></div>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<div><button type="button" class="btn-danger text-white" style="width: 245px; height: 55px">Sing in with gmail</button></div>
+		<div><button type="button" class="btn-danger text-white" style="width: 145px; height: 55px">Sing in with gmail</button></div>
         </div>
 		</div>
 
@@ -34,13 +34,13 @@
         </div>
 		</div>
         <div class="form-group">
-			<label  required="required"> Don't have account?</label>
+			<b-button  required="required" @click="$bvModal.show('bv-modal-signup'); $bvModal.hide('bv-modal-signin')" > Don't have account?</b-button>
 		</div>
 		<div class="form-group">
 			<a href="Signup.vue">SIGN UP NOW</a>
 		</div>	
-    </form>
-</div>
+    </div>
+</b-modal>
     </div>
 </template>
 

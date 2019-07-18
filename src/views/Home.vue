@@ -10,6 +10,7 @@
     <footer-bar></footer-bar>
     <FloatContactUs/>
     <CantactUs />
+    <SignIn/>
     <Signup />
   </div>
 </template>
@@ -28,6 +29,7 @@ import VisionCarousel from "../components/Home/VisionCarousel.vue";
 import Webinar from "../components/Home/Webinar.vue";
 import FloatContactUs from "../components/FloatContactUs.vue";
 import CantactUs from "../components/Home/CantactUs.vue";
+import SignIn from "../components/Home/SignIn.vue";
 import Signup from "../components/Home/Signup.vue";
 
 export default {
@@ -43,8 +45,9 @@ export default {
     "webinar": Webinar,
     "carousel-vis": VisionCarousel,
     FloatContactUs,
-    Signup,
-    CantactUs
+    CantactUs,
+    SignIn,
+    Signup
   }
 };
 </script>
