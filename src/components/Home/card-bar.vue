@@ -7,7 +7,8 @@
       :pauseOnHover="true"
       :speed="1000"
       :dragging-distance="50"
-      :autoplay="true"
+      :autoplay="false"
+      :disableArrowsOnEdges="true"
       :arrows="false"
       :bullets="false"
       :breakpoints="{
@@ -101,6 +102,7 @@ export default {
   font-weight: bold;
   text-align: unset;
   width: 100px;
+  margin-right: 40px;
 }
 .card-container-img {
   width: 68px;
