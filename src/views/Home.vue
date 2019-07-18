@@ -8,6 +8,7 @@
     <our-branches></our-branches>
     <more-about></more-about>
     <footer-bar></footer-bar>
+    <FloatContactUs/>
   </div>
 </template>
 
@@ -23,6 +24,7 @@ import footerBar from "../components/Home/footer.vue";
 import Navbar from "../components/Home/Navbar.vue";
 import VisionCarousel from "../components/Home/VisionCarousel.vue";
 import Webinar from "../components/Home/Webinar.vue";
+import FloatContactUs from "../components/FloatContactUs.vue";
 
 export default {
   name: "home",
@@ -35,7 +37,8 @@ export default {
     "nav-bar": Navbar,
     // "vision-carousel": VisionCarousel,
     "webinar": Webinar,
-    "carousel-vis": VisionCarousel
+    "carousel-vis": VisionCarousel,
+    FloatContactUs
   }
 };
 </script>
