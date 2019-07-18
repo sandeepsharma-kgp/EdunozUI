@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color:#eceef8; position:relative;">
+  <div style="background-color:; position:relative;">
     <div class="clearfix">
       <b-img left :src="require('../../assets/images/blur-close-up-desk-433604.jpg')" alt="Left image" style="width:600px; height:405px; padding:15px 40px; border-radius:45px;"></b-img>
      <div style="position:absolute; top:35%; left:55%; width:500px;">
