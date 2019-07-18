@@ -1,0 +1,132 @@
+<template>
+    <div>
+		 <b-modal id="bv-modal-signup" hide-footer hide-header size="sm"> 
+    <form>
+		<div class="form-header">
+			 <p class="text-white" style="font-weight: bold; padding:0px; color:	#000000; font-size: 35px;">Sign Up</p>
+			
+		</div >
+        <div class="form-group">
+			
+        	<input type="text" class="form-control" name="username" required="required" placeholder="Full Name">
+        </div>
+        <div class="form-group">
+			
+        	<input type="email" class="form-control" name="email" required="required" placeholder="Email">
+        </div>
+		<div class="form-group">
+			
+            <input type="text" class="form-control" name="password" required="required" placeholder="Phone Number">
+        </div>
+		<div class="form-group">
+			
+            <input type="text" class="form-control" name="confirm_password" required="required" placeholder="Location">
+        </div>
+        <div class="form-group">
+			
+            <input type="password" class="form-control" name="confirm_password" required="required" placeholder="Password">
+        </div>        
+        
+		<div class="form-group">
+			<button type="submit" class=" bg-warning text-white btn-block btn-lg">Create Account</button>
+		</div>
+        <div class="form-group">
+			<label class="checkbox-inline"><input type="checkbox" required="required"> I accept all terms and conditions</label>
+		</div>	
+    </form>
+</b-modal>
+    </div>
+</template>
+
+<style>
+div {
+  border-radius: 5px;
+  
+}
+	body{
+		color: #999;
+		background: #e2e2e2;
+		font-family: 'Roboto', sans-serif;
+	}
+	.form-control{
+		min-height: 41px;
+		box-shadow: none;
+		border-color: #e1e1e1;
+	}
+	.form-control:focus{
+		border-color: #00cb82;
+	}	
+    .form-control, .btn{        
+        border-radius: 0px;
+    }
+	.form-header{
+		margin: -30px -30px 20px;
+		padding: 10px 10px 10px;
+        text-emphasis-color: #ffffff;
+		text-align: center;
+		background: #2A326d;
+		border-bottom: 1px solid #eee;
+		color: #fff;
+	}
+	.form-header h2{
+		font-size: 34px;
+		font-weight: bold;
+        margin: 0 0 10px;
+		font-family: 'Pacifico', sans-serif;
+    }
+	.form-header p{
+		margin: 20px 0 15px;
+		font-size: 17px;
+		line-height: normal;
+		font-family: 'Courgette', sans-serif;
+	}
+    .signup-form{
+		width: 588px;
+        height: 656px;
+		margin: 0 auto;	
+		padding: 30px 0;	
+        
+	}
+    .signup-form form{
+		color: #999;
+		border-radius: 3px;
+    	margin-bottom: 15px;
+        background: #f0f0f0;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+	.signup-form .form-group{
+		margin-bottom: 20px;
+        
+	}		
+	.signup-form label{
+		font-weight: normal;
+		font-size: 13px;
+	}
+    .signup-form input[type="checkbox"]{
+		margin-top: 2px;
+	}
+    .signup-form .btn{        
+        font-size: 16px;
+        font-weight: bold;
+		background: #00cb82;
+		border: none;
+		min-width: 200px;
+    }
+	.signup-form .btn:hover, .signup-form .btn:focus{
+		background: #00b073 !important;
+        outline: none;
+	}
+    .signup-form a{
+		color: #00cb82;		
+	}
+    .signup-form a:hover{
+		text-decoration: underline;
+	}
+    #corner1 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  }
+</style>

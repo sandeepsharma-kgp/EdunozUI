@@ -9,6 +9,8 @@
     <more-about></more-about>
     <footer-bar></footer-bar>
     <FloatContactUs/>
+    <CantactUs />
+    <Signup />
   </div>
 </template>
 
@@ -25,6 +27,8 @@ import Navbar from "../components/Home/Navbar.vue";
 import VisionCarousel from "../components/Home/VisionCarousel.vue";
 import Webinar from "../components/Home/Webinar.vue";
 import FloatContactUs from "../components/FloatContactUs.vue";
+import CantactUs from "../components/Home/CantactUs.vue";
+import Signup from "../components/Home/Signup.vue";
 
 export default {
   name: "home",
@@ -38,7 +42,9 @@ export default {
     // "vision-carousel": VisionCarousel,
     "webinar": Webinar,
     "carousel-vis": VisionCarousel,
-    FloatContactUs
+    FloatContactUs,
+    Signup,
+    CantactUs
   }
 };
 </script>
