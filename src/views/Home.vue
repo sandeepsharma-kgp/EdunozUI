@@ -9,7 +9,7 @@
     <more-about></more-about>
     <footer-bar></footer-bar>
     <FloatContactUs/>
-    <CantactUs />
+    <QuickMessage />
     <SignIn/>
     <Signup />
     <Enquire />
@@ -20,7 +20,6 @@
 // @ is an alias to /src
 import cardBar from "../components/Home/card-bar.vue";
 import Carousel from "../components/Home/Carousel.vue";
-
 import popularTech from "../components/Home/popular-tech.vue";
 import ourBranches from "../components/Home/our-branches.vue";
 import moreAbout from "../components/Home/more-about-us.vue";
@@ -29,7 +28,7 @@ import Navbar from "../components/Home/Navbar.vue";
 import VisionCarousel from "../components/Home/VisionCarousel.vue";
 import Webinar from "../components/Home/Webinar.vue";
 import FloatContactUs from "../components/FloatContactUs.vue";
-import CantactUs from "../components/Home/CantactUs.vue";
+import QuickMessage from "../components/Home/QuickMessage.vue";
 import SignIn from "../components/Home/SignIn.vue";
 import Signup from "../components/Home/Signup.vue";
 import Enquire from "../components/Home/Enquire.vue";
@@ -47,9 +46,9 @@ export default {
     "webinar": Webinar,
     "carousel-vis": VisionCarousel,
     FloatContactUs,
-    CantactUs,
     SignIn,
     Signup,
+    QuickMessage,
     Enquire
   }
 };
