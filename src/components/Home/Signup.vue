@@ -28,7 +28,7 @@
         </div>        
         
 		<div class="form-group">
-			<button type="submit" class=" bg-warning text-white btn-block btn-lg">Create Account</button>
+			<button type="submit" class=" text-white btn-block btn-lg" style="background:#FF7340;">Create Account</button>
 		</div>
         <div class="form-group">
 			<label class="checkbox-inline"><input type="checkbox" required="required"> I accept all terms and conditions</label>
@@ -81,7 +81,7 @@ div {
 		font-family: 'Courgette', sans-serif;
 	}
     .signup-form{
-		width: 588px;
+		width: 100px;
         height: 656px;
 		margin: 0 auto;	
 		padding: 30px 0;	

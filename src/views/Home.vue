@@ -12,6 +12,7 @@
     <CantactUs />
     <SignIn/>
     <Signup />
+    <Enquire />
   </div>
 </template>
 
@@ -31,6 +32,7 @@ import FloatContactUs from "../components/FloatContactUs.vue";
 import CantactUs from "../components/Home/CantactUs.vue";
 import SignIn from "../components/Home/SignIn.vue";
 import Signup from "../components/Home/Signup.vue";
+import Enquire from "../components/Home/Enquire.vue";
 
 export default {
   name: "home",
@@ -47,7 +49,8 @@ export default {
     FloatContactUs,
     CantactUs,
     SignIn,
-    Signup
+    Signup,
+    Enquire
   }
 };
 </script>
