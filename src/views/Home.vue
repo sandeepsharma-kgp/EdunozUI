@@ -10,7 +10,9 @@
     <footer-bar></footer-bar>
     <FloatContactUs/>
     <QuickMessage />
+    <SignIn/>
     <Signup />
+    <Enquire />
   </div>
 </template>
 
@@ -18,7 +20,6 @@
 // @ is an alias to /src
 import cardBar from "../components/Home/card-bar.vue";
 import Carousel from "../components/Home/Carousel.vue";
-
 import popularTech from "../components/Home/popular-tech.vue";
 import ourBranches from "../components/Home/our-branches.vue";
 import moreAbout from "../components/Home/more-about-us.vue";
@@ -28,7 +29,9 @@ import VisionCarousel from "../components/Home/VisionCarousel.vue";
 import Webinar from "../components/Home/Webinar.vue";
 import FloatContactUs from "../components/FloatContactUs.vue";
 import QuickMessage from "../components/Home/QuickMessage.vue";
+import SignIn from "../components/Home/SignIn.vue";
 import Signup from "../components/Home/Signup.vue";
+import Enquire from "../components/Home/Enquire.vue";
 
 export default {
   name: "home",
@@ -43,8 +46,10 @@ export default {
     "webinar": Webinar,
     "carousel-vis": VisionCarousel,
     FloatContactUs,
+    SignIn,
     Signup,
-    QuickMessage
+    QuickMessage,
+    Enquire
   }
 };
 </script>

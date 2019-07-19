@@ -1,17 +1,16 @@
 <template>
     <div>
-        <div class="signup-form">
-    <form>
+		<b-modal id="bv-modal-signin" hide-footer hide-header size="md"> 
+    <div>
 		<div class="form-header">
-			 <p class="text-white" style="font-weight: bold; padding:0px; color:	#000000; font-size: 35px;">Sign In</p>
+			 <p class="text-white" style="font-weight: bold; padding:0px; color:#000000; font-size: 35px;">Sign In</p>
 			
 		</div >
 		<div class="form-group">
         <div class="btn-group" id="corner">
 		
-		<div><button type="button" class=" text-white btn-primary" style="width: 245px; height: 55px;">Sing in with facebook</button></div>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<div><button type="button" class="btn-danger text-white" style="width: 245px; height: 55px">Sing in with gmail</button></div>
+		<div><button type="button" class=" text-white btn-primary" style="width: 200px; height: 55px;">Sign in with facebook</button></div>
+		<div style="margin-left:60px;"><button type="button" class="btn-danger text-white"  style="width: 200px; height: 55px">Sign in with gmail</button></div>
         </div>
 		</div>
 
@@ -28,23 +27,23 @@
 		<div class="form-group">
         <div class="btn-group">
 		
-		<div><button type="button" class=" text-white btn-black button button1" id="button1" style="width: 200px; height: 50px;">Cancel</button></div>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<div style="margin-right:40px;"><button type="submit" class="btn-secondary text-white" style="width: 200px; height: 50px" >Cancel</button></div>
 		<div><button type="submit" class="btn-warning text-white" style="width: 200px; height: 50px">Sing In</button></div>
         </div>
 		</div>
-        <div class="form-group">
-			<label  required="required"> Don't have account?</label>
+        <div class="form-group" align="center">
+			<b-button  required="required" @click="$bvModal.show('bv-modal-signup'); $bvModal.hide('bv-modal-signin')" variant="outline"> Don't have account?</b-button>
 		</div>
-		<div class="form-group">
+		<div class="form-group" align="center">
 			<a href="Signup.vue">SIGN UP NOW</a>
 		</div>	
-    </form>
-</div>
+    </div>
+</b-modal>
     </div>
 </template>
 
 <style scoped>
+
 div {
   border-radius: 5px;}
   .button1 {border-radius: 2px;}
