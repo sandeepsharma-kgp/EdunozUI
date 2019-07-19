@@ -1,0 +1,25 @@
+<template>
+    <div id="mybutton">
+        <button class="feedback btn btn-md"  @click="$bvModal.show('bv-modal-enquire')">Enquiry</button>
+    </div>
+</template>
+
+<style scoped>
+.feedback {
+  background-color : #FF7340;
+  color: white;
+  padding: 10px 8px;
+  border-radius: 4px;
+  border-color: #46b8da;
+}
+
+#mybutton {
+  position: fixed;
+  bottom: 200px;
+  right: 3px;
+  -moz-transform:rotate(-90deg);
+  -ms-transform:rotate(-90deg);
+  -o-transform:rotate(-90deg);
+  -webkit-transform:rotate(-90deg);
+}
+</style>

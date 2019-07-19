@@ -6,7 +6,7 @@ npm i --S vueperslides-->
     class="container-fluid"
     style="color: #0e6251; padding: 12px; background-color:#ffffff;"
   >
-    <h5 style="font-weight: bold;">Our Branches</h5>
+    <h5 style="font-weight: bold; text-align: center;">Our Branches</h5>
     <vueper-slides
       class="no-shadow"
       :visible-slides="4"
@@ -21,7 +21,10 @@ npm i --S vueperslides-->
       }"
       style="padding-bottom: 20px"
     >
-      <vueper-slide :key=0>
+    <v-icon slot="arrow_left" color="black" large>arrow_left</v-icon>
+    <v-icon slot="arrow_right" color="black" large>arrow_right</v-icon>
+
+      <vueper-slide :key="0">
         <div slot="slideContent">
           <h6 style="font-weight: bold; color: #D66D02">Our Branch</h6>
           <p>{{ text }}</p>
@@ -37,7 +40,7 @@ npm i --S vueperslides-->
           </div>
         </div>
       </vueper-slide>
-      <vueper-slide :key=1>
+      <vueper-slide :key="1">
         <div slot="slideContent">
           <h6 style="font-weight: bold; color: #D66D02">Our Branch</h6>
           <p>{{ text }}</p>
@@ -53,7 +56,7 @@ npm i --S vueperslides-->
           </div>
         </div>
       </vueper-slide>
-      <vueper-slide :key=2>
+      <vueper-slide :key="2">
         <div slot="slideContent">
           <h6 style="font-weight: bold; color: #D66D02">Our Branch</h6>
           <p>{{ text }}</p>
@@ -69,7 +72,7 @@ npm i --S vueperslides-->
           </div>
         </div>
       </vueper-slide>
-      <vueper-slide :key=3>
+      <vueper-slide :key="3">
         <div slot="slideContent">
           <h6 style="font-weight: bold; color: #D66D02">Our Branch</h6>
           <p>{{ text }}</p>
@@ -85,7 +88,7 @@ npm i --S vueperslides-->
           </div>
         </div>
       </vueper-slide>
-      <vueper-slide :key=4>
+      <vueper-slide :key="4">
         <div slot="slideContent">
           <h6 style="font-weight: bold; color: #D66D02">Our Branch</h6>
           <p>{{ text }}</p>
@@ -101,7 +104,7 @@ npm i --S vueperslides-->
           </div>
         </div>
       </vueper-slide>
-      <vueper-slide :key=5>
+      <vueper-slide :key="5">
         <div slot="slideContent">
           <h6 style="font-weight: bold; color: #D66D02">Our Branch</h6>
           <p>{{ text }}</p>
@@ -117,7 +120,7 @@ npm i --S vueperslides-->
           </div>
         </div>
       </vueper-slide>
-      <vueper-slide :key=6>
+      <vueper-slide :key="6">
         <div slot="slideContent">
           <h6 style="font-weight: bold; color: #D66D02">Our Branch</h6>
           <p>{{ text }}</p>
@@ -133,7 +136,7 @@ npm i --S vueperslides-->
           </div>
         </div>
       </vueper-slide>
-      <vueper-slide :key=7>
+      <vueper-slide :key="7">
         <div slot="slideContent">
           <h6 style="font-weight: bold; color: #D66D02">Our Branch</h6>
           <p>{{ text }}</p>

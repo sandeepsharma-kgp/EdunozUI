@@ -1,8 +1,8 @@
 <template lang="en">
     <b-container fluid style="background-color:#f9f9f9;">
-    <h5 style="font-weight: bold; color: #0e6251; padding: 12px;">More About Us</h5>
-        <b-row align-v="center">
-            <b-col sm>
+    <h5 style="font-weight: bold; color: #0e6251; padding: 12px; text-align: center;">More About Us</h5>
+        <b-row align="center">
+            <b-col>
                 <div>
                     <b-card
                     align="center"
@@ -105,7 +105,7 @@ export default {
 
 <style scoped>
 .about-us-card {
-  margin: 26px;
+  margin: 10px;
   background-color: #f9f9f9;
   color: #0e6251;
   font-weight: bold;

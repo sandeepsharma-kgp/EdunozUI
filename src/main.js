@@ -1,14 +1,19 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
+import Vuetify from 'vuetify'
 
-import BootstrapVue from "bootstrap-vue";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
-
+Vue.use(Vuetify)
 Vue.use(BootstrapVue);
 Vue.component('GoogleMap', GoogleMap);
 Vue.config.productionTip = false;
+import BootstrapVue from "bootstrap-vue";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
+// index.js or main.js
+import 'vuetify/dist/vuetify.min.css'
+// main.styl
+// @import '~vuetify/src/stylus/main' // Ensure you are using stylus-loader
 
 window.EventBus = new Vue({
   data(){
