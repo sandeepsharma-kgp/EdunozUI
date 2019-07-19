@@ -40,6 +40,8 @@ div.whatsapp{
     right: 65px;
     cursor: pointer;
     z-index: 2;
+     -webkit-animation: slide-up .3s ease-out;
+    -moz-animation: slide-up .3s ease-out; 
 }
 div.messenger{
     position: fixed;
@@ -47,6 +49,16 @@ div.messenger{
     right: 20px;
     cursor: pointer;
     z-index: 2;
+     -webkit-animation: slide-up .5s ease-out;
+    -moz-animation: slide-up .5s ease-out; 
+}
+@-webkit-keyframes slide-up {
+      0% { opacity: 0; -webkit-transform: translateY(-10%); }   
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@-moz-keyframes slide-up {
+      0% { opacity: 0; -moz-transform: translateY(-10%); }   
+    100% { opacity: 1; -moz-transform: translateY(0); }
 }
 .nvisible{
     display: none;

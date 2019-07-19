@@ -9,7 +9,7 @@
     <more-about></more-about>
     <footer-bar></footer-bar>
     <FloatContactUs/>
-    <CantactUs />
+    <QuickMessage />
     <Signup />
   </div>
 </template>
@@ -27,7 +27,7 @@ import Navbar from "../components/Home/Navbar.vue";
 import VisionCarousel from "../components/Home/VisionCarousel.vue";
 import Webinar from "../components/Home/Webinar.vue";
 import FloatContactUs from "../components/FloatContactUs.vue";
-import CantactUs from "../components/Home/CantactUs.vue";
+import QuickMessage from "../components/Home/QuickMessage.vue";
 import Signup from "../components/Home/Signup.vue";
 
 export default {
@@ -44,7 +44,7 @@ export default {
     "carousel-vis": VisionCarousel,
     FloatContactUs,
     Signup,
-    CantactUs
+    QuickMessage
   }
 };
 </script>
