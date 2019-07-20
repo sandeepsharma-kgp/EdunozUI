@@ -126,8 +126,6 @@ div {
     .signup-form a{
 		color: #00cb82;		
 	}
-    .signup-form a:hover{
-		text-decoration: underline;
 	}
     #corner{
   border-radius: 25px;
