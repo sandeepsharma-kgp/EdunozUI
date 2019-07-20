@@ -6,16 +6,16 @@
     <md-card-media>
       <!-- swiper -->
       <swiper :options="swiperOption">
-        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="width:80%;padding:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/get_full_support.jpg')" style="width:80%;padding:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/get_certified.jpg')" style="width:80%;padding:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/art-artsy-bulb-1938318.jpg')" style="width:80%;padding:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/get_certified.jpg')" style="width:80%;padding:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="width:80%;padding:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="width:80%;padding:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/get_full_support.jpg')" style="width:80%;padding:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/get_certified.jpg')" style="width:80%;padding:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="width:80%;padding:25px;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/get_full_support.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/get_certified.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/art-artsy-bulb-1938318.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/get_certified.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/get_full_support.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/get_certified.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
        
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
@@ -43,6 +43,6 @@
 
 <style scoped>
   .swiper-slide {
-    height: 300px;
+    height: 250px;
   }
 </style>
