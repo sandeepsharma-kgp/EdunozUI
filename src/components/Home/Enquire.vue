@@ -1,6 +1,6 @@
 <template>
     <div >
-        <b-modal id="bv-modal-enquire"  hide-footer   modal-class="enq" size="sm" class="float-right"> 
+        <b-modal id="bv-modal-enquire"  hide-footer   modal-class="enq" size="sm" body-bg-variant="dark" header-bg-variant="dark" class="float-right"> 
             <div class="en" >
         
         <div class="form-group">
@@ -19,7 +19,7 @@
         </div>        
         
         <div style="padding-bottom:15px">
-            <b-dropdown id="dropdown-1" text="Select Courses"  variant="outline" style="border-style: solid; width:100%;">
+            <b-dropdown id="dropdown-1" text="Select Courses"  variant="light" style=" width:100%;">
                 <b-dropdown-item>First Action</b-dropdown-item>
                 <b-dropdown-item>Second Action</b-dropdown-item>
                 <b-dropdown-item>Third Action</b-dropdown-item>
