@@ -2,6 +2,7 @@
   <div class="home">
     <nav-bar></nav-bar>
     <carousel-vis></carousel-vis>
+    <MultiCard />
     <webinar></webinar>
     <card-bar></card-bar>
     <popular-tech></popular-tech>
@@ -32,6 +33,7 @@ import QuickMessage from "../components/Home/QuickMessage.vue";
 import SignIn from "../components/Home/SignIn.vue";
 import Signup from "../components/Home/Signup.vue";
 import Enquire from "../components/Home/Enquire.vue";
+import MultiCard from "../components/Home/MultiCard.vue";
 
 export default {
   name: "home",
@@ -49,7 +51,8 @@ export default {
     SignIn,
     Signup,
     QuickMessage,
-    Enquire
+    Enquire,
+    MultiCard
   }
 };
 </script>
