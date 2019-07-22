@@ -24,15 +24,15 @@ import Carousel from "../components/Home/Carousel.vue";
 import popularTech from "../components/Home/popular-tech.vue";
 import ourBranches from "../components/Home/our-branches.vue";
 import moreAbout from "../components/Home/more-about-us.vue";
-import footerBar from "../components/Home/footer.vue";
-import Navbar from "../components/Home/Navbar.vue";
+import footerBar from "../components/footer.vue";
+import Navbar from "../components/Navbar.vue";
 import VisionCarousel from "../components/Home/VisionCarousel.vue";
 import Webinar from "../components/Home/Webinar.vue";
 import FloatContactUs from "../components/FloatContactUs.vue";
 import QuickMessage from "../components/Home/QuickMessage.vue";
 import SignIn from "../components/Home/SignIn.vue";
 import Signup from "../components/Home/Signup.vue";
-import Enquire from "../components/Home/Enquire.vue";
+import Enquire from "../components/Enquire.vue";
 import MultiCard from "../components/Home/MultiCard.vue";
 
 export default {

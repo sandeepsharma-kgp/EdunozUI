@@ -1,7 +1,7 @@
 <template>
     <div style="color:#000;">
   <b-navbar toggleable="lg" type="dark" variant="info">
-    <div class="logo"><b-img :src="require('../../assets/images/Logo.png')" fluid alt="Fluid image"></b-img></div>
+    <div class="logo"><b-img :src="require('../assets/images/Logo.png')" fluid alt="Fluid image"></b-img></div>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -19,7 +19,7 @@
       <b-navbar-nav class="ml-auto">
       
           <b-form-input size="sm" class="mr-sm-2" placeholder="Search Courses"></b-form-input>
-          <b-button id="show-btn" @click="$bvModal.show('bv-modal-signin')"><b-img :src="require('../../assets/icons/man-user (1)@2x.png')"></b-img></b-button>
+          <b-button id="show-btn" @click="$bvModal.show('bv-modal-signin')"><b-img :src="require('../assets/icons/man-user (1)@2x.png')"></b-img></b-button>
 
 
       </b-navbar-nav>
