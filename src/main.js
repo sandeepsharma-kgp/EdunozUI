@@ -1,12 +1,13 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import Vuetify from 'vuetify';
+import Vuetify from 'vuetify'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper)
+
 
 // require styles
-import 'swiper/dist/css/swiper.css'
-Vue.use(VueAwesomeSwiper, /* { default global options } */)
 Vue.use(Vuetify)
 Vue.use(BootstrapVue);
 Vue.component('GoogleMap', GoogleMap);
