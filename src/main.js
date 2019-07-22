@@ -6,10 +6,13 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper)
 
+
+// require styles
 Vue.use(Vuetify)
 Vue.use(BootstrapVue);
 Vue.component('GoogleMap', GoogleMap);
 Vue.config.productionTip = false;
+
 import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
