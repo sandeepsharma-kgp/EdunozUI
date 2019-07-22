@@ -13,6 +13,7 @@
   "main": "babel.config.js",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "express":"*",
     "bootstrap-vue": "^2.0.0-rc.26",
     "core-js": "^2.6.5",
     "swiper": "^4.5.0",
