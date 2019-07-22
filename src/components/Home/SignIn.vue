@@ -3,132 +3,41 @@
 		<b-modal id="bv-modal-signin" hide-footer hide-header size="md"> 
     <div>
 		<div class="form-header">
-			 <p class="text-white" style="font-weight: bold; padding:0px; color:#000000; font-size: 35px;">Sign In</p>
-			
-		</div >
+					<p class="text-white" style="font-weight: bold; padding: 10px 10px 10px; border-radius: 5px; margin: -15px -15px 25px; color:#000000; font-size: 35px;background:#2A326d; text-align: center;font-family: 'Pacifico', sans-serif;" >Sign In</p>
+					
+				</div >
 		<div class="form-group">
-        <div class="btn-group" id="corner">
+        <div class="btn-group">
 		
-		<div><button type="button" class=" text-white btn-primary" style="width: 200px; height: 55px;">Sign in with facebook</button></div>
-		<div style="margin-left:60px;"><button type="button" class="btn-danger text-white"  style="width: 200px; height: 55px">Sign in with gmail</button></div>
+		<div><button type="button" class=" text-white btn-primary" style="width: 225px; height: 55px;border-radius: 5px;">Sign in with facebook</button></div>
+		<div style="margin-left:20px;"><button type="button" class="btn-danger text-white"  style="border-radius: 5px; width: 225px; height: 55px">Sign in with gmail</button></div>
         </div>
 		</div>
 
 		<div class="form-group">
 			
-            <input type="text" class="form-control" name="password" required="required" placeholder="Mobile/Email">
+            <input type="text"  style="background: #ECEEF8;margin-bottom: 20px;" class="form-control" name="password" required="required" placeholder="Mobile/Email">
         </div>
 		
         <div class="form-group">
 			
-            <input type="password" class="form-control" name="confirm_password" required="required" placeholder="Password">
+            <input type="password"  style="background: #ECEEF8;margin-bottom: 20px;" class="form-control" name="confirm_password" required="required" placeholder="Password">
         </div>        
         
 		<div class="form-group">
         <div class="btn-group">
 		
-		<div style="margin-right:40px;"><button type="submit" class="btn-secondary text-white" style="width: 200px; height: 50px" >Cancel</button></div>
-		<div><button type="submit" class="btn-warning text-white" style="width: 200px; height: 50px">Sing In</button></div>
+		<div style="margin-right:20px; margin-left:20px; "><button type="submit" class="btn-secondary text-white" style="width: 200px; height: 50px;border-radius: 5px;" >Cancel</button></div>
+		<div><button type="submit" class="btn-warning text-white" style="width: 200px; height: 50px;border-radius: 5px;">Sing In</button></div>
         </div>
 		</div>
         <div class="form-group" align="center">
 			<b-button  required="required" @click="$bvModal.show('bv-modal-signup'); $bvModal.hide('bv-modal-signin')" variant="outline"> Don't have account?</b-button>
 		</div>
 		<div class="form-group" align="center">
-			<a href="Signup.vue">SIGN UP NOW</a>
+			<a href="">SIGN UP NOW</a>
 		</div>	
     </div>
 </b-modal>
     </div>
 </template>
-
-<style scoped>
-
-div {
-  border-radius: 5px;}
-  .button1 {border-radius: 2px;}
-
-	body{
-		color: #999;
-		background: #e2e2e2;
-		font-family: 'Roboto', sans-serif;
-	}
-	.form-control{
-		min-height: 41px;
-		box-shadow: none;
-		border-color: #e1e1e1;
-	}
-	.form-control:focus{
-		border-color: #00cb82;
-	}	
-    .form-control, .btn{        
-        border-radius: 0px;
-    }
-	.form-header{
-		margin: -30px -30px 20px;
-		padding: 10px 10px 10px;
-        text-emphasis-color: #ffffff;
-		text-align: center;
-		background: #2A326d;
-		border-bottom: 1px solid #eee;
-		color: #fff;
-	}
-	.form-header h2{
-		font-size: 34px;
-		font-weight: bold;
-        margin: 0 0 10px;
-		font-family: 'Pacifico', sans-serif;
-    }
-	.form-header p{
-		margin: 20px 0 15px;
-		font-size: 17px;
-		line-height: normal;
-		font-family: 'Courgette', sans-serif;
-	}
-    .signup-form{
-		width: 587px;
-        height: 596px;
-		margin: 0 auto;	
-		padding: 30px 0;	
-        
-	}
-    .signup-form form{
-		color: #999;
-		border-radius: 3px;
-    	margin-bottom: 15px;
-        background: #f0f0f0;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        padding: 30px;
-    }
-	.signup-form .form-group{
-		margin-bottom: 20px;
-        
-	}		
-	.signup-form label{
-		font-weight: normal;
-		font-size: 13px;
-	}
-    .signup-form input[type="checkbox"]{
-		margin-top: 2px;
-	}
-    .signup-form .btn{        
-        font-size: 16px;
-        font-weight: bold;
-		background: #00cb82;
-		border: none;
-		min-width: 200px;
-    }
-	.signup-form .btn:hover, .signup-form .btn:focus{
-		background: #00b073 !important;
-        outline: none;
-	}
-    .signup-form a{
-		color: #00cb82;		
-	}
-    .signup-form a:hover{
-		text-decoration: underline;
-	}
-    #corner{
-  border-radius: 25px;
-    }
-</style>
