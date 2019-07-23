@@ -4,8 +4,7 @@
     <div>
 		<div class="form-header">
 					<p class="text-white" style="font-weight: bold; padding: 10px 10px 10px; border-radius: 5px; margin: -15px -15px 25px; color:#000000; font-size: 35px;background:#2A326d; text-align: center;font-family: 'Pacifico', sans-serif;" >Sign In</p>
-					
-				</div >
+		</div >
 		<div class="form-group">
         <div class="btn-group">
 		
