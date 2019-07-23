@@ -2,7 +2,7 @@
     <b-container fluid style="background-color:#f9f9f9;">
     <h5 style="font-weight: bold; color: #0e6251; padding: 12px; text-align: center;">More About Us</h5>
         <b-row align="center">
-            <b-col>
+            <b-col md="6" lg="3">
                 <div>
                     <b-card
                     align="center"
@@ -20,7 +20,7 @@
                     </b-card>
                 </div>
             </b-col>
-            <b-col sm>
+            <b-col md="6" lg="3">
                 <div>
                     <b-card
                     align="center"
@@ -39,7 +39,7 @@
                 </div>
                 
             </b-col>
-            <b-col sm>
+            <b-col md="6" lg="3">
                 <div>
                     <b-card
                     align="center"
@@ -57,7 +57,7 @@
                     </b-card>
                 </div>
             </b-col>
-            <b-col sm>
+            <b-col md="6" lg="3">
               <div>
                     <b-card
                     align="center"
