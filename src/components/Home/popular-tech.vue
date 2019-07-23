@@ -34,9 +34,6 @@
             :src="require('@/assets/images/Software-Testing.png')"
           ></b-img-lazy>
         </b-col>
-      </b-row>
-
-      <b-row>
         <b-col>
           <b-img-lazy
             class="tech-container-img"
