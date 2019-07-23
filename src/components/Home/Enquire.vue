@@ -1,6 +1,6 @@
 <template>
     <div >
-        <b-modal id="bv-modal-enquire"  hide-footer   modal-class="enq" size="sm" body-bg-variant="dark" header-bg-variant="dark" class="float-right"> 
+        <b-modal id="bv-modal-enquire"  hide-footer   class="enq" size="sm" body-bg-variant="dark" header-bg-variant="dark"> 
             <div class="en" >
         
         <div class="form-group">
@@ -48,7 +48,7 @@
 <style scoped>
   .enq{
   background-color:#455674;
-  opacity:0.5;
+  opacity:0.5 !important;
 
 }
 
