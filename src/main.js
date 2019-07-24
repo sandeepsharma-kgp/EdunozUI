@@ -1,10 +1,23 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import Vuetify from 'vuetify'
-import VueAwesomeSwiper from 'vue-awesome-swiper'
-import 'swiper/dist/css/swiper.css'
+import Vuetify from 'vuetify';
+import VueAwesomeSwiper from 'vue-awesome-swiper';
+import 'swiper/dist/css/swiper.css';
+import firebase from 'firebase';
 Vue.use(VueAwesomeSwiper)
+
+
+const config = {
+  apiKey: "AIzaSyCVfvwhL_I9syRjYbhZ0Pk9egifhgkuDog",
+    authDomain: "eduauth-826a4.firebaseapp.com",
+    databaseURL: "https://eduauth-826a4.firebaseio.com",
+    projectId: "eduauth-826a4",
+    storageBucket: "eduauth-826a4.appspot.com",
+    messagingSenderId: "325003081008",
+    appId: "1:325003081008:web:489f32c87f0390d4"
+}
+firebase.initializeApp(config);
 
 
 // require styles

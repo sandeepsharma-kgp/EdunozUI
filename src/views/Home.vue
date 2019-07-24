@@ -20,7 +20,7 @@
 <script>
 // @ is an alias to /src
 import cardBar from "../components/Home/card-bar.vue";
-import Carousel from "../components/Home/Carousel.vue";
+//import Carousel from "../components/Home/Carousel.vue";
 import popularTech from "../components/Home/popular-tech.vue";
 import ourBranches from "../components/Home/our-branches.vue";
 import moreAbout from "../components/Home/more-about-us.vue";
