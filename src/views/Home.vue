@@ -14,6 +14,7 @@
     <SignIn/>
     <Signup />
     <Enquire />
+  
   </div>
 </template>
 
@@ -52,7 +53,8 @@ export default {
     Signup,
     QuickMessage,
     Enquire,
-    MultiCard
+    MultiCard,
+
   }
 };
 </script>

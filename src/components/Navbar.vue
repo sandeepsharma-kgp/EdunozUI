@@ -9,7 +9,7 @@
       <b-navbar-nav>
         <b-nav-item href="#">Home</b-nav-item>
         <b-nav-item href="#">About Us</b-nav-item>
-        <b-nav-item href="#">Courses</b-nav-item>
+        <b-nav-item href="#" to=/Home/course.vue>Courses</b-nav-item>
         <b-nav-item href="#">Get in touch</b-nav-item>
       </b-navbar-nav>
 

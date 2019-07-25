@@ -1,0 +1,118 @@
+
+<template>
+  <div class="hello">
+    <div>
+  <b-card >
+    <b-tabs pills card >
+      <b-tab title="Course Syllabus" >
+        <b-card >
+          <div>
+            
+        <b-img :src="require('../../assets/images/online_tests.jpg')" class="img-fluid p-4" fluid alt="responsive image" style="max-width:731px;" align="right" ></b-img>
+        
+        </div>
+        <b-card-text>
+         <strong> <p style=" font-size:24px">Overview </p></strong>
+          <ul align:left class="text-dark">
+            <li>SAP Overview</li>
+            <li>ERP Overview</li>
+            <li>Architecture</li>
+            <li>Usecase & Implementation</li>
+            <li>Life cycle</li>
+          </ul>
+
+        </b-card-text>
+        <b-card-text>
+         <strong> <p style="font-weight: bold; font-size:24px">Intro to ABAP </p></strong>
+          <ul align:left class="text-dark">
+            <li>Characteristics of ABAP and workbench Architecture</li>
+            <li>Intruduction to data Dictionary</li>
+            <li>Repository information</li>
+            <li>ABAP statements,Creating programs and changing programs</li>
+            <li>Data Dictionary</li>
+          </ul>
+
+        </b-card-text>
+        <b-card-text >
+         <strong> <p style="font-weight:bold;font-size:24px">Components of ABAP Dictionary </p></strong>
+          <ul align:left class="">
+            <li>Data Elements and Domains</li>
+            <li>Intruductions</li>
+            
+          </ul>
+
+        </b-card-text>
+    </b-card>
+      </b-tab>
+      <b-tab title="Instructor">
+        <b-card >  
+          <div class="row" style="border-style: groove;margin:50px;">
+    <div class="col-sm-2">
+      <b-img :src="require('../../assets/images/online_tests.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
+    </div>
+    <div class="col-sm-9 " style="padding:10px">
+      <h6>Name</h6>
+      <p style="color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <p>hgcdgfejhfgeriufhroifl;krgotrirpotpoo</p>
+    </div>
+  </div>
+
+  <div class="row" style="border-style: groove;margin:50px;">
+    <div class="col-sm-2">
+      <b-img :src="require('../../assets/images/online_tests.jpg')" class="img-fluid p-4 img-responsive" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
+        
+    </div>
+    <div class="col-sm-9 " style="padding:10px">
+      <h6>Name</h6>
+      <p style="color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <p>hgcdgfejhfgeriufhroifl;krgotrirpotpoo</p>
+    </div>
+  </div>
+
+  <div class="row" style="border-style: groove;margin:50px;">
+    <div class="col-sm-2">
+      <b-img :src="require('../../assets/images/online_tests.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
+        
+    </div>
+    <div class="col-sm-9 " style="padding:10px">
+      <h6>Name</h6>
+      <p style="color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <p>hgcdgfejhfgeriufhroifl;krgotrirpotpoo</p>
+    </div>
+  </div>
+        </b-card>
+          </b-tab>
+
+          <b-tab title="FAQs">
+        <b-card >        
+    </b-card>
+      </b-tab>
+      
+    </b-tabs>
+  </b-card>
+</div>
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'course',
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+ul {
+  list-style: none; 
+}
+ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;  
+  width: 1em; 
+  margin-left: -1em; 
+}
+
+</style>
