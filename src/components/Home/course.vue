@@ -8,7 +8,7 @@
         <b-card >
           <div>
             
-        <b-img :src="require('../../assets/images/online_tests.jpg')" class="img-fluid p-4" fluid alt="responsive image" style="max-width:731px;" align="right" ></b-img>
+        <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" fluid alt="responsive image" style="max-width:731px;" align="right" ></b-img>
         
         </div>
         <b-card-text>
@@ -48,7 +48,7 @@
         <b-card >  
           <div class="row" style="border-style: groove;margin:50px;">
     <div class="col-sm-2">
-      <b-img :src="require('../../assets/images/online_tests.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
+      <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
     </div>
     <div class="col-sm-9 " style="padding:10px">
       <h6>Name</h6>
@@ -59,7 +59,7 @@
 
   <div class="row" style="border-style: groove;margin:50px;">
     <div class="col-sm-2">
-      <b-img :src="require('../../assets/images/online_tests.jpg')" class="img-fluid p-4 img-responsive" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
+      <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4 img-responsive" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
         
     </div>
     <div class="col-sm-9 " style="padding:10px">
@@ -71,7 +71,7 @@
 
   <div class="row" style="border-style: groove;margin:50px;">
     <div class="col-sm-2">
-      <b-img :src="require('../../assets/images/online_tests.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
+      <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
         
     </div>
     <div class="col-sm-9 " style="padding:10px">
