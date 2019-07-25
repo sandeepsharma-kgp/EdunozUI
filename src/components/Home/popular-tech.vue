@@ -1,102 +1,40 @@
 <template>
-  <div
-    class="container-fluid"
-    style="color: #0e6251; padding: 12px; background-color:#f9f9f9;"
-  >
-    <h5 style="font-weight: bold; text-align: center;">Popular Technology</h5>
-    <b-container align-h="start" fluid>
-      <b-row align-h="start">
-        <b-col>
-          <b-img-lazy
-            class="tech-container-img"
-            v-bind="mainProps"
-            :src="require('@/assets/images/bitcoin-blockchain-coins.jpg')"
-          ></b-img-lazy>
-        </b-col>
-        <b-col>
-          <b-img-lazy
-            class="tech-container-img"
-            v-bind="mainProps"
-            :src="require('@/assets/images/python.jpg')"
-          ></b-img-lazy>
-        </b-col>
-        <b-col>
-          <b-img-lazy
-            class="tech-container-img"
-            v-bind="mainProps"
-            :src="require('@/assets/images/shutterstock.jpg')"
-          ></b-img-lazy>
-        </b-col>
-        <b-col>
-          <b-img-lazy
-            class="tech-container-img"
-            v-bind="mainProps"
-            :src="require('@/assets/images/Software-Testing.png')"
-          ></b-img-lazy>
-        </b-col>
-        <b-col>
-          <b-img-lazy
-            class="tech-container-img"
-            v-bind="mainProps"
-            :src="require('@/assets/images/angular.png')"
-          ></b-img-lazy>
-        </b-col>
-        <b-col>
-          <b-img-lazy
-            class="tech-container-img"
-            v-bind="mainProps"
-            :src="require('@/assets/images/information.jpeg')"
-          ></b-img-lazy>
-        </b-col>
-        <b-col>
-          <b-img-lazy
-            class="tech-container-img"
-            v-bind="mainProps"
-            :src="require('@/assets/images/development-cycle.png')"
-          ></b-img-lazy>
-        </b-col>
-      </b-row>
-    </b-container>
-  </div>
+            <v-container fluid grid-list-xl style="background-color:#f9f9f9;">
+    <h5 style="font-weight: bold; color: #0e6251; padding: 12px; text-align: center;">More About Us</h5>
+
+                <v-layout row wrap child-flex>
+                    <v-flex lg3>
+                        <v-img style="height: 100px; width: 250px; padding: 4px; border-radius: 5px;" 
+                        :src="require('@/assets/images/bitcoin-blockchain-coins.jpg')" alt="Image"></v-img>
+                    </v-flex>
+                    <v-flex lg3>
+                        <v-img style="height: 100px; width: 250px; padding: 4px; border-radius: 5px;" 
+                        :src="require('@/assets/images/python.jpg')" alt="Image"></v-img>
+                    </v-flex>
+                    <v-flex lg3>
+                        <v-img style="height: 100px; width: 250px; padding: 4px; border-radius: 5px;" 
+                       :src="require('@/assets/images/shutterstock.jpg')" alt="Image"></v-img>
+                    </v-flex>
+                    <v-flex lg3>
+                        <v-img style="height: 100px; width: 250px; padding: 4px; border-radius: 5px;" 
+                         :src="require('@/assets/images/Software-Testing.png')" alt="Image"></v-img>
+                    </v-flex>
+                    <v-flex lg3>
+                        <v-img style="height: 100px; width: 250px; padding: 4px; border-radius: 5px;" 
+                       :src="require('@/assets/images/angular.png')" alt="Image"></v-img>
+                    </v-flex>
+                    <v-flex lg3>
+                        <v-img style="height: 100px; width: 250px; padding: 4px; border-radius: 5px;"  
+                        :src="require('@/assets/images/information.jpeg')" alt="Image"></v-img>
+                    </v-flex>
+                    <v-flex lg3>
+                        <v-img style="height: 100px; width: 250px; padding: 4px; border-radius: 5px;" 
+                        :src="require('@/assets/images/development-cycle.png')" alt="Image"></v-img>
+                    </v-flex>
+                    
+                </v-layout>
+            </v-container>
 </template>
-<script>
-export default {
-  name: "popular-tech",
-  data() {
-    return {
-      mainProps: {
-        center: true,
-        rounded: true,
-        fluidGrow: false,
-        blank: true,
-        blankColor: "#bbb",
-        alt: "Profile Picture"
-      }
-    };
-  }
-};
-</script>
 <style scoped>
-.tech-container-img {
-  height: 80px;
-  width: 240px;
-  margin: 20px;
-}
-@media only screen and (max-width: 1024px){
-  .tech-container-img{
-    width: 180px;
-  }
-  
-}
-@media only screen and (max-width: 768px){
-  .tech-container-img{
-    width: 150px;
-  }
-}
-@media only screen and (max-width: 375px){
-  .tech-container-img{
-    width: 90px;
-  }
-  
-}
+
 </style>
