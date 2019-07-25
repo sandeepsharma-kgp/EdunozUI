@@ -8,7 +8,7 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item href="#">Home</b-nav-item>
-        <b-nav-item href="#">About Us</b-nav-item>
+        <b-nav-item href="#" :to="{name: 'about'}" @click.native="open = false">About Us</b-nav-item>
         <b-nav-item href="#">Courses</b-nav-item>
         <b-nav-item href="#">Get in touch</b-nav-item>
       </b-navbar-nav>

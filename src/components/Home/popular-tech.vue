@@ -4,8 +4,8 @@
     style="color: #0e6251; padding: 12px; background-color:#f9f9f9;"
   >
     <h5 style="font-weight: bold; text-align: center;">Popular Technology</h5>
-    <b-container fluid>
-      <b-row align-h="center">
+    <b-container align-h="start" fluid>
+      <b-row align-h="start">
         <b-col>
           <b-img-lazy
             class="tech-container-img"
@@ -79,12 +79,23 @@ export default {
 <style scoped>
 .tech-container-img {
   height: 80px;
-  width: 250px;
+  width: 240px;
   margin: 20px;
 }
-@media only screen and (max-width: 371px){
+@media only screen and (max-width: 1024px){
   .tech-container-img{
-    width: 300px;
+    width: 180px;
+  }
+  
+}
+@media only screen and (max-width: 768px){
+  .tech-container-img{
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 375px){
+  .tech-container-img{
+    width: 90px;
   }
   
 }

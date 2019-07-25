@@ -1,11 +1,11 @@
 <template>
-            <v-container fluid style="background-color:#f9f9f9;">
+            <v-container fluid grid-list-xl style="background-color:#f9f9f9;">
     <h5 style="font-weight: bold; color: #0e6251; padding: 12px; text-align: center;">More About Us</h5>
 
-                <v-layout row wrap child-flex>
-                    <v-flex pa-4 md6 lg3>
+                <v-layout justify-center row wrap child-flex>
+                    <v-flex md6 lg3>
                         <v-card height="calc(100% - 5px)" 
-                        style="max-width: 20rem; 
+                        style=" 
                         border: 3px solid #394285; 
                         border-radius: 12px; 
                         padding: 5px; 
@@ -20,9 +20,9 @@
                         </v-card-text> 
                         </v-card>
                     </v-flex>
-                    <v-flex pa-4 mb-2 md6 lg3>
+                    <v-flex md6 lg3>
                         <v-card height="100%" 
-                        style="max-width: 20rem; 
+                        style=" 
                         border: 3px solid #394285; 
                         border-radius: 12px; 
                         padding: 5px; 
@@ -37,9 +37,9 @@
                         </v-card-text> 
                         </v-card>
                     </v-flex>
-                    <v-flex pa-4 mb-2 md6 lg3>
+                    <v-flex md6 lg3>
                         <v-card height="100%" 
-                        style="max-width: 20rem; 
+                        style=" 
                         border: 3px solid #394285; 
                         border-radius: 12px; 
                         padding: 5px; 
@@ -54,9 +54,9 @@
                         </v-card-text> 
                         </v-card>
                     </v-flex>
-                    <v-flex pa-4 mb-2 md6 lg3>
+                    <v-flex md6 lg3>
                         <v-card height="100%" 
-                        style="max-width: 20rem; 
+                        style=" 
                         border: 3px solid #394285; 
                         border-radius: 12px; 
                         padding: 5px; 
