@@ -14,7 +14,6 @@
     <SignIn/>
     <Signup />
     <Enquire />
-  
   </div>
 </template>
 
@@ -35,7 +34,6 @@ import SignIn from "../components/Home/SignIn.vue";
 import Signup from "../components/Home/Signup.vue";
 import Enquire from "../components/Enquire.vue";
 import MultiCard from "../components/Home/MultiCard.vue";
-
 export default {
   name: "home",
   components: {
@@ -54,7 +52,7 @@ export default {
     QuickMessage,
     Enquire,
     MultiCard,
-
+    
   }
 };
 </script>

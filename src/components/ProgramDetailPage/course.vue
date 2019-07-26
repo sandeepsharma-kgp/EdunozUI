@@ -1,10 +1,10 @@
 
 <template>
-  <div class="hello">
+  <div class="course">
     <div>
   <b-card >
-    <b-tabs pills card >
-      <b-tab title="Course Syllabus" >
+    <b-tabs style="background: #2A326D;">
+      <b-tab class="" title="Course Syllabus" >
         <b-card >
           <div>
             
@@ -50,8 +50,8 @@
     <div class="col-sm-2">
       <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
     </div>
-    <div class="col-sm-9 " style="padding:10px">
-      <h6>Name</h6>
+    <div class="col-sm-9 " style="padding:50px" align="left">
+      <h6 style="font-weight:bold" >Name</h6>
       <p style="color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       <p>hgcdgfejhfgeriufhroifl;krgotrirpotpoo</p>
     </div>
@@ -62,8 +62,8 @@
       <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4 img-responsive" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
         
     </div>
-    <div class="col-sm-9 " style="padding:10px">
-      <h6>Name</h6>
+    <div class="col-sm-9 " style="padding:50px" align="left">
+      <h6 style="font-weight:bold">Name</h6>
       <p style="color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       <p>hgcdgfejhfgeriufhroifl;krgotrirpotpoo</p>
     </div>
@@ -74,8 +74,8 @@
       <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
         
     </div>
-    <div class="col-sm-9 " style="padding:10px">
-      <h6>Name</h6>
+    <div class="col-sm-9 " style="padding:50px" align="left">
+      <h6 style="font-weight:bold">Name</h6>
       <p style="color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       <p>hgcdgfejhfgeriufhroifl;krgotrirpotpoo</p>
     </div>
@@ -84,8 +84,45 @@
           </b-tab>
 
           <b-tab title="FAQs">
-        <b-card >        
-    </b-card>
+        <b-card >
+         <div>
+             <b-input-group>
+            <b-form-input placeholder="FAQs" style="width:80%" ></b-form-input>
+            <b-button pill slot="append" class="pl-5 pr-5" style="margin-left:20px;background:#FF5733;">Post </b-button>
+             </b-input-group>   
+         </div>
+         <div>
+             <h5 align="center" style="padding:10px;text-decoration: underline;color:#2F306D;">Answer</h5>
+         </div>  
+         <div style="border-style: outset;">
+            <div class="row" style="margin:50px;">
+            <div class="col-sm-2">
+            <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
+        
+            </div>
+            <div class="col-sm-9 " style="" align="left">
+                <h6 style="font-weight:bold">Name</h6>
+                <p style="color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p>hgcdgfejhfgeriufhroifl;krgotrirpotpoo</p>
+            </div>
+        </div>
+        </div>     
+
+        <div style="border-style: outset;">
+            <div class="row" style="margin:50px;">
+            <div class="col-sm-2">
+            <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
+        
+            </div>
+            <div class="col-sm-9 " style="" align="left">
+                <h6 style="font-weight:bold">Name</h6>
+                <p style="color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p>hgcdgfejhfgeriufhroifl;krgotrirpotpoo</p>
+            </div>
+        </div>
+        </div>      
+        </b-card>
+
       </b-tab>
       
     </b-tabs>
@@ -113,6 +150,9 @@ ul li::before {
   display: inline-block;  
   width: 1em; 
   margin-left: -1em; 
+}
+.tab-title-class {
+    color: #FF0000 !important;  
 }
 
 </style>
