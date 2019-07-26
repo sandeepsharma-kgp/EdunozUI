@@ -6,16 +6,26 @@
     <md-card-media>
       <!-- swiper -->
       <swiper :options="swiperOption">
-        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/get_full_support.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/get_certified.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/art-artsy-bulb-1938318.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/get_certified.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/get_full_support.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/get_certified.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
-        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="width:80%;padding-left:25px;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="padding: 28px; width: 90%; height: 80%; 
+        margin-right: auto; margin-left: auto;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/get_full_support.jpg')" style="padding: 28px; width: 90%; height: 80%;
+        margin-right: auto; margin-left: auto;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/get_certified.jpg')" style="padding: 28px; width: 90%; height: 80%;
+        margin-right: auto; margin-left: auto;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/art-artsy-bulb-1938318.jpg')" style="padding: 28px; width: 90%; height: 80%;
+        margin-right: auto; margin-left: auto;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/get_certified.jpg')" style="padding: 28px; width: 90%; height: 80%;
+        margin-right: auto; margin-left: auto;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="padding: 28px; width: 90%; height: 80%;
+        margin-right: auto; margin-left: auto;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="padding: 28px; width: 90%; height: 80%;
+        margin-right: auto; margin-left: auto;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/get_full_support.jpg')" style="padding: 28px; width: 90%; height: 80%;
+        margin-right: auto; margin-left: auto;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/get_certified.jpg')" style="padding: 28px; width: 90%; height: 80%;
+        margin-right: auto; margin-left: auto;"></b-img></swiper-slide>
+        <swiper-slide ><b-img :src="require('../../assets/images/online_tests.jpg')" style="padding: 28px; width: 90%; height: 80%;
+        margin-right: auto; margin-left: auto;"></b-img></swiper-slide>
        
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
@@ -28,12 +38,30 @@
     data() {
       return {
         swiperOption: {
-          slidesPerView: 3,
+          slidesPerView: 4,
           slidesPerColumn: 2,
-          spaceBetween: 80,
+          spaceBetween: 0,
           pagination: {
             el: '.swiper-pagination',
             clickable: true
+          },
+          breakpoints: {
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 40
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            }
           }
         }
       }
