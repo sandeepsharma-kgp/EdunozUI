@@ -21,5 +21,6 @@
   -ms-transform:rotate(-90deg);
   -o-transform:rotate(-90deg);
   -webkit-transform:rotate(-90deg);
+  z-index: 1;
 }
 </style>

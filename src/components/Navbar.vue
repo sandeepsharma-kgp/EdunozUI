@@ -16,10 +16,11 @@
       <!-- Right aligned nav items 
       Use &#128269 for search logo
       -->
-      <b-navbar-nav class="ml-auto">
-      
-          <b-form-input size="sm" class="mr-sm-2" placeholder="Search Courses"></b-form-input>
-          <b-button id="show-btn" @click="$bvModal.show('bv-modal-signin')"><b-img :src="require('../assets/icons/man-user (1)@2x.png')"></b-img></b-button>
+      <b-navbar-nav class="ml-auto" >
+      <div style="padding-top:11px;padding-right:15px;">
+          <b-form-input size="sm" class="mr-sm-2" placeholder="Search Courses" style="width:200px;" ></b-form-input>
+          </div>
+          <b-button id="show-btn" @click="$bvModal.show('bv-modal-signin')" style="border-style:none;"><b-img :src="require('../assets/icons/man-user (1)@2x.png')"></b-img></b-button>
 
 
       </b-navbar-nav>
