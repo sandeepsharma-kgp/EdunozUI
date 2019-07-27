@@ -52,7 +52,6 @@ export default {
     QuickMessage,
     Enquire,
     MultiCard,
-    
   }
 };
 </script>
