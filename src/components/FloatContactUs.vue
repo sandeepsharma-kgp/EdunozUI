@@ -17,7 +17,6 @@
   position: fixed;
   bottom: 205px;
   right:-50px;
-   z-index:1;
   -moz-transform:rotate(-90deg);
   -ms-transform:rotate(-90deg);
   -o-transform:rotate(-90deg);
