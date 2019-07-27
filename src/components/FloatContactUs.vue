@@ -1,6 +1,6 @@
 <template>
     <div id="mybutton">
-        <button class="feedback btn btn-md"  @click="$bvModal.show('bv-modal-enquire')">Enquiry</button>
+        <button class="feedback btn btn-md pl-5 pr-5"  @click="$bvModal.show('bv-modal-enquire')">Enquiry</button>
     </div>
 </template>
 
@@ -16,10 +16,11 @@
 #mybutton {
   position: fixed;
   bottom: 200px;
-  right: 3px;
+  right: -50px;
   -moz-transform:rotate(-90deg);
   -ms-transform:rotate(-90deg);
   -o-transform:rotate(-90deg);
   -webkit-transform:rotate(-90deg);
+  z-index: 1;
 }
 </style>
