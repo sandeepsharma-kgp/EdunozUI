@@ -1,7 +1,7 @@
 <template>
   <v-container fluid style=" padding: 20px;">
-      <h1 align="center">Programs we Offer</h1>
-    
+      <h5 style="font-weight: bold; color: #0e6251; padding: 12px; text-align: center; padding: 12px;">Programs We Offer</h5>
+
       <!-- swiper -->
       <swiper :options="swiperOption">
         <swiper-slide >
