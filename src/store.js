@@ -2,7 +2,6 @@ import Vue from "vue";
 import Vuex from "vuex";
 const fb = require('./firebaseConfig.js')
 Vue.use(Vuex);
-
 export const store = new Vuex.Store({
   state: {
     currentUser: null,
@@ -28,7 +27,7 @@ export const store = new Vuex.Store({
           console.log(err);
         });
     },
-    getUser({ commit, state }) {
+    getUser(state) {
       return state.currentUser;
     }
   }

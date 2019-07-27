@@ -25,7 +25,7 @@
               <b-img :src="require('../assets/icons/man-user (1)@2x.png')"></b-img>
             </b-button>
           </router-link>
-          <b-nav-item v-if="showitem === true" href="#" to="/home/login">Sign Out</b-nav-item>
+          <b-nav-item v-if="showitem === true" href="#" @click.prevent="signout">Sign Out</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -53,6 +53,7 @@ button {
 </style>
 
 <script>
+const fb = require("../firebaseConfig.js");
 export default {
   data() {
     return {
@@ -60,11 +61,27 @@ export default {
     };
   },
   methods: {
+    signout() {
+      fb.auth
+        .signOut()
+        .then(() => {
+          this.$store.commit("setCurrentUser", null);
+          alert("Logged Out");
+          this.isLogged = this.checkIfIsLogged();
+          this.$router.go("/");
+        })
+        .catch(err => {
+          alert("Failure");
+          this.performingRequest = false;
+          console.log(err);
+        });
+    },
     checkIfIsLogged() {
-      if (this.$store.dispatch("getUser")) {
+      const currentUser = fb.auth.currentUser
+      if (currentUser) {
         return true;
       }
-      return false;
+      return false
     }
   }
 };

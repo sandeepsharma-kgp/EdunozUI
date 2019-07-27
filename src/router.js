@@ -24,11 +24,6 @@ const router = new Router({
       component: Home
     },
     {
-      path: "/home",
-      name: "home",
-      component: Home
-    },
-    {
       path: "/ProgramDetailPage/course",
       name: "ProgramDetailPage",
       component: ProgramDetailPage,

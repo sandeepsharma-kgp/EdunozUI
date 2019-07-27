@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-modal id="bv-modal-signin" hide-footer hide-header size="md">
+    <b-modal v-if="performingRequest" id="bv-modal-signin" hide-footer hide-header size="md">
       <div class="siginModal">
         <div class="form-header">
           <p
@@ -55,6 +55,7 @@
           <div class="btn-group">
             <div style="margin-right:20px; margin-left:20px; ">
               <button
+                @click="cancel"
                 type="submit"
                 class="btn-secondary text-white"
                 style="width: 200px; height: 50px;border-radius: 5px;"
@@ -93,31 +94,32 @@ export default {
       loginForm: {
         email: "",
         password: ""
-      }
+      },
+      performingRequest: true
     };
   },
   methods: {
     login() {
-      this.performingRequest = true;
-
       fb.auth
         .signInWithEmailAndPassword(
           this.loginForm.email,
           this.loginForm.password
         )
         .then(user => {
-          console.log("user", user);
-          console.log("user,user", user.user);
-
           this.$store.commit("setCurrentUser", user.user);
           this.$store.dispatch("fetchUserProfile");
           this.performingRequest = false;
-          this.$router.push("/home");
+          this.$router.go("/");
         })
         .catch(err => {
           this.performingRequest = false;
+          this.$router.go("/");
           console.log(err);
         });
+    },
+    cancel() {
+      this.performingRequest = false;
+      this.$router.go("/");
     }
   }
 };

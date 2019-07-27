@@ -89,7 +89,6 @@
 </template>	  
 
 <script>
-import { currentUser } from "../../firebaseConfig";
 const fb = require("../../firebaseConfig.js");
 export default {
   data() {
@@ -113,7 +112,7 @@ export default {
         )
         .then(user => {
           this.$store.commit("setCurrentUser", user.user);
-          alert("success");
+          alert("Signed Up");
 
           // create user obj
           fb.usersCollection
@@ -126,7 +125,7 @@ export default {
             .then(() => {
               this.$store.dispatch("fetchUserProfile");
               this.performingRequest = false;
-              this.$router.push("/home");
+              this.$router.go("/");
             })
             .catch(err => {
               this.performingRequest = false;

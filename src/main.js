@@ -41,4 +41,6 @@ fb.auth.onAuthStateChanged(user => {
       render: h => h(App)
     }).$mount("#app");
   }
+Vue.config.debug = true; Vue.config.devtools = true;
+
 })
