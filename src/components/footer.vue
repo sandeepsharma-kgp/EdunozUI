@@ -45,7 +45,8 @@
                 </div>
                 <br>
                 <a href="default.asp" style="color: white;"><u>Blogs</u></a>&ensp;&ensp;&ensp;<a href="default.asp" style="color: white;"><u>Terms&amp;Conditions</u></a>&ensp;&ensp;&ensp;<a href="default.asp" style="color: white;"><u>Privacy&nbsp;Policy</u></a>
-                
+                <br>
+                <br>
             </b-col>
             <b-col md="7" align-self="start">
                 <google-map></google-map>
