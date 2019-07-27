@@ -37,7 +37,7 @@
             max-rows="6"
 
         ></b-form-textarea>
-        <div class="form-group" style="padding:5px;text-align:center">
+        <div class="form-group" style="padding:15px;text-align:center">
 			<b-button  style="background-color : #FF7340;" required="required" @click="$bvModal.show('bv-modal-signup'); $bvModal.hide('bv-modal-signin')" > Enter Query</b-button>
 		</div>
     </div>
