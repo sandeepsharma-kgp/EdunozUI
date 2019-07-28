@@ -9,9 +9,9 @@
     <our-branches></our-branches>
     <more-about></more-about>
     <footer-bar></footer-bar>
-    <FloatContactUs/>
+    <FloatContactUs />
     <QuickMessage />
-    <SignIn/>
+    <SignIn />
     <Signup />
     <Enquire />
   </div>
@@ -44,14 +44,14 @@ export default {
     "footer-bar": footerBar,
     "nav-bar": Navbar,
     // "vision-carousel": VisionCarousel,
-    "webinar": Webinar,
+    webinar: Webinar,
     "carousel-vis": VisionCarousel,
     FloatContactUs,
     SignIn,
     Signup,
     QuickMessage,
     Enquire,
-    MultiCard,
+    MultiCard
   }
 };
 </script>

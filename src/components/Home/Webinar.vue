@@ -17,7 +17,7 @@
       </div>
     </b-col>
     </b-row>
-</b-container>
+  </b-container>
 </template>
 
 <style scoped>
