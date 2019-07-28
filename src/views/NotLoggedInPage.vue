@@ -1,9 +1,8 @@
 <template>
   <div class="program_detail">
     <nav-bar></nav-bar>
-    <FloatContactUs />
-    <Enquire />
-    <course />
+    <FloatContactUs/>
+    <NotLoggedIn/>
     <footer-bar></footer-bar>
   </div>
 </template>
@@ -13,15 +12,15 @@
 import footerBar from "../components/footer.vue";
 import Navbar from "../components/Navbar.vue";
 import FloatContactUs from "../components/FloatContactUs.vue";
-import Enquire from "../components/Enquire.vue";
-import course from "../components/ProgramDetailPage/course.vue";
+import NotLoggedIn from "@/components/NotLoggedIn.vue";
+import Enquire from "@/components/Enquire.vue";
 export default {
   name: "ProgramDetailPage",
   components: {
     "footer-bar": footerBar,
-    "nav-bar": Navbar,
+    "nav-bar": Navbar, 
     FloatContactUs,
-    course
+    NotLoggedIn
   }
 };
 </script>
