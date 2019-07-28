@@ -21,7 +21,7 @@
         <b-navbar-nav class="ml-auto">
           <b-form-input size="sm" class="mr-sm-2" placeholder="Search Courses"></b-form-input>
           <router-link to="/login" id="modalpop">
-            <b-button id="show-btn" @click="$bvModal.show('bv-modal-signin')">
+            <b-button v-if="showitem === false" id="show-btn" @click="$bvModal.show('bv-modal-signin')">
               <b-img :src="require('../assets/icons/man-user (1)@2x.png')"></b-img>
             </b-button>
           </router-link>
