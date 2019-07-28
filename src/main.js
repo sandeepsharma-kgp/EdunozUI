@@ -1,12 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-<<<<<<< HEAD
-import Vuetify from "vuetify";
-import VueAwesomeSwiper from "vue-awesome-swiper";
-import "swiper/dist/css/swiper.css";
-Vue.use(VueAwesomeSwiper);
-=======
 import { store } from './store.js'
 const fb = require('./firebaseConfig.js')
 import Vuetify from 'vuetify'
@@ -14,7 +8,6 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper)
 
->>>>>>> 59e4ac6b5b94fa6b064461a72e25162dc86065be
 
 // require styles
 Vue.use(Vuetify);
