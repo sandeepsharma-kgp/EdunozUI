@@ -1,19 +1,21 @@
 <template>
     <div class="carousel" style="">
         <b-carousel
+      id="carousel-1"
       v-model="slide"
       :interval="4000"
       controls
       indicators
-      img-width="824"
-      img-height="280"
+      background="#ababab"
+      img-width="1024"
+      img-height="0"
+      style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
-
     >
       <!-- Text slides with image -->
       <b-carousel-slide
-        :img-src="require('../../assets/images/businessman-charts-close-up-1851448.jpg')"
+        :img-src="require('../../assets/images/code-coding-connection-943096.jpg')"
         img-width="500"
         img-height="100"
       >
