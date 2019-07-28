@@ -1,9 +1,9 @@
 <template>
   <div class="program_detail">
     <nav-bar></nav-bar>
-    <FloatContactUs/>
+    <FloatContactUs />
     <Enquire />
-    <course/>
+    <course />
     <footer-bar></footer-bar>
   </div>
 </template>
@@ -19,10 +19,9 @@ export default {
   name: "ProgramDetailPage",
   components: {
     "footer-bar": footerBar,
-    "nav-bar": Navbar, 
+    "nav-bar": Navbar,
     FloatContactUs,
-    course,
-    
+    course
   }
 };
 </script>

@@ -1,43 +1,37 @@
 <template>
-<div>
-  <v-carousel hide-delimiters height="350">
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      :src="item.src"
-    >
-    </v-carousel-item>
-  </v-carousel>
+  <div>
+    <v-carousel hide-delimiters height="350">
+      <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src"></v-carousel-item>
+    </v-carousel>
 
-    <div class="row">
-      <div class="viscard col-md-8 offset-md-2" style="background-color:#eceef8;">
-        <h1 align="center">Vision & Goals </h1>
-        <p style="padding:10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perferendis est perspiciatis ipsum minus quisquam necessitatibus, accusamus totam aliquam dolor accusantium cumque possimus, consequatur, laudantium odit. Ullam est incidunt necessitatibus.</p>
+    <div>
+      <div class="viscard" style="background-color:#eceef8;">
+        <h1 align="center">Vision & Goals</h1>
+        <p style="padding:10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
-    <div class="bg">
-    </div>
-</div>
+    <div class="bg"></div>
+  </div>
 </template>   
 
 <script>
-  export default {
-    data () {
-      return {
-        items: [
-          {
-            src: require('../../assets/images/businessman-charts-close-up-1851448.jpg')
-          },
-          {
-            src: require('../../assets/images/code-coding-connection-943096.jpg')
-          },
-          {
-            src: require('../../assets/images/blur-close-up-desk-433604.jpg')
-          }
-        ]
-      }
-    }
+export default {
+  data() {
+    return {
+      items: [
+        {
+          src: require("../../assets/images/businessman-charts-close-up-1851448.jpg")
+        },
+        {
+          src: require("../../assets/images/code-coding-connection-943096.jpg")
+        },
+        {
+          src: require("../../assets/images/blur-close-up-desk-433604.jpg")
+        }
+      ]
+    };
   }
+};
 </script>
 
 
@@ -52,23 +46,23 @@
 //     </div>
 
 <style scoped>
-div{
+div {
   position: relative;
 }
-.viscard{
-  position:absolute;
-  top:100%;
-  left:35%;
-  transform: translate(-50%,-50%);
-  width:auto;
-  opacity:0.95;
-}
-.bg{
+.viscard {
   position: absolute;
-  width:100%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  opacity: 0.95;
+}
+.bg {
+  position: absolute;
+  width: 100%;
   background-color: #5d6493;
-  top:100%;
-  height:80px;
+  top: 100%;
+  height: 80px;
   z-index: -1;
 }
 </style>

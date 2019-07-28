@@ -60,36 +60,36 @@
 
 <script>
 // @ is an alias to /src
-import Vue from 'vue';
+import Vue from "vue";
 export default {
   name: "footer-bar",
   data() {
-    return {}
+    return {};
   },
-  methods: {},
+  methods: {}
 };
 </script>
 <style scoped>
-.reach-us-container{
-    max-width: 21em;
+.reach-us-container {
+  max-width: 21em;
 }
-.reach-us-box1{
-    padding-left: 15%;
+.reach-us-box1 {
+  padding-left: 15%;
 }
-#t1{
-    -moz-tab-size:4;
-    -o-tab-size: 4;
-    tab-size: 4;
+#t1 {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
 }
-.footer-container{
-    background-color:#060e47; 
-    padding: 40px 10% 40px 10%; 
-    color: white;
+.footer-container {
+  background-color: #060e47;
+  padding: 40px 10% 40px 10%;
+  color: white;
 }
-@media (max-width: 414px){
-    .reach-us-box1{
+@media (max-width: 414px) {
+  .reach-us-box1 {
     padding-left: 0px;
-    }
+  }
 }
 </style>
 
