@@ -1,7 +1,7 @@
 <template>
   <div>
-    <b-modal id="bv-modal-signin" hide-footer hide-header size="md">
-      <div>
+    <b-modal v-if="performingRequest" id="bv-modal-signin" hide-footer hide-header size="md">
+      <div class="siginModal">
         <div class="form-header">
           <p
             class="text-white"
@@ -29,6 +29,7 @@
 
         <div class="form-group">
           <input
+            v-model.trim="loginForm.email"
             type="text"
             style="background: #ECEEF8;margin-bottom: 20px;"
             class="form-control"
@@ -40,6 +41,7 @@
 
         <div class="form-group">
           <input
+            v-model.trim="loginForm.password"
             type="password"
             style="background: #ECEEF8;margin-bottom: 20px;"
             class="form-control"
@@ -53,6 +55,7 @@
           <div class="btn-group">
             <div style="margin-right:20px; margin-left:20px; ">
               <button
+                @click="cancel"
                 type="submit"
                 class="btn-secondary text-white"
                 style="width: 200px; height: 50px;border-radius: 5px;"
@@ -60,6 +63,7 @@
             </div>
             <div>
               <button
+                @click="login"
                 type="submit"
                 class="btn-warning text-white"
                 style="width: 200px; height: 50px;border-radius: 5px;"
@@ -81,3 +85,42 @@
     </b-modal>
   </div>
 </template>
+
+<script>
+const fb = require("../../firebaseConfig.js");
+export default {
+  data() {
+    return {
+      loginForm: {
+        email: "",
+        password: ""
+      },
+      performingRequest: true
+    };
+  },
+  methods: {
+    login() {
+      fb.auth
+        .signInWithEmailAndPassword(
+          this.loginForm.email,
+          this.loginForm.password
+        )
+        .then(user => {
+          this.$store.commit("setCurrentUser", user.user);
+          this.$store.dispatch("fetchUserProfile");
+          this.performingRequest = false;
+          this.$router.go("/");
+        })
+        .catch(err => {
+          this.performingRequest = false;
+          this.$router.go("/");
+          console.log(err);
+        });
+    },
+    cancel() {
+      this.performingRequest = false;
+      this.$router.go("/");
+    }
+  }
+};
+</script>

@@ -1,16 +1,15 @@
 
 <template lang="en">
     <b-container fluid class="footer-container">
-        <b-row align-h = "start">
-            <b-col class="reach-us-box1">
+        <b-row align-h = "center">
+            <b-col class="reach-us-box1" md="5">
             <div class="reach-us-container">
-                <h4 style="font-weight: bold">Reach Us</h4>
-                <div>
+                <h4 style="font-weight: bold; text-align: center">Reach Us</h4>
                 <a href="default.asp">
                 <img
                 src="@/assets/icons/google-plus.png"
                 alt="Get Details"
-                 style="width:48px;height:48px; margin: 20px 5px 20px 0;"
+                 style="width:48px;height:48px; margin: 5px;"
                 />
              
                 </a><a href="default.asp">
@@ -35,7 +34,6 @@
                 />
               
                 </a>
-                </div>
                 <div>
                 <br>
                 <h4 style="font-weight: bold; text-align: left; padding-left: ca">Great Faculty</h4>
@@ -46,12 +44,11 @@
                 </p>
                 </div>
                 <br>
-                <div style="text-align: left;" >
-                    <pre id="t1"><a href="default.asp" style="color: white;"><u>Blogs</u></a>   <a href="default.asp" style="color: white;"><u>Terms&amp;Conditions</u></a>     <a href="default.asp" style="color: white;"><u>Privacy Policy</u></a>
-                    </pre>
-                </div>
+                <a href="default.asp" style="color: white;"><u>Blogs</u></a>&ensp;&ensp;&ensp;<a href="default.asp" style="color: white;"><u>Terms&amp;Conditions</u></a>&ensp;&ensp;&ensp;<a href="default.asp" style="color: white;"><u>Privacy&nbsp;Policy</u></a>
+                <br>
+                <br>
             </b-col>
-            <b-col align-self="start">
+            <b-col md="7" align-self="start">
                 <google-map></google-map>
             </b-col>            
         </b-row>
@@ -73,13 +70,10 @@ export default {
 .reach-us-container {
   max-width: 21em;
 }
-.reach-us-box1 {
-  padding-left: 15%;
-}
-#t1 {
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
+#t1{
+    -moz-tab-size:3;
+    -o-tab-size: 3;
+    tab-size: 3;
 }
 .footer-container {
   background-color: #060e47;

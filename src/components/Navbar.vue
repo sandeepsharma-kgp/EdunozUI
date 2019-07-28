@@ -12,28 +12,20 @@
           <b-nav-item href="#">Home</b-nav-item>
           <b-nav-item href="#" :to="{name: 'about'}" @click.native="open = false">About Us</b-nav-item>
           <b-nav-item href="#" to="/ProgramDetailPage/course">Courses</b-nav-item>
-          <b-nav-item href="#">Get in touch</b-nav-item>
+          <b-nav-item href="#" to="/home/login">Get in touch</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items 
       Use &#128269 for search logo
         -->
         <b-navbar-nav class="ml-auto">
-          <div style="padding-top:11px;padding-right:15px;">
-            <b-form-input
-              size="sm"
-              class="mr-sm-2"
-              placeholder="Search Courses"
-              style="width:200px;"
-            ></b-form-input>
-          </div>
-          <b-button
-            id="show-btn"
-            @click="$bvModal.show('bv-modal-signin')"
-            style="border-style:none;"
-          >
-            <b-img :src="require('../assets/icons/man-user (1)@2x.png')"></b-img>
-          </b-button>
+          <b-form-input size="sm" class="mr-sm-2" placeholder="Search Courses"></b-form-input>
+          <router-link to="/login" id="modalpop">
+            <b-button v-if="showitem === false" id="show-btn" @click="$bvModal.show('bv-modal-signin')">
+              <b-img :src="require('../assets/icons/man-user (1)@2x.png')"></b-img>
+            </b-button>
+          </router-link>
+          <b-nav-item v-if="showitem === true" href="#" @click.prevent="signout">Sign Out</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -59,3 +51,39 @@ button {
   background: transparent;
 }
 </style>
+
+<script>
+const fb = require("../firebaseConfig.js");
+export default {
+  data() {
+    return {
+      showitem: this.checkIfIsLogged()
+    };
+  },
+  methods: {
+    signout() {
+      fb.auth
+        .signOut()
+        .then(() => {
+          this.$store.commit("setCurrentUser", null);
+          alert("Logged Out");
+          this.isLogged = this.checkIfIsLogged();
+          this.$router.go("/");
+        })
+        .catch(err => {
+          alert("Failure");
+          this.performingRequest = false;
+          console.log(err);
+        });
+    },
+    checkIfIsLogged() {
+      const currentUser = fb.auth.currentUser
+      if (currentUser) {
+        return true;
+      }
+      return false
+    }
+  }
+};
+</script>
+
