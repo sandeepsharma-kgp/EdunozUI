@@ -8,22 +8,22 @@
             style="font-weight: bold; padding: 10px 10px 10px; border-radius: 5px; margin: -15px -15px 25px; color:#000000; font-size: 35px;background:#2A326d; text-align: center;font-family: 'Pacifico', sans-serif;"
           >Sign In</p>
         </div>
-        <div class="form-group">
+        <div class="form-group" align="center">
           <div class="btn-group">
             <div>
-              <button
-                type="button"
-                class="text-white btn-primary"
-                style="width: 225px; height: 55px;border-radius: 5px;"
-              >Sign in with facebook</button>
+            <b-button  
+            class=" text-white btn-info pl-5 pr-5" 
+            size="sm" 
+            style=" height: 55px;border-radius: 5px;">
+            Sign in with facebook
+            </b-button>
             </div>
-            <div style="margin-left:20px;">
-              <button
-                type="button"
-                class="btn-danger text-white"
-                style="border-radius: 5px; width: 225px; height: 55px"
-              >Sign in with gmail</button>
-            </div>
+              <div style="margin-left:10px;">
+                <b-button class="btn-danger text-white pl-5 pr-5" 
+                size="sm" style="border-radius: 5px; height: 55px;">
+                Sign in with gmail
+                </b-button>
+              </div>
           </div>
         </div>
 
@@ -51,23 +51,23 @@
           />
         </div>
 
-        <div class="form-group">
-          <div class="btn-group">
-            <div style="margin-right:20px; margin-left:20px; ">
+        <div class="form-group" align="center">
+          <div class="btn-group" >
+            <div style="margin-right:20px;">
               <button
                 @click="cancel"
                 type="submit"
-                class="btn-secondary text-white"
-                style="width: 200px; height: 50px;border-radius: 5px;"
+                class="btn-secondary text-white pl-5 pr-5"
+                style="height: 50px;border-radius: 5px;"
               >Cancel</button>
             </div>
             <div>
               <button
                 @click="login"
                 type="submit"
-                class="btn-warning text-white"
-                style="width: 200px; height: 50px;border-radius: 5px;"
-              >Sing In</button>
+                class="btn-warning text-white pl-5 pr-5"
+                style="height: 50px;border-radius: 5px;"
+              >Sign In</button>
             </div>
           </div>
         </div>
