@@ -46,9 +46,9 @@
       </b-tab>
       <b-tab title="Instructor">
         <b-card >  
-          <div class="row" style="border-style: groove;margin:50px;">
+          <div class="row" style="border-style: groove;margin:5%;padding:px">
     <div class="col-sm-2">
-      <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
+      <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="center" ></b-img>
     </div>
     <div class="col-sm-9 " style="padding:50px" align="left">
       <h6 style="font-weight:bold" >Name</h6>
@@ -57,71 +57,71 @@
     </div>
   </div>
 
-  <div class="row" style="border-style: groove;margin:50px;">
+  <div class="row" style="border-style: groove;margin:5%;padding:px">
     <div class="col-sm-2">
-      <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4 img-responsive" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
-        
+      <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="center" ></b-img>
     </div>
     <div class="col-sm-9 " style="padding:50px" align="left">
-      <h6 style="font-weight:bold">Name</h6>
+      <h6 style="font-weight:bold" >Name</h6>
       <p style="color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       <p>hgcdgfejhfgeriufhroifl;krgotrirpotpoo</p>
     </div>
   </div>
-
-  <div class="row" style="border-style: groove;margin:50px;">
+  <div class="row" style="border-style: groove;margin:5%;padding:px">
     <div class="col-sm-2">
-      <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
-        
+      <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="center" ></b-img>
     </div>
     <div class="col-sm-9 " style="padding:50px" align="left">
-      <h6 style="font-weight:bold">Name</h6>
+      <h6 style="font-weight:bold" >Name</h6>
       <p style="color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       <p>hgcdgfejhfgeriufhroifl;krgotrirpotpoo</p>
     </div>
-  </div>
-        </b-card>
+  </div>      </b-card>
           </b-tab>
 
           <b-tab title="FAQs">
         <b-card >
          <div>
              <b-input-group>
-            <b-form-input placeholder="FAQs" style="width:80%" ></b-form-input>
+            <b-form-input placeholder="FAQs" style="width:80% background:grey" ></b-form-input>
             <b-button pill slot="append" class="pl-5 pr-5" style="margin-left:20px;background:#FF5733;">Post </b-button>
              </b-input-group>   
          </div>
          <div>
              <h5 align="center" style="padding:10px;text-decoration: underline;color:#2F306D;">Answer</h5>
          </div>  
-         <div style="border-style: outset;">
-            <div class="row" style="margin:50px;">
+         <div class="" style="border-bottom: 4px solid grey">
+             <dir><h6 class="" style="font-weight:bold; color:red; padding: 30px 0px 0px 100px;"  align="left">Lorem ipsum doler sit amet ,consectuter adipsciling edit</h6></dir>
+            <div class="row" style="margin-left:50px;">
+                
             <div class="col-sm-2">
+                
             <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
-        
+             
             </div>
-            <div class="col-sm-9 " style="" align="left">
-                <h6 style="font-weight:bold">Name</h6>
-                <p style="color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <p>hgcdgfejhfgeriufhroifl;krgotrirpotpoo</p>
+            <div class="col-sm-9 " style="padding-top:60px " align="left">
+               
+                <p style="color:black">Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum doler sit amet ,consectuter adipsciling edit </p>
+                
             </div>
         </div>
-        </div>     
-
-        <div style="border-style: outset;">
-            <div class="row" style="margin:50px;">
+        </div>
+       <div class="" style="border-bottom: 4px solid grey;">
+             <dir><h6 class="" style="font-weight:bold; color:red; padding: 30px 0px 0px 100px;"  align="left">Lorem ipsum doler sit amet ,consectuter adipsciling edit</h6></dir>
+            <div class="row" style="margin-left:50px;">
+                
             <div class="col-sm-2">
+                
             <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" class="img-fluid p-4" rounded="circle" fluid alt="responsive image" style="max-width:200px;height:200px" align="left" ></b-img>
-        
+             
             </div>
-            <div class="col-sm-9 " style="" align="left">
-                <h6 style="font-weight:bold">Name</h6>
-                <p style="color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <p>hgcdgfejhfgeriufhroifl;krgotrirpotpoo</p>
+            <div class="col-sm-9 " style="padding-top:60px " align="left">
+               
+                <p style="color:black">Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum doler sit amet ,consectuter adipsciling edit </p>
+                
             </div>
         </div>
-        </div>      
-        </b-card>
+        </div> </b-card>
 
       </b-tab>
       
