@@ -1,6 +1,6 @@
 <template>
-    <div class="carousel" style="">
-        <b-carousel
+  <div class="carousel" style="height:500px">
+    <b-carousel
       id="carousel-1"
       v-model="slide"
       :interval="4000"
@@ -16,11 +16,10 @@
       <!-- Text slides with image -->
       <b-carousel-slide
         :img-src="require('../../assets/images/code-coding-connection-943096.jpg')"
-        img-width="500"
-        img-height="100"
-      >
-      
-      </b-carousel-slide>
-</b-carousel>
-    </div>
+        :img-width="300"
+        :img-height="100"
+
+      ></b-carousel-slide>
+    </b-carousel>
+  </div>
 </template>

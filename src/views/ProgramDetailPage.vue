@@ -1,10 +1,10 @@
 <template>
   <div class="program_detail">
     <nav-bar></nav-bar>
-    <Carousel/>
-    <FloatContactUs/>
+    <Carousel />
+    <FloatContactUs />
     <Enquire />
-    <course/>
+    <course />
     <footer-bar></footer-bar>
   </div>
 </template>
@@ -21,11 +21,10 @@ export default {
   name: "ProgramDetailPage",
   components: {
     "footer-bar": footerBar,
-    "nav-bar": Navbar, 
+    "nav-bar": Navbar,
     FloatContactUs,
     course,
-    Carousel,
-    
+    Carousel
   }
 };
 </script>
