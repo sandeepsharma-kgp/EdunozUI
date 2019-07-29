@@ -11,19 +11,34 @@
         <div class="form-group" align="center">
           <div class="btn-group">
             <div>
-            <b-button  
-            class=" text-white btn-info pl-5 pr-5" 
-            size="sm" 
-            style=" height: 55px;border-radius: 5px;">
-            Sign in with facebook
-            </b-button>
-            </div>
-              <div style="margin-left:10px;">
-                <b-button class="btn-danger text-white pl-5 pr-5" 
-                size="sm" style="border-radius: 5px; height: 55px;">
-                Sign in with gmail
-                </b-button>
+              <div id="ms">
+                <button style="border:0;background: none; padding: 0;"> 
+                
+                  <b-img :src="require('@/assets/icons/fb.png')" rounded="circle" style="width: 70px;"></b-img>
+                
+                </button>
               </div>
+              <b-button id="fbtn"
+                class="text-white btn-info pl-5 pr-5"
+                
+                
+                size="sm"
+                style=" height: 55px;border-radius: 5px;"
+              >Sign in with facebook</b-button>
+            </div>
+            <div style="margin-left:30px;">
+              <div id="ms1">
+                <a href="">
+                  <b-img :src="require('@/assets/icons/google-plus.png')" rounded="circle" style="width: 70px;"></b-img>
+                </a>
+              </div>  
+              <b-button
+                class="btn-danger text-white pl-5 pr-5"
+                id="gbtn"
+                size="sm"
+                style="border-radius: 5px; height: 55px;"
+              >Sign in with gmail</b-button>
+            </div>
           </div>
         </div>
 
@@ -53,21 +68,25 @@
 
         <div class="form-group" align="center">
           <div class="btn-group" >
-            <div style="margin-right:20px;">
+            <div style="margin-right:10px;">
               <button
+              id="cancelbtn"
                 @click="cancel"
                 type="submit"
                 class="btn-secondary text-white pl-5 pr-5"
-                style="height: 50px;border-radius: 5px;"
+                style="height:50px;border-radius: 5px;"
               >Cancel</button>
             </div>
             <div>
-              <button
+              <button id="signinbtn"
                 @click="login"
                 type="submit"
+                data-am-type="button"
+                text-align="left"
                 class="btn-warning text-white pl-5 pr-5"
-                style="height: 50px;border-radius: 5px;"
-              >Sign In</button>
+                style=" height:50px;border-radius: 5px; text-align: center"
+                
+              > Sign In</button>
             </div>
           </div>
         </div>
@@ -91,6 +110,7 @@ const fb = require("../../firebaseConfig.js");
 export default {
   data() {
     return {
+      visible: false,
       loginForm: {
         email: "",
         password: ""
@@ -124,3 +144,43 @@ export default {
   }
 };
 </script>
+<style scopped>
+
+#ms {
+display:none
+}
+#ms1 {
+display:none
+}
+@media only screen and (max-width: 420px) {
+#ms {
+display:block
+}
+#ms1 {
+display:block;
+margin-left:50px;
+}
+#fbtn{
+  display: none;
+}
+#gbtn{
+  display: none;
+}
+
+}
+@media screen and (max-width: 320px) {
+  #signinbtn {
+    width: 120px;
+    vertical-align: middle;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    border: none; 
+  }
+  #cancelbtn{
+    width: 120px;
+    text-align: color;
+    
+  }
+}
+
+</style>
