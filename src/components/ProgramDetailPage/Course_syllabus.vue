@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div>
+    <div id="carousel">
       <b-img
         :src="require('../../assets/images/aerial-desk-device-1011329.jpg')"
         class="img-fluid p-4"
         fluid
         alt="responsive image"
-        style="max-width:731px;"
+        style="max-width:731px; height:auto;"
         align="right"
       ></b-img>
     </div>
@@ -61,4 +61,5 @@ ul li::before {
 .tab-title-class {
   color: #ff0000 !important;
 }
+
 </style>
