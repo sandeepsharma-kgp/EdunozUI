@@ -36,10 +36,10 @@
                 </a>
                 <div>
                 <br>
-                <h4 style="font-weight: bold; text-align: left; padding-left: ca">Great Faculty</h4>
+                <h4 class="text_align" style="font-weight: bold; padding-left: ca">Great Faculty</h4>
                 </div>
                 <br>
-                <p style="text-align: left;">some text for reach us and Great Faculty,some text for reach us and Great Faculty.
+                <p class="text_align">some text for reach us and Great Faculty,some text for reach us and Great Faculty.
                     some text for reach us and Great Faculty
                 </p>
                 </div>
@@ -80,9 +80,16 @@ export default {
   padding: 40px 10% 40px 10%;
   color: white;
 }
+.text_align{
+  text-align: left ;
+}
 @media (max-width: 414px) {
   .reach-us-box1 {
     padding-left: 0px;
+    text-align: center;
+  }
+  .text_align{
+    text-align: center;
   }
 }
 </style>
