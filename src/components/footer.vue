@@ -68,7 +68,7 @@ export default {
 </script>
 <style scoped>
 .reach-us-container {
-  max-width: 21em;
+  max-width: auto;
 }
 #t1{
     -moz-tab-size:3;
