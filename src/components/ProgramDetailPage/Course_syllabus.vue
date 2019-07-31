@@ -6,7 +6,7 @@
         class="img-fluid"
         fluid
         alt="responsive image"
-        style="max-width:731px;"
+        style="max-width:731px; height:auto;"
         align="right"
       ></b-img>
     </div>
