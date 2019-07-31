@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div>
-      <b-img
+    <div >
+      <b-img id="img1"
         :src="require('../../assets/images/aerial-desk-device-1011329.jpg')"
-        class="img-fluid p-4"
+        class="img-fluid"
         fluid
         alt="responsive image"
         style="max-width:731px;"
@@ -61,4 +61,25 @@ ul li::before {
 .tab-title-class {
   color: #ff0000 !important;
 }
+
+@media only screen and (max-width: 770px) {
+  #img1{
+    width: 340px;
+    align-content: left;
+  }
+}
+@media only screen and (max-width: 385px) {
+  #img1{
+    width: 300px;
+    align-content: left;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #img1{
+    width: 250px;
+    align-content: left;
+  }
+}
+
+
 </style>

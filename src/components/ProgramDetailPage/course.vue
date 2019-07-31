@@ -5,7 +5,7 @@
       <b-card>
         <b-tabs style="background: #2A326D;">
 
-          <b-tab class title="Course Syllabus">
+          <b-tab class title="Course Syllabus" style="">
             <b-card>
               <Course_syllabus/>
             </b-card>
