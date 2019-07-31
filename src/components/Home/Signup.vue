@@ -19,7 +19,7 @@
         <input
           v-model.trim="signupForm.name"
           type="text"
-          style="background: #ECEEF8;margin-bottom: 20px;"
+          style="background: #FAF6F6;margin-bottom: 20px;"
           class="form-control"
           name="username"
           required="required"
@@ -30,7 +30,7 @@
         <input
           v-model.trim="signupForm.email"
           type="email"
-          style="background: #ECEEF8;margin-bottom: 20px;"
+          style="background: #FAF6F6;margin-bottom: 20px;"
           class="form-control"
           name="email"
           required="required"
@@ -39,38 +39,63 @@
       </div>
       <div class="form-group">
         <input
-          v-model.trim="signupForm.password"
-          type="text"
-          style="background: #ECEEF8; margin-bottom: 20px;"
+          type="email"
+          style="background: #FAF6F6;margin-bottom: 20px;"
           class="form-control"
+          name="contactno"
+          required="required"
+          placeholder="Phone No"
+        />
+      </div>
+      <div style="padding-bottom:15px">
+        <b-dropdown
+          id="dropdown-1"
+          class="border info"
+          text="Select Location"
+          variant="light secondary"
+          style=" background:#000000;width:100%;"
+        >
+          <b-dropdown-item>First Action</b-dropdown-item>
+          <b-dropdown-item>Second Action</b-dropdown-item>
+          <b-dropdown-item>Third Action</b-dropdown-item>
+          <b-dropdown-divider></b-dropdown-divider>
+          <b-dropdown-item active>Active action</b-dropdown-item>
+          <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+        </b-dropdown>
+      </div>
+      <div class="form-group">
+        <input
+        v-on:blur="validate"
+          
           name="password"
-          required="required"
-          placeholder="Password"
-        />
-      </div>
-      <div class="form-group">
-        <input
-          v-model.trim="signupForm.confirmPassword"
           type="password"
-          style="background: #ECEEF8;margin-bottom: 20px;"
+          placeholder="Password"
+          ref="password"
+          v-model.trim="signupForm.password"
+          style="background: #FAF6F6; margin-bottom: 20px;"
           class="form-control"
-          name="confirm_password"
           required="required"
-          placeholder="Confirm Password"
+          v-model="password"
+          
         />
       </div>
       <div class="form-group">
         <input
-          v-model.trim="signupForm.location"
-          type="text"
-          style="background: #ECEEF8; margin-bottom: 20px;"
+        v-on:blur="validate"
+          
+          name="confirmPassword"
+          type="password"
+          placeholder="confirm Password"
+           data-vv-as="password"
+          v-model.trim="signupForm.confirmPassword"
+          style="background: #FAF6F6;margin-bottom: 20px;"
           class="form-control"
-          name="confirm_password"
           required="required"
-          placeholder="Location"
+          v-model="confirmPassword"
+          
         />
       </div>
-
+      <small v-if="showError">Passwords don't match!</small>
       <div class="form-group">
         <button
           @click="signup"
@@ -98,12 +123,19 @@ export default {
         email: "",
         password: "",
         confirmPassword: "",
-        location: ""
+        location: "",
+        showError: false
       },
       performingRequest: true
     };
   },
   methods: {
+    validate: function() {
+        if(this.password != this.password2)
+        {
+          alert("password does not match");
+        }
+    },
     signup() {
       fb.auth
         .createUserWithEmailAndPassword(
@@ -140,5 +172,15 @@ export default {
         });
     }
   }
+  
 };
 </script>
+
+<style>
+#dropdown-1 {
+  border-block-color: black;
+  background: transparent !important;
+  color: #ffffff;
+}
+</style>
+

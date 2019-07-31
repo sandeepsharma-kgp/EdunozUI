@@ -8,21 +8,36 @@
             style="font-weight: bold; padding: 10px 10px 10px; border-radius: 5px; margin: -15px -15px 25px; color:#000000; font-size: 35px;background:#2A326d; text-align: center;font-family: 'Pacifico', sans-serif;"
           >Sign In</p>
         </div>
-        <div class="form-group">
+        <div class="form-group" align="center">
           <div class="btn-group">
             <div>
-              <button
-                type="button"
-                class="text-white btn-primary"
-                style="width: 225px; height: 55px;border-radius: 5px;"
-              >Sign in with facebook</button>
+              <div id="ms">
+                <button style="border:0;background: none; padding: 0;"> 
+                
+                  <b-img :src="require('@/assets/icons/fb.png')" rounded="" style="width: 70px;"></b-img>
+                
+                </button>
+              </div>
+              <b-button id="fbtn"
+                class="text-white btn-info pl-5 pr-5"
+                
+                
+                size="sm"
+                style=" height: 55px;border-radius: 5px;"
+              >Sign in with facebook</b-button>
             </div>
-            <div style="margin-left:20px;">
-              <button
-                type="button"
-                class="btn-danger text-white"
-                style="border-radius: 5px; width: 225px; height: 55px"
-              >Sign in with gmail</button>
+            <div style="margin-left:30px;">
+              <div id="ms1">
+                <a href="">
+                  <b-img :src="require('@/assets/icons/google-plus.png')" rounded="" style="width: 70px;"></b-img>
+                </a>
+              </div>  
+              <b-button
+                class="btn-danger text-white pl-5 pr-5"
+                id="gbtn"
+                size="sm"
+                style="border-radius: 5px; height: 55px;"
+              >Sign in with gmail</b-button>
             </div>
           </div>
         </div>
@@ -51,23 +66,27 @@
           />
         </div>
 
-        <div class="form-group">
-          <div class="btn-group">
-            <div style="margin-right:20px; margin-left:20px; ">
+        <div class="form-group" align="center">
+          <div class="btn-group" >
+            <div style="margin-right:10px;">
               <button
+              id="cancelbtn"
                 @click="cancel"
                 type="submit"
-                class="btn-secondary text-white"
-                style="width: 200px; height: 50px;border-radius: 5px;"
+                class="btn-secondary text-white pl-5 pr-5"
+                style="height:50px;border-radius: 5px;"
               >Cancel</button>
             </div>
             <div>
-              <button
+              <button id="signinbtn"
                 @click="login"
                 type="submit"
-                class="btn-warning text-white"
-                style="width: 200px; height: 50px;border-radius: 5px;"
-              >Sing In</button>
+                data-am-type="button"
+                text-align="left"
+                class="btn-warning text-white pl-5 pr-5 btn btn-default btn-work"
+                style=" height:50px;border-radius: 5px; text-align: center"
+                
+              > Sign&nbsp;In</button>
             </div>
           </div>
         </div>
@@ -91,6 +110,7 @@ const fb = require("../../firebaseConfig.js");
 export default {
   data() {
     return {
+      visible: false,
       loginForm: {
         email: "",
         password: ""
@@ -124,3 +144,40 @@ export default {
   }
 };
 </script>
+<style scopped>
+#ms {
+display:none
+}
+#ms1 {
+display:none
+}
+@media only screen and (max-width: 420px) {
+#ms {
+display:block
+}
+#ms1 {
+display:block;
+margin-left:50px;
+}
+#fbtn{
+  display: none;
+}
+#gbtn{
+  display: none;
+}
+}
+@media screen and (max-width: 320px) {
+  #signinbtn {
+    width: 120px;
+    vertical-align: middle;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    border: none; 
+  }
+  #cancelbtn{
+    width: 120px;
+    text-align: color;
+    
+  }
+}
+</style>
