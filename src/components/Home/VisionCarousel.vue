@@ -7,7 +7,12 @@
     <div>
       <div class="viscard" style="background-color:#eceef8;">
         <h1 align="center">Vision & Goals</h1>
-        <p style="padding:10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p style="padding:10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+        </p>
       </div>
     </div>
     <div class="bg"></div>
@@ -64,5 +69,10 @@ div {
   top: 100%;
   height: 80px;
   z-index: -1;
+}
+@media only screen and (max-width: 414px) {
+  .viscard{
+    width: 100%;
+  }
 }
 </style>

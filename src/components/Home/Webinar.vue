@@ -1,5 +1,5 @@
 <template>
-<b-container fluid class="b-container-class">
+<b-container fluid class="b-container-class" style="padding: 20px;">
     <b-row align-h="center">
     <b-col align-self="center" lg="5" md="5">
       <b-img left :src="require('../../assets/images/blur-close-up-desk-433604.jpg')" alt="Left image" class="img-webinar" ></b-img>
