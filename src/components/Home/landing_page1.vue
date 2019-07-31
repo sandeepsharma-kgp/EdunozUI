@@ -1,8 +1,8 @@
 <template>
   <div>
     <v-container fluid style="padding:24px;">
-      <v-layout row>
-        <v-flex md9>
+      <v-layout justify-center row wrap child-flex>
+        <v-flex md9 xs12 sm7>
           <div class="container1">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -10,7 +10,9 @@
           It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </div>
         </v-flex>
-        <v-flex md3>
+        <v-flex md3 sm5 xs12>
+       
+         
           <div class="container1">
             <div>
               <br>
@@ -20,6 +22,7 @@
               <br>
             </div>
           </div>
+         
           <div class="container1">
             <h5 style="text-align: center;">Ask</h5>
             <form action="/action_page.php">
@@ -44,13 +47,11 @@
               <input type="submit" value="Submit">
             </form>
           </div>
-        </v-flex>
-      </v-layout>
+          </v-flex>
+          </v-layout>
     </v-container>
   </div>
 </template>
-<style scoped>
-</style>
 
 <style scoped>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -102,4 +103,5 @@ input[type=submit]:hover {
   padding: 20px;
   margin: 12px;
 }
+
 </style>
