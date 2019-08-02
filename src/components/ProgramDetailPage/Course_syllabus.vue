@@ -73,13 +73,23 @@ ul li::before {
     width: 300px;
     align-content: left;
   }
+  
 }
 @media only screen and (max-width: 320px) {
   #img1{
     width: 250px;
     align-content: left;
   }
+  p {
+    font-size:14px;
+  }
 }
+@media (max-width: 600px) {  
+  p{
+    font-size:10px;
+  }
 
+
+}
 
 </style>
