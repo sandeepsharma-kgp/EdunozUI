@@ -5,14 +5,20 @@
     </v-carousel>
 
     <div>
+
       <div class="viscard" style="background-color:#eceef8;">
-        <h1 align="center">Vision & Goals</h1>
+      <b-button align="start" style="position: absolute; left: 0; top: 0;" v-on:click="isActive = !isActive" :class="{yesvisible: isActive}">&#10006;</b-button>
+
+      <b-button align="center" v-on:click="isActive = !isActive" :class="{btnvisible: isActive}" variant="info">Vision & Goals<br>Read more..</b-button>
+
+        <div :class="{yesvisible: isActive}">
+        <h4 align="center" >Vision & Goals</h4>
         <p style="padding:10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
         </p>
+        </div>
       </div>
     </div>
     <div class="bg"></div>
@@ -23,6 +29,7 @@
 export default {
   data() {
     return {
+      isActive: true,
       items: [
         {
           src: require("../../assets/images/businessman-charts-close-up-1851448.jpg")
@@ -51,6 +58,9 @@ export default {
 //     </div>
 
 <style scoped>
+.btnvisible{
+  display: none;
+}
 div {
   position: relative;
 }
@@ -59,8 +69,11 @@ div {
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: auto;
+  width: 60%;
   opacity: 0.95;
+  padding: 5px;
+  border-radius: 12px;
+  text-align: center;
 }
 .bg {
   position: absolute;
@@ -72,7 +85,20 @@ div {
 }
 @media only screen and (max-width: 414px) {
   .viscard{
-    width: 100%;
+    width: 95%;
+    position: relative;
+    top: 120px;
+    left: 50%;
+    margin: 2px;
+  }
+  .bg{
+    height: 20px;
+  }
+  .btnvisible{
+    display: block;
+  }
+  .yesvisible{
+    display: none;
   }
 }
 </style>
