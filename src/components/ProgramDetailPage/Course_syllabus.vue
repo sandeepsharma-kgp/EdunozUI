@@ -12,7 +12,7 @@
     </div>
     <b-card-text>
       <strong>
-        <p style=" font-size:24px">Overview</p>
+        <p class="overview">Overview</p>
       </strong>
       <ul align:left class="text-dark">
         <li>SAP Overview</li>
@@ -24,7 +24,7 @@
     </b-card-text>
     <b-card-text>
       <strong>
-        <p style="font-weight: bold; font-size:24px">Intro to ABAP</p>
+        <p class="intro">Intro to ABAP</p>
       </strong>
       <ul align:left class="text-dark">
         <li>Characteristics of ABAP and workbench Architecture</li>
@@ -36,7 +36,7 @@
     </b-card-text>
     <b-card-text>
       <strong>
-        <p style="font-weight:bold;font-size:24px">Components of ABAP Dictionary</p>
+        <p class="component">Components of ABAP Dictionary</p>
       </strong>
       <ul align:left class>
         <li>Data Elements and Domains</li>
@@ -47,6 +47,9 @@
 </template>
 
 <style scoped>
+.intro,.overview,.component{
+    font-weight: bold; font-size:24px;
+  }
 ul {
   list-style: none;
 }
@@ -80,16 +83,13 @@ ul li::before {
     width: 250px;
     align-content: left;
   }
-  p {
-    font-size:14px;
-  }
+  
 }
+
 @media (max-width: 600px) {  
-  p{
-    font-size:10px;
+  .intro,.overview,.component{
+   font-size:18px;
   }
-
-
 }
 
 </style>

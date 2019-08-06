@@ -4,7 +4,7 @@
       <b-card>
         <b-tabs style="background: #2A326D;">
 
-          <b-tab class title="Course Syllabus" style="">
+          <b-tab  title="Course Syllabus">
             <b-card>
               <Course_syllabus/>
             </b-card>
@@ -26,6 +26,11 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+
+</style>
+>
 
 <script>
 import FAQ from "../ProgramDetailPage/FAQ.vue";
