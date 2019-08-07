@@ -17,7 +17,7 @@
       <div>
         <h6
           class
-          style="font-weight:bold; color:red; padding: 030px 0px 0px 50px;"
+          style="font-weight:bold; color:red; padding: 10px 0px 0px 40px;"
           align="left"
         >Lorem ipsum doler sit amet ,consectuter adipsciling edit</h6>
       </div>
@@ -25,43 +25,46 @@
         <div class="col-sm-2">
           <b-img
             :src="require('../../assets/images/aerial-desk-device-1011329.jpg')"
-            class="img-fluid p-4"
+            class="img-fluid p-1"
             rounded="circle"
             fluid
             alt="responsive image"
+            style="width:100px; height:100px"
           ></b-img>
         </div>
-        <div id="p1" class="col-sm-9" style="padding-top:60px " align="left">
+        <div id="p1" class="col-sm-10" style="padding-top:10px " align="left">
           <p
             style="color:black"
           >Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum doler sit amet ,consectuter adipsciling edit Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum doler sit amet ,consectuter adipsciling edit</p>
         </div>
       </div>
     </div>
-    <div class style="border-bottom: 4px solid grey;">
+    <div id="bx1" class style="border-bottom: 4px solid grey">
       <div>
         <h6
           class
-          style="font-weight:bold; color:red; padding: 30px 0px 0px 50px;"
+          style="font-weight:bold; color:red; padding: 10px 0px 0px 40px;"
           align="left"
         >Lorem ipsum doler sit amet ,consectuter adipsciling edit</h6>
       </div>
-      <div class="row" style="margin-left:20px;" align="center">
-        <div class="col-sm-2" >
+      <div class="row" style="margin-left:20px;">
+        <div class="col-sm-2">
           <b-img
             :src="require('../../assets/images/aerial-desk-device-1011329.jpg')"
-            class="img-fluid p-4"
+            class="img-fluid p-1"
             rounded="circle"
             fluid
             alt="responsive image"
+            style="width:100px; height:100px"
           ></b-img>
         </div>
-        <div id="p2" class="col-sm-9" style="padding-top:60px " align="left">
+        <div id="p1" class="col-sm-10" style="padding-top:10px " align="left">
           <p
             style="color:black"
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum doler sit amet ,consectuter adipsciling edit Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum doler sit amet ,consectuter adipsciling edit Done</p>
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum doler sit amet ,consectuter adipsciling edit Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum doler sit amet ,consectuter adipsciling edit</p>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </template>
