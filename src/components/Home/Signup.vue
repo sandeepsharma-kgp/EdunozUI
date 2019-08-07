@@ -99,6 +99,7 @@
       <div class="form-group">
         <button
           @click="signup"
+          
           type="submit"
           style="margin-bottom: 20px;background:#FF7340;"
           class="text-white btn-block btn-lg"
@@ -124,14 +125,14 @@ export default {
         password: "",
         confirmPassword: "",
         location: "",
-        showError: false
+        
       },
       performingRequest: true
     };
   },
   methods: {
-    validate: function() {
-        if(this.password != this.password2)
+    validate() {
+        if(this.password != this.confirmPassword)
         {
           alert("password does not match");
         }

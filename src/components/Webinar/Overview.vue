@@ -1,15 +1,15 @@
 <template>
   <div>
-    <div >
+    
       <b-img id="img1"
         :src="require('../../assets/images/aerial-desk-device-1011329.jpg')"
         class="img-fluid"
         fluid
         alt="responsive image"
-        style="max-width:560px; height:auto;margin:20px;"
+        style="max-width:560px; height:auto;margin:10px;"
         align="right"
       ></b-img>
-    </div>
+    
     <b-card-text>
       <label style="font-weight:bold;font-size:20px;">Title&nbsp;-&nbsp;</label>   
       <label style="font-size:18px;">Lorem ipsum</label><br>
@@ -23,3 +23,26 @@
     
   </div>
 </template>
+
+<style scoped> 
+@media only screen and (max-width: 770px) {
+  #img1{
+    width: 320px;
+    align-content: center;
+  }
+}
+@media only screen and (max-width: 385px) {
+  #img1{
+    width: 280px;
+    align-content: center;
+  }
+  
+}
+@media only screen and (max-width: 325px) {
+  #img1{
+    width: 230px;
+    align-content: right;
+  }
+  
+}
+</style>

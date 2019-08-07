@@ -6,8 +6,8 @@
         class="img-fluid"
         fluid
         alt="responsive image"
-        style="max-width:400px; height:400px;margin:20px;"
-        align="right"
+        style="max-width:400px; max-height:400px;margin:20px;"
+        align=""
         rounded="circle"
         
         
@@ -26,9 +26,20 @@
         >Lorem ipsum doler sit amet ,consectuter adipsciling edit</h6>
       </div>
       <br>
-      <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempora quasi maiores vitae, sequi asperiores! Iure placeat, voluptates nam totam temporibus eveniet voluptas maiores, magnam vitae quibusdam qui laborum blanditiis.voluptates nam totam temporibus eveniet voluptas maiores, magnam vitae quibusdam qui laborum blanditiis. </p>
+      <p >voluptates nam totam temporibus eveniet voluptas maiores, magnam vitae quibusdam qui laborum blanditiis.voluptates nam totam temporibus eveniet voluptas maiores, magnam vitae quibusdam qui laborum blanditiis. </p>
         </div>
     </b-card-text>
     
   </div>
 </template>
+
+<style scoped>
+
+@media only screen and (max-width: 1250px) {
+
+
+
+}  
+
+</style>
+

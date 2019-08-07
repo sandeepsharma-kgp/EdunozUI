@@ -66,7 +66,7 @@
           />
         </div>
 
-        <div class="form-group" align="center">
+        <div class="form-group" align="center" text-align="center">
           <div class="btn-group" >
             <div style="margin-right:10px;">
               <button
@@ -81,10 +81,10 @@
               <button id="signinbtn"
                 @click="login"
                 type="submit"
-                data-am-type="button"
-                text-align="left"
-                class="btn-warning text-white pl-5 pr-5 btn btn-default btn-work"
-                style=" height:50px;border-radius: 5px; text-align: center"
+                
+                text-align="center"
+                class="btn-warning text-white pl-5 pr-5 "
+                style=" height:50px;border-radius: 5px; text-align:center"
                 
               > Sign&nbsp;In</button>
             </div>

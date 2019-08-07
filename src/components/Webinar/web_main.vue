@@ -3,10 +3,10 @@
   <div class="webinars">
     <div>
       <b-card-group >
-        <b-card  style=" width:1304px;height:auto;border:none;">
+        <b-card  style=" max-width:1304px;height:auto;border:none;">
           <b-tabs style="background: #2A326D;" >
             <b-tab title="Overview">
-              <b-card style="background:#f0f5f5;height:465px;border:none;" >
+              <b-card style="background:#f0f5f5;min-height:465px;border:none;" >
                 <Overview/>
               </b-card>
             </b-tab>
@@ -25,8 +25,8 @@
             </b-tab>
           </b-tabs>
         </b-card>
-        <div style="width:400px; height:501px; margin-right:30px;" align=center>
-        <b-card  calss="card2" style="border:none;">
+        <div style=" margin-right:30px;" align=center>
+        <b-card  class="card2" style="border:none;">
           <div class="reg">
             <h3 align="center">Register Now</h3><br>
             <div class="form-group">
@@ -107,7 +107,7 @@ export default {
   border-style: groove;
   padding:5%;
   border-radius:5px;
-  width:100%;
+  width:370px;
   height:501px;
 }
 .branch,.city,.state{
@@ -118,6 +118,36 @@ export default {
   border-radius: 3px;
   background-color:#E7E6FA;
   color: gray;
+
+}
+@media only screen and (max-width:360px){
+  .reg{
+    min-width: 300px;
+    
+    align-content: center;
+
+    
+  }
+
+}
+@media only screen and (max-width:425px){
+  .reg{
+    width: 360px;
+    
+    align-content: center;
+
+    
+  }
+
+}
+@media only screen and (max-width:400px){
+  .reg{
+    width: 330px;
+    
+    align-content: center;
+
+    
+  }
 
 }
 
