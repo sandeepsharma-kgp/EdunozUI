@@ -29,8 +29,6 @@
             rounded="circle"
             fluid
             alt="responsive image"
-            style="max-width:200px;height:200px"
-            align="left"
           ></b-img>
         </div>
         <div id="p1" class="col-sm-9" style="padding-top:60px " align="left">
@@ -41,23 +39,21 @@
       </div>
     </div>
     <div class style="border-bottom: 4px solid grey;">
-      <dir>
+      <div>
         <h6
           class
           style="font-weight:bold; color:red; padding: 30px 0px 0px 50px;"
           align="left"
         >Lorem ipsum doler sit amet ,consectuter adipsciling edit</h6>
-      </dir>
-      <div class="row" style="margin-left:20px;">
-        <div class="col-sm-2">
+      </div>
+      <div class="row" style="margin-left:20px;" align="center">
+        <div class="col-sm-2" >
           <b-img
             :src="require('../../assets/images/aerial-desk-device-1011329.jpg')"
             class="img-fluid p-4"
             rounded="circle"
             fluid
             alt="responsive image"
-            style="max-width:200px;height:200px"
-            align="left"
           ></b-img>
         </div>
         <div id="p2" class="col-sm-9" style="padding-top:60px " align="left">
@@ -71,6 +67,10 @@
 </template>
 
 <style scoped>
+.img-fluid{
+      max-width:200px;
+      height:200px
+}
 @media only screen and (max-width: 1250px) {
   #p1,
   #p2 {
@@ -79,6 +79,11 @@
   #bx1{
       align:center;
       
+  }
+}
+@media only screen and (max-width:575px){
+  .img-fluid{
+    align-self: center;
   }
 }
 </style>

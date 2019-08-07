@@ -13,7 +13,7 @@
         The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of 
         Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
       </p>
-      <b-btn >See Details</b-btn>
+      <b-btn to="/Webinar">See Details</b-btn>
       </div>
     </b-col>
     </b-row>
