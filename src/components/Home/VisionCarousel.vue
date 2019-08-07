@@ -7,21 +7,22 @@
     <div>
 
       <div class="viscard" style="background-color:#eceef8;">
-      <b-button align="start" style="position: absolute; left: 0; top: 0;" v-on:click="isActive = !isActive" :class="{yesvisible: isActive}">&#10006;</b-button>
-
-      <b-button align="center" v-on:click="isActive = !isActive" :class="{btnvisible: isActive}" variant="info">Vision & Goals<br>Read more..</b-button>
-
-        <div :class="{yesvisible: isActive}">
-        <h4 align="center" >Vision & Goals</h4>
-        <p style="padding:10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
+        <h3 align="center">
+        <b-button  class="visible transparent" v-b-modal.modal-tall><h5>Vision & Goals<br>Read About It...</h5></b-button>
+        </h3>
+        <b-modal id="modal-tall" title="Vision & Goals">
+          <p class="my-4" >
+            {{vision}}
+          </p>
+        </b-modal>
+         <div class="novisible">
+          <h4 align="center" >Vision & Goals</h4>
+          <p style="padding:10px;">{{vision}}
+          </p>
         </div>
       </div>
     </div>
-    <div class="bg"></div>
+      <div class="bg"></div>
   </div>
 </template>   
 
@@ -30,6 +31,10 @@ export default {
   data() {
     return {
       isActive: true,
+      vision: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.\
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.\
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       items: [
         {
           src: require("../../assets/images/businessman-charts-close-up-1851448.jpg")
@@ -58,7 +63,7 @@ export default {
 //     </div>
 
 <style scoped>
-.btnvisible{
+.visible{
   display: none;
 }
 div {
@@ -83,22 +88,32 @@ div {
   height: 80px;
   z-index: -1;
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 570px) {
   .viscard{
-    width: 95%;
+    width: 100%;
     position: relative;
-    top: 120px;
-    left: 50%;
-    margin: 2px;
+    opacity: 1;
+    color:violet;
+
   }
   .bg{
-    height: 20px;
+    top: 80%;
   }
-  .btnvisible{
+  .visible{
+    position: relative;
     display: block;
+    text-align: center;
+    transform: translateX(-50%);
+    left: 50%;
+    color: black;
   }
-  .yesvisible{
+  .novisible{
     display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .viscard{
+    width: 95%;
   }
 }
 </style>
