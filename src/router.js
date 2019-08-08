@@ -1,12 +1,11 @@
 import Vue from "vue";
 import Router from "vue-router";
-import firebase from 'firebase'
-
-
+import firebase from "firebase";
 import Home from "@/views/Home";
 import ProgramDetailPage from "@/views/ProgramDetailPage";
-import NotLoggedInPage from "@/views/NotLoggedInPage"
-import SignIn from "@/components/Home/SignIn"
+import NotLoggedInPage from "@/views/NotLoggedInPage";
+import SignIn from "@/components/Home/SignIn";
+import Webinar from "@/views/Webinar";
 
 Vue.use(Router);
 
@@ -35,6 +34,11 @@ const router = new Router({
       path: "/home/login",
       name: "ProgramDetailPage",
       component: NotLoggedInPage
+    },
+    {
+      path: "/Webinar",
+      name: "Webinar",
+      component: Webinar
     }
   ]
 });

@@ -14,7 +14,7 @@
     >
       <!-- Text slides with image -->
       <b-carousel-slide :img-src="require('../../assets/images/img1.jpg')">
-        <div class="centered" style="margin-bottom:50px;">
+        <div id="div_id" style="margin-bottom:50px;">
           <h3>SAP-ABAP</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
@@ -30,9 +30,9 @@
   left: 50%;
   transform: translate(-50%, -50% );
 }
-@media only screen and (max-width: 720px) {
-  .centered{
-    
+@media only screen and (max-width: 700px) {
+  .carousel{
+    display:none !important;
   }
 }</style>
 
