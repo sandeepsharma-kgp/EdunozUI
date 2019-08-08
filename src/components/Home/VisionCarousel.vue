@@ -5,17 +5,24 @@
     </v-carousel>
 
     <div>
-      <div class="viscard" style="background-color:#eceef8;">
-        <h1 align="center">Vision & Goals</h1>
-        <p style="padding:10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
-        </p>
+      <div class="viscard" style="background-color:#eceef8;">
+        <h3 align="center">
+        <b-button  class="visible transparent" v-b-modal.modal-tall><h5>Vision & Goals<br>Read About It...</h5></b-button>
+        </h3>
+        <b-modal id="modal-tall" title="Vision & Goals">
+          <p class="my-4" >
+            {{vision}}
+          </p>
+        </b-modal>
+         <div class="novisible">
+          <h4 align="center" >Vision & Goals</h4>
+          <p style="padding:10px;">{{vision}}
+          </p>
+        </div>
       </div>
     </div>
-    <div class="bg"></div>
+      <div class="bg"></div>
   </div>
 </template>   
 
@@ -23,6 +30,11 @@
 export default {
   data() {
     return {
+      isActive: true,
+      vision: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.\
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.\
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       items: [
         {
           src: require("../../assets/images/businessman-charts-close-up-1851448.jpg")
@@ -51,6 +63,9 @@ export default {
 //     </div>
 
 <style scoped>
+.visible{
+  display: none;
+}
 div {
   position: relative;
 }
@@ -59,8 +74,11 @@ div {
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: auto;
+  width: 60%;
   opacity: 0.95;
+  padding: 5px;
+  border-radius: 12px;
+  text-align: center;
 }
 .bg {
   position: absolute;
@@ -70,9 +88,32 @@ div {
   height: 80px;
   z-index: -1;
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 570px) {
   .viscard{
     width: 100%;
+    position: relative;
+    opacity: 1;
+    color:violet;
+
+  }
+  .bg{
+    top: 80%;
+  }
+  .visible{
+    position: relative;
+    display: block;
+    text-align: center;
+    transform: translateX(-50%);
+    left: 50%;
+    color: black;
+  }
+  .novisible{
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .viscard{
+    width: 95%;
   }
 }
 </style>
