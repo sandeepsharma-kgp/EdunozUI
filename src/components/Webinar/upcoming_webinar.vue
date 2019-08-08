@@ -21,7 +21,7 @@
       <label style="font-weight:bold;font-size:20px;">Time&nbsp;-&nbsp;</label>   
       <label style="font-size:18px;">5 PM, IST</label><br>
     </b-card-text>
-        <div id="btn2" class=" p-4" align=center>
+        <div id="btn2" class=" p-4 pr-4" align=center>
             <button
                 class="btn- btn-block pl-4 pr-4"
                 type="submit"
@@ -47,7 +47,7 @@
       <label style="font-weight:bold;font-size:20px;">Time&nbsp;-&nbsp;</label>   
       <label style="font-size:18px;">5 PM, IST</label><br>
     </b-card-text>
-        <div id="btn2" class=" p-4" align=center>
+        <div id="btn2" class=" p-4 pr-4" align=center>
             <button
                 class="btn- btn-block pl-4 pr-4"
                 type="submit"
@@ -71,7 +71,7 @@
       <label style="font-weight:bold;font-size:20px;">Time&nbsp;-&nbsp;</label>   
       <label style="font-size:18px;">5 PM, IST</label><br>
     </b-card-text>
-        <div id="btn2" class=" p-4" align=center>
+        <div id="btn2" class=" p-4 pr-4" align=center>
             <button
                 class="btn- btn-block pl-4 pr-4"
                 type="submit"

@@ -13,7 +13,7 @@
     <div>
       <h5 align="center" style="padding:10px;text-decoration: underline;color:#2F306D;">Answer</h5>
     </div>
-    <div id="bx1" class style="border-bottom: 4px solid grey">
+    <div id="bx1" class="p-1" style="border-bottom: 4px solid grey">
       <div>
         <h6
           class
@@ -39,10 +39,10 @@
         </div>
       </div>
     </div>
-    <div id="bx1" class style="border-bottom: 4px solid grey">
+    <div id="bx1" class="p-1" style="border-bottom: 4px solid grey ">
       <div>
         <h6
-          class
+         
           style="font-weight:bold; color:red; padding: 10px 0px 0px 40px;"
           align="left"
         >Lorem ipsum doler sit amet ,consectuter adipsciling edit</h6>

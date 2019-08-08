@@ -55,7 +55,7 @@
           variant="light secondary"
           style=" background:#000000;width:100%;"
         >
-          <b-dropdown-item>First Action</b-dropdown-item>
+          <b-dropdown-item style="width:100%;">First Action</b-dropdown-item>
           <b-dropdown-item>Second Action</b-dropdown-item>
           <b-dropdown-item>Third Action</b-dropdown-item>
           <b-dropdown-divider></b-dropdown-divider>
