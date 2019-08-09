@@ -97,6 +97,7 @@
         
       </div>
       
+      
       <div class="form-group">
         <button
           @click="signup"
@@ -186,5 +187,6 @@ export default  {
   background: transparent !important;
   color: #ffffff;
 }
+  
 </style>
 

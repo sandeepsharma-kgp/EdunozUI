@@ -56,7 +56,7 @@
             alt="responsive image"
           ></b-img>
         </div>
-        <div id="p2" class="col-sm-9" style="padding-top:60px " align="left">
+        <div id="p1" class="col-sm-9" style="padding-top:60px " align="left">
           <p
             style="color:black"
           >Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum doler sit amet ,consectuter adipsciling edit Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum doler sit amet ,consectuter adipsciling edit Done</p>
@@ -72,8 +72,7 @@
       height:200px
 }
 @media only screen and (max-width: 1250px) {
-  #p1,
-  #p2 {
+  #p1 {
     padding-left: 10%;
   }
   #bx1{
@@ -84,6 +83,16 @@
 @media only screen and (max-width:575px){
   .img-fluid{
     align-self: center;
+  }
+}
+@media (min-width:600px) and (max-width:800px) {
+  #p1{
+     margin-top:-200px;
+     margin-right:80px;
+     margin-left: 150px
+      
+    
+     
   }
 }
 </style>
