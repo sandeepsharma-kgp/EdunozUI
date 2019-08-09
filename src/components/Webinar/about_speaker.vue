@@ -83,7 +83,8 @@
 }
 
 }
-@media only screen and (max-width:1024px){
+
+@media only screen and (min-width:800px){
    .speaker{
    }
   .img-fluid{
