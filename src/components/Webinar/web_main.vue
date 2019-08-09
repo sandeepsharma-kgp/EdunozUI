@@ -1,11 +1,11 @@
 <template>
-  <div class="webinars">
+  <div class="webinars" id="t1">
     <div>
       <b-card-group >
-        <b-card class="card1">
+        <b-card  style=" max-width:1304px;height:auto;border:none;">
           <b-tabs style="background: #2A326D;" >
             <b-tab title="Overview">
-              <b-card style="background:#f0f5f5;height:465px;border:none;" >
+              <b-card style="background:#f0f5f5;min-height:465px;border:none;" >
                 <Overview/>
               </b-card>
             </b-tab>
@@ -16,17 +16,17 @@
                 <about_speaker/>
               </b-card>
             </b-tab>
-
+           
             <b-tab title="FAQs">
-              <b-card style="background:#f0f5f5;height:465px;border:none;" >
+              <b-card style="background:#f0f5f5;min-height:465px;border:none;" >
                 <faq/>
               </b-card>
             </b-tab>
           </b-tabs>
         </b-card>
-        <div style="width:400px; height:501px; margin-right:30px;" align=center>
-        <b-card  calss="card2" style="border:none;">
-          <div class="reg">
+        <div class="d1" style=" " align=center>
+        <b-card  class="card2" style="border:none;">
+          <div class="reg" style="">
             <h3 align="center">Register Now</h3><br>
             <div class="form-group">
               <input
@@ -91,11 +91,12 @@
 import Overview from "../Webinar/Overview";
 import about_speaker from "../Webinar/about_speaker";
 import faq from "../Webinar/faq";
+
 export default {
   components:{
     Overview,
     about_speaker,
-    faq
+    faq,
   }
 }
 </script>
@@ -112,7 +113,7 @@ export default {
   border-style: groove;
   padding:5%;
   border-radius:5px;
-  width:100%;
+  width:300px;
   height:501px;
 }
 .branch,.city,.state{
@@ -123,6 +124,26 @@ export default {
   border-radius: 3px;
   background-color:#E7E6FA;
   color: gray;
+
+}
+@media only screen and (max-width: 375px) {
+  .d1{
+    padding-right: 1%;
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .reg{
+    margin-right: 30px;
+    width: 400;
+  }
+
+}
+@media only screen and (max-width: 375px) {
+  .reg{
+    margin-right: 10px;
+    width: 280px;
+  }
 
 }
 
