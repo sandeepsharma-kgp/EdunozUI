@@ -94,9 +94,7 @@
           
         />
         
-        <div v-if="password !== confirmPassword">
-          <p style="color:red"> Password Doesn't Match</p> 
-        </div>
+        
       </div>
       
       <div class="form-group">
@@ -118,8 +116,9 @@
 </template>	  
 
 <script>
+import { messaging } from 'firebase';
 const fb = require("../../firebaseConfig.js");
-export default {
+export default  {
   data() {
     return {
       signupForm: {
@@ -135,9 +134,10 @@ export default {
   },
   methods: {
      validate() {
-       if(signupForm.password != signupForm.confirmPassword)
+       if(this.password !== this.confirmPassword)
        {
-          alert("sajhdgajhd")
+          alert("Password Doesn't Match, Please Enter Valid Password")
+          
        }
     },
     signup() {
