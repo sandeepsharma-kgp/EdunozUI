@@ -14,7 +14,7 @@
     <SignIn />
     <Signup />
     <Enquire />
-    <lgp1/>
+    
   </div>
 </template>
 
@@ -35,7 +35,7 @@ import SignIn from "../components/Home/SignIn.vue";
 import Signup from "../components/Home/Signup.vue";
 import Enquire from "../components/Enquire.vue";
 import MultiCard from "../components/Home/MultiCard.vue";
-import pg1 from "@/components/Home/landing_page1.vue";
+
 
 export default {
   name: "home",
@@ -49,7 +49,7 @@ export default {
     // "vision-carousel": VisionCarousel,
     webinar: Webinar,
     "carousel-vis": VisionCarousel,
-    "lgp1": pg1,
+    
     FloatContactUs,
     SignIn,
     Signup,

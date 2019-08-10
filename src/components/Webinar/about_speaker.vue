@@ -17,7 +17,7 @@
       <div>
         <h6
           class="cls_h"
-        >Lorem ipsum doler sit amet ,consectuter adipsciling edit</h6>
+        >Lorem ipsum doler sit amet sit amet,consectuter adipsciling edit</h6>
       </div>
       <br>
       <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempora quasi maiores vitae, sequi asperiores! Iure placeat, voluptates nam totam temporibus eveniet voluptas maiores, magnam vitae quibusdam qui laborum blanditiis.voluptates nam totam temporibus eveniet voluptas maiores, magnam vitae quibusdam qui laborum blanditiis. </p>
@@ -28,10 +28,6 @@
 </template>
 
 <style  scoped>
-.speaker{
-  width:100%;
-  height:100%;
-}
 .img-fluid{
   max-width:400px; 
   height:400px;
@@ -61,7 +57,7 @@
     width: 101px;
     height:101px;
     align-content: left;
-    margin-right: 100px;
+    margin-right: 90px;
   }
   .d1{
   margin-right:3px;
@@ -69,17 +65,17 @@
 }
 .name{
   font-weight:bold;
-  font-size:13px;
+  font-size:15px;
   margin-left: 110px;
 
 }
 .cls_h{
   font-weight:bold;
-  font-size:10px;
+  font-size:12px;
   color:red;
 }
 .para{
-  font-size:10px;
+  font-size:12px;
 }
 
 }
