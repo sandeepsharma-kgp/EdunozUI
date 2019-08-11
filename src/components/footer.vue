@@ -4,7 +4,7 @@
         <b-row align-self = "start">
             <b-col class="reach-us-box1" md="6">
             <div class="reach-us-container">
-                <h4 style="font-weight: bold; text-align: center">Reach Us</h4>
+                <h4 class="reach-us">Reach Us</h4>
                 <a href="default.asp">
                 <img
                 src="@/assets/icons/google-plus.png"
@@ -71,6 +71,10 @@ export default {
 .reach-us-container {
   max-width: auto;
 }
+.reach-us{
+  font-weight: bold; 
+  text-align: left;
+}
 #t1{
     -moz-tab-size:3;
     -o-tab-size: 3;
@@ -100,6 +104,9 @@ export default {
   .text_align{
     text-align: left;
     margin-left: 18px;
+  }
+  .reach-us{
+    text-align: center;
   }
   .icons{
     margin: 13px
