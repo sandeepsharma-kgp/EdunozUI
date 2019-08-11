@@ -5,17 +5,29 @@
     </v-carousel>
 
     <div>
-      <div class="viscard" style="background-color:#eceef8;">
-        <h1 align="center">Vision & Goals</h1>
-        <p style="padding:10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
-        </p>
+      <div class="viscard" style="background-color:#eceef8;">
+        <b-modal id="modal-tall" title="Vision & Goals">
+          <p class="my-4" >
+            {{vision}}
+          </p>
+        </b-modal>
+         <div>
+          <h5 align="center" >Vision & Goals</h5>
+          <div class="content-of-vision">{{vision}}
+          </div>
+        </div>
+        <button v-b-modal.modal-tall type="button" class="info" aria-label="Read More">
+          <span aria-hidden="true"><img
+                :src="require('@/assets/icons/more.png')"
+                alt="Vision and Goals"
+                style="height: 32px; width: 32px;"          
+                /><br>
+                More</span>
+        </button>
       </div>
     </div>
-    <div class="bg"></div>
+      <div class="bg"></div>
   </div>
 </template>   
 
@@ -23,6 +35,11 @@
 export default {
   data() {
     return {
+      isActive: true,
+      vision: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.\
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.\
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       items: [
         {
           src: require("../../assets/images/businessman-charts-close-up-1851448.jpg")
@@ -40,27 +57,23 @@ export default {
 </script>
 
 
-// <div style="background-color:#eceef8; width:900px; height:220px;margin-left:25%;margin-top:17%;">
-//       <h3 align="center" style="padding-top:20px; color:#394285">Vision & Goals</h3>
-//       <p style="padding:10px; color:#394285; font-weight:1000">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
-//  The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of 
-//  Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
-//  <div align="center" style="padding-bottom:15px;">
-//  <img :src="require('../../assets/icons/Group 73@2x.png')" ><h5>More</h5>
-//  </div>
-//     </div>
 
 <style scoped>
+
 div {
   position: relative;
 }
 .viscard {
+  padding-top: 10px;
   position: absolute;
-  top: 100%;
+  top: -15px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: auto;
+  width: 60%;
   opacity: 0.95;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
 }
 .bg {
   position: absolute;
@@ -70,9 +83,20 @@ div {
   height: 80px;
   z-index: -1;
 }
-@media only screen and (max-width: 414px) {
+.content-of-vision{
+  padding: 15px;
+  height: 80px;
+  overflow: hidden;
+
+}
+@media only screen and (max-width: 570px) {
   .viscard{
     width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .viscard{
+    width: 95%;
   }
 }
 </style>

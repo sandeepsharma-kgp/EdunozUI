@@ -1,4 +1,3 @@
-
 <template>
   <div class="webinars" id="t1">
     <div>
@@ -12,8 +11,8 @@
             </b-tab>
 
           
-            <b-tab title="About Speaker">
-              <b-card style="background:#f0f5f5;height:465px;border:none;" >
+            <b-tab class="speaker" title="About Speaker">
+              <b-card   style="background:#f0f5f5;height:465px;border:none;"  >
                 <about_speaker/>
               </b-card>
             </b-tab>
@@ -104,6 +103,12 @@ export default {
 
 
 <style scoped>
+.card1{
+   width:1304px;
+   height:auto;
+   border:none;
+}
+
 .reg {
   border-style: groove;
   padding:5%;
@@ -121,16 +126,21 @@ export default {
   color: gray;
 
 }
+@media only screen and (max-width: 360px) {
+  .d1{
+    width: 200px;
+    margin-left:20px;
+  }
+}
 @media only screen and (max-width: 375px) {
   .d1{
-    padding-right: 1%;
-    width: 100px;
+    width: 200px;
   }
 }
 @media only screen and (min-width: 1000px) {
   .reg{
-    margin-right: 30px;
     width: 400;
+
   }
 
 }
@@ -139,7 +149,14 @@ export default {
     margin-right: 10px;
     width: 280px;
   }
+  
+}
 
+@media only screen and (max-width:800px){
+  .card1{
+    width:350px;
+    height:370px;
+  }
 }
 
 </style>

@@ -11,13 +11,13 @@
       ></b-img>
     
     <b-card-text>
-      <label style="font-weight:bold;font-size:20px;">Title&nbsp;-&nbsp;</label>   
-      <label style="font-size:18px;">Lorem ipsum</label><br>
-      <label style="font-weight:bold;font-size:20px;">Date&nbsp;-&nbsp;</label>   
-      <label style="font-size:18px;">24 October 2019</label><br>
-      <label style="font-weight:bold;font-size:20px;">Time&nbsp;-&nbsp;</label>   
-      <label style="font-size:18px;">5 PM, IST</label><br>
-      <label style="font-weight:bold;font-size:20px;">Summary</label><br>
+      <label id="title">Title&nbsp;-&nbsp;</label>   
+      <label id="nm">Lorem ipsum</label><br>
+      <label id="date">Date&nbsp;-&nbsp;</label>   
+      <label id="dt" >24 October 2019</label><br>
+      <label id="time">Time&nbsp;-&nbsp;</label>   
+      <label id="tm" >5 PM, IST</label><br>
+      <label id="summary">Summary</label><br>
       <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempora quasi maiores vitae, sequi asperiores! Iure placeat, voluptates nam totam temporibus eveniet voluptas maiores, magnam vitae quibusdam qui laborum blanditiis.voluptates nam totam temporibus eveniet voluptas maiores, magnam vitae quibusdam qui laborum blanditiis. </p>
     </b-card-text>
     
@@ -25,23 +25,38 @@
 </template>
 
 <style scoped> 
+#title,#summary,#date,#time{
+  font-weight:bold;
+  font-size:20px;
+}
+#nm,#dt,#tm{
+font-size:18px;
+}
 @media only screen and (max-width: 770px) {
   #img1{
     width: 320px;
     align-content: center;
+    
   }
 }
 @media only screen and (max-width: 385px) {
   #img1{
-    width: 280px;
+    width: 290px;
     align-content: center;
+    
   }
-  
+  #title,#summary,#date,#time{
+    font-size: 16px;
+  }
+  #nm,#dt,#tm{
+  font-size:14px;
+}
 }
 @media only screen and (max-width: 325px) {
   #img1{
-    width: 230px;
+    width: 240px;
     align-content: right;
+    
   }
   
 }

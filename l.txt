@@ -1,0 +1,1000 @@
+  999  npm run serve
+ 1000  npm install --save bootstrap-vue bootstrap-vue/dist/bootstrap-vue.css bootstrap/dist/css/bootstrap.css
+ 1001  ls
+ 1002  npm install bootstrap-vue bootstrap
+ 1003  npm i npm@latest -g
+ 1004  sudo npm i npm@latest -g
+ 1005  sudo npm install bootstrap-vue bootstrap
+ 1006  npm run serve
+ 1007  ls
+ 1008  npm run serve
+ 1009  ls
+ 1010  cd ..
+ 1011  ls
+ 1012  cd Layout-system-with-vue-and-vue-router/
+ 1013  cd
+ 1014  vscode
+ 1015  vscode Layout-system-with-vue-and-vue-router/
+ 1016  vscode ABCAcadFrontend/
+ 1017  6.5*80.77
+ 1018  bc
+ 1019  cd ABCAcadFrontend/
+ 1020  ls
+ 1021  git branch 
+ 1022  git checkout -b modularisation
+ 1023  git checkout modularisation 
+ 1024  git status
+ 1025  git add .
+ 1026  git status
+ 1027  git branch 
+ 1028  git status
+ 1029  git add .
+ 1030  git commit -m "new branch created, pages, layout directories created"
+ 1031  git push origin modularisation 
+ 1032  git status
+ 1033  git log
+ 1034  sudo apt update
+ 1035  sudo apt upgrade
+ 1036  tree
+ 1037  sudo apt install tree
+ 1038  ls
+ 1039  cd semester/
+ 1040  tree
+ 1041  tree -I
+ 1042  ls
+ 1043  cd SE
+ 1044  ls
+ 1045  tree
+ 1046  clear
+ 1047  tree
+ 1048  cd
+ 1049  node -v
+ 1050  vue create ninja-custom
+ 1051  vue ui
+ 1052  cd ..
+ 1053  ls
+ 1054  cd src/
+ 1055  ls
+ 1056  cd components/
+ 1057  ls
+ 1058  vue serve Footer.vue
+ 1059  npm install -g @vue/cli-service-global
+ 1060  ls
+ 1061  npm serve Footer.vue
+ 1062  vue serve Footer.vue 
+ 1063  npm install -g @vue/cli-service-global
+ 1064  sudo npm install -g @vue/cli-service-global
+ 1065  ls
+ 1066  vue serve Footer.vue 
+ 1067  vue serve Navbar.vue 
+ 1068  ls
+ 1069  vue serve ContactUs.vue 
+ 1070  ls
+ 1071  cd ..
+ 1072  ls
+ 1073  cd layouts/
+ 1074  ls
+ 1075  vue serve Default.vue 
+ 1076  cd ..
+ 1077  npm run serve
+ 1078  ls
+ 1079  cd src/components/
+ 1080  ls
+ 1081  vue serve Footer
+ 1082  vue serve Footer.vue
+ 1083  cd components/
+ 1084  ls
+ 1085  cd ..
+ 1086  cd layouts/
+ 1087  ls
+ 1088  vue serve NoContactUs.vue 
+ 1089  cd pages/
+ 1090  vue serve Home.vue 
+ 1091  ls
+ 1092  cd 
+ 1093  cd Layout-system-with-vue-and-vue-router/
+ 1094  ls
+ 1095  npm run serve
+ 1096  npm run serve
+ 1097  npm run lint
+ 1098  npm run serve
+ 1099  npm install sass-loader
+ 1100  npm run serve
+ 1101  sudo npm install sass-loader
+ 1102  npm run serve
+ 1103  ld
+ 1104  cd src/
+ 1105  ls
+ 1106  cd ..
+ 1107  npm run serve
+ 1108  vue ui
+ 1109  npm run serve
+ 1110  clear
+ 1111  npm run serve
+ 1112  ls
+ 1113  rmdir -r Layout-system-with-vue-and-vue-router/
+ 1114  rmdir r Layout-system-with-vue-and-vue-router/
+ 1115  rmdir r Layout-system-with-vue-and-vue-router
+ 1116  rmdir -rr Layout-system-with-vue-and-vue-router
+ 1117  rmdir -r Layout-system-with-vue-and-vue-router
+ 1118  rmdir Layout-system-with-vue-and-vue-router
+ 1119  rmdir --help
+ 1120  rm -r Layout-system-with-vue-and-vue-router/
+ 1121  ls
+ 1122  sudo rm -r Layout-system-with-vue-and-vue-router/
+ 1123  ls
+ 1124  git clone <template>
+ 1125  </template>
+ 1126  <script>
+ 1127  const default_layout = "default";
+ 1128  export default {
+ 1129  };
+ 1130  </script>
+ 1131  <style lang="scss">
+ 1132  @import "~bulma";
+ 1133  body {
+ 1134  }
+ 1135  </style>
+ 1136  git clone https://github.com/darkylmnx/Layout-system-with-vue-and-vue-router.git
+ 1137  cd Layout-system-with-vue-and-vue-router/
+ 1138  npm run serve
+ 1139  ls
+ 1140  npm serve 
+ 1141  vue serve
+ 1142  cd src/
+ 1143  ls
+ 1144  vue serve main.js 
+ 1145  npm install --save @/components/FooterBar @/components/NavBar @/components/SideBar @/pages/404.vue @/pages/About.vue @/pages/Home.vue @/pages/Photos.vue @/pages/Post.vue vue-router
+ 1146  cd ..
+ 1147  ls
+ 1148  npm run serve
+ 1149  ls -s
+ 1150  ls
+ 1151  cd node_modules/
+ 1152  ls
+ 1153  cd sr
+ 1154  cd src
+ 1155  cd ..
+ 1156  ls
+ 1157  cd src/
+ 1158  ls
+ 1159  cd node_modules/
+ 1160  ls
+ 1161  cd ..
+ 1162  rm -r node_modules/
+ 1163  ls
+ 1164  cd ..
+ 1165  ls
+ 1166  npm run serve
+ 1167  rm node_modules/
+ 1168  rm-r  node_modules/
+ 1169  rm -r  node_modules/
+ 1170  ls
+ 1171  npm install
+ 1172  npm run serve
+ 1173  ls
+ 1174  cd ..
+ 1175  cd Layout-system-with-vue-and-vue-router/
+ 1176  ls
+ 1177  vscode *
+ 1178  cd
+ 1179  cd ABCAcadFrontend/
+ 1180  ls
+ 1181  git status
+ 1182  git add .
+ 1183  git status
+ 1184  git commit -m "plugint router is added"
+ 1185  git push oringin modularisation 
+ 1186  git push origin modularisation 
+ 1187  npm run serve
+ 1188  ls
+ 1189  git status
+ 1190  git add . && git commit -m "router.js modified"
+ 1191  git checkout master 
+ 1192  npm run serve
+ 1193  ls
+ 1194  cd src/
+ 1195  ls
+ 1196  cat App.vue 
+ 1197  cd ..
+ 1198  git checkout modularisation 
+ 1199  git checkout shrikant_modalpopup_login 
+ 1200  ls
+ 1201  git branch
+ 1202  git checkout shrikant_modalpopup_login 
+ 1203  git add . 
+ 1204  git commit -m "commit"
+ 1205  git checkout shrikant_modalpopup_login 
+ 1206  git checkout modularisation 
+ 1207  git checkout shrikant_modalpopup_login 
+ 1208  git checkout modularisation 
+ 1209  sudo apt update
+ 1210  sudo apt upgrade
+ 1211  cd ..
+ 1212  npm run serve
+ 1213  cd ABCAcadFrontend/
+ 1214  git status
+ 1215  git pull
+ 1216  git log
+ 1217  npm run serve
+ 1218  npm i --save firebase
+ 1219  firebase -v
+ 1220  npm run serve
+ 1221  npm install --save vuex
+ 1222  sudo npm install --save vuex
+ 1223  npm run serve
+ 1224  cd ABCAcadFrontend/
+ 1225  git pull
+ 1226  git log
+ 1227  git checkout modularisation 
+ 1228  cd ABCAcadFrontend/
+ 1229  git pull
+ 1230  git fetch origin modularisation:modularisation 
+ 1231  git fetch origin modularisation
+ 1232  git checkout modularisation 
+ 1233  vscode ../ABCAcadFrontend
+ 1234  cd ..
+ 1235  ls
+ 1236  cd vueProjects/
+ 1237  ls
+ 1238  mkdir tejas
+ 1239  cd tejas/
+ 1240  vscode ../tejas
+ 1241  cd ..
+ 1242  cd
+ 1243  cd ABCAcadFrontend/
+ 1244  git pull
+ 1245  git fetch origin modularisation
+ 1246  git branch -a
+ 1247  git status
+ 1248  sudo apt update
+ 1249  sudo apt upgrade
+ 1250  playonlinux --version
+ 1251  wine --version
+ 1252  cd ABCAcadFrontend/
+ 1253  git pul
+ 1254  git pull
+ 1255  git branch
+ 1256  npm run serve
+ 1257  cd ..
+ 1258  vi legendre.cpp
+ 1259  g++ legendre.cpp 
+ 1260  ./a.out 
+ 1261  vi legendre.cpp
+ 1262  g++ legendre.cpp 
+ 1263  vi legendre.cpp
+ 1264  g++ legendre.cpp 
+ 1265  ./a.out
+ 1266  vi legendre.cpp
+ 1267  g++ legendre.cpp 
+ 1268  ./a.out
+ 1269  vi legendre.cpp
+ 1270  g++ legendre.cpp 
+ 1271  ./a.out
+ 1272  vi legendre.cpp
+ 1273  g++ legendre.cpp 
+ 1274  ./a.out
+ 1275  vi legendre.cpp
+ 1276  ls
+ 1277  cd /opt/
+ 1278  ls
+ 1279  postman
+ 1280  postman --version
+ 1281  sudo snap install postman
+ 1282  ls
+ 1283  mkdir bootStrap && cd bootStrap
+ 1284  ls
+ 1285  mkdir project1
+ 1286  vscode project1/
+ 1287  ls
+ 1288  cd vueProjects/
+ 1289  ls
+ 1290  cd vue-js-playlist/
+ 1291  ls
+ 1292  npm run serve
+ 1293  google-chrome index.html 
+ 1294  cd ../ && vscode vue-js-playlist
+ 1295  node -v
+ 1296  sudo apt update
+ 1297  cd vueProjects/
+ 1298  ls
+ 1299  git clone https://github.com/sandeepsharma-kgp/EdunozUI.git
+ 1300  cd EdunozUI/
+ 1301  npm run serve
+ 1302  npm init
+ 1303  ls
+ 1304  npm install
+ 1305  npm run serve
+ 1306  git checkout -b shrikant_home_5_8
+ 1307  git status
+ 1308  git add .
+ 1309  git status
+ 1310  git commit -m "branch created"
+ 1311  git push
+ 1312  git push --set-upstream origin shrikant_home_5_8 
+ 1313  sudo apt upgrade
+ 1314  git branch
+ 1315  git status
+ 1316  git add . 
+ 1317  git commit -m "card-bar added"
+ 1318  git push origin shrikant_home_5_8 
+ 1319  cd ../ 
+ 1320  cd
+ 1321  cd ABCAcadFrontend/
+ 1322  npm run serve
+ 1323  git branch
+ 1324  git checkout shrikant_modalpopup_login 
+ 1325  npm run serve
+ 1326  cd vueProjects/
+ 1327  cd EdunozUI/
+ 1328  npm run serve
+ 1329  sudo npm install --save bootstrap-vue bootstrap-vue/dist/bootstrap-vue.css bootstrap/dist/css/bootstrap.css
+ 1330  npm i -g bootstrap
+ 1331  npm i bootstrap
+ 1332  npm run serve
+ 1333  sudo npm install --save bootstrap-vue bootstrap-vue/dist/bootstrap-vue.css bootstrap/dist/css/bootstrap.css
+ 1334  sudo npm i bootstrap
+ 1335  npm run serve
+ 1336  npm install vue bootstrap-vue bootstrap
+ 1337  sudo npm install vue bootstrap-vue bootstrap
+ 1338  npm run serve
+ 1339  npm run serve --fix
+ 1340  npm run eslint
+ 1341  npm run lint
+ 1342  npm run serve
+ 1343  npm run lint
+ 1344  npm run serve
+ 1345  clear
+ 1346  git status
+ 1347  git add .
+ 1348  git commit -m "popular technolog added"
+ 1349  git push origin shrikant_home_5_8 
+ 1350  vue ui
+ 1351  npm i --S vueperslides
+ 1352  sudo npm i --S vueperslides
+ 1353  npm audit fix
+ 1354  sudo npm i --S vueperslides
+ 1355  npm run serve
+ 1356  npm run lint
+ 1357  npm run serve
+ 1358  gedit x.txt
+ 1359  git status
+ 1360  git add .
+ 1361  git commit -m "more about us done"
+ 1362  git push origin shrikant_home_5_8 
+ 1363  cd ..
+ 1364  git clone https://github.com/JscramblerBlog/communicating-between-vue-components.git
+ 1365  cd communicating-between-vue-components/
+ 1366  npm run serve
+ 1367  npm install
+ 1368  npm run serve
+ 1369  sudo npm run serve
+ 1370  npm run serve
+ 1371  npm run dev
+ 1372  cd ..
+ 1373  vi a.txx
+ 1374  gedit a.txt
+ 1375  cd ABCAcadFrontend/
+ 1376  cd
+ 1377  cd vueProjects/
+ 1378  cd EdunozUI/
+ 1379  npm run serve
+ 1380  git log
+ 1381  git add .
+ 1382  git status
+ 1383  git add .
+ 1384  git status
+ 1385  git commit -m "our branches component added"
+ 1386  git push origin shrikant_home_5_8 
+ 1387  npm run serve
+ 1388  npm run lint
+ 1389  npm run serve
+ 1390  gedit googl_map.html
+ 1391  firefox googl_map.html 
+ 1392  gedit googl_map.html
+ 1393  cd vueProjects/
+ 1394  ls
+ 1395  cd EdunozUI/
+ 1396  ls
+ 1397  npm run serve
+ 1398  git add .
+ 1399  git commit -m "changes carousel"
+ 1400  git push origin shrikant_home_5_8 
+ 1401  git pull
+ 1402  git pull origin 
+ 1403  git pull origin master 
+ 1404  git fetch
+ 1405  git pull
+ 1406  git brach -a
+ 1407  git branch -a
+ 1408  git fetch
+ 1409  cd vueProjects/
+ 1410  cd EdunozUI/
+ 1411  git pull
+ 1412  git branch -a
+ 1413  git checkout gaurav_home_1-4 
+ 1414  npm run serve
+ 1415  npm run lint
+ 1416  sudo npm i --S vueperslides
+ 1417  npm install
+ 1418  npm run serve
+ 1419  cd ABCAcadFrontend/
+ 1420  git pull
+ 1421  git checkout gayatri_update 
+ 1422  npm run serve
+ 1423  cat .gitignore 
+ 1424  git status
+ 1425  npm run serve
+ 1426  vscode ../ABCAcadFrontend/
+ 1427  cd 
+ 1428  cd vueProjects/EdunozUI
+ 1429  cd ..
+ 1430  cd EdunozUI\ \(copy\)/
+ 1431  git branch 
+ 1432  git status
+ 1433  git add .
+ 1434  git commit -m "merge code of shrikant and gaurov"
+ 1435  git push origin shrikant_new 
+ 1436  git branch 
+ 1437  npm run serve
+ 1438  git status
+ 1439  git add public/index.html 
+ 1440  git commit -m "this code working fine"
+ 1441  git push origin gaurav_login 
+ 1442  ls
+ 1443  cd vueProjects/
+ 1444  cd EdunozUI/
+ 1445  ls
+ 1446  npm run serve
+ 1447  git pull
+ 1448  git branch --set-upstream-to=origin/ gaurav_backup 
+ 1449  git fetch
+ 1450  git push
+ 1451  git push --set-upstream origin gaurav_backup
+ 1452  git pull
+ 1453  git branch 
+ 1454  npm run serve
+ 1455  git checkout shrikant_home_5_8 
+ 1456  git stash
+ 1457  git checkout shrikant_home_5_8 
+ 1458  npm run serve
+ 1459  npm run lint
+ 1460  npm run serve
+ 1461  git checkout gaurav_backup 
+ 1462  git stash
+ 1463  git checkout gaurav_backup 
+ 1464  npm run serve
+ 1465  git log
+ 1466  git checkout 
+ 1467  git checkout ef4201e782baf984cf2368a243a93ef375268657
+ 1468  git stash
+ 1469  git checkout ef4201e782baf984cf2368a243a93ef375268657
+ 1470  git checkout -v gaurav_backup
+ 1471  git checkout -b gaurav_backup
+ 1472  npm run serve
+ 1473  npm run eslint
+ 1474  npm run lint
+ 1475  sudo npm i --S vueperslides
+ 1476  git branch -s
+ 1477  git branch -a
+ 1478  git checkout gaurav_login 
+ 1479  git stash
+ 1480  git checkout gaurav_login 
+ 1481  git stash
+ 1482  git checkout gaurav_login 
+ 1483  git status
+ 1484  git stash
+ 1485  rm src/components/Home/our-branches.vue 
+ 1486  git stash
+ 1487  git checkout gaurav_login 
+ 1488  npm run serve
+ 1489  ls
+ 1490  cd ..
+ 1491  ls
+ 1492  cd EdunozUI\ \(copy\)/
+ 1493  git branch
+ 1494  git checkout 
+ 1495  git checkout shrikant_home_5_8 ]
+ 1496  git checkout shrikant_home_5_8
+ 1497  npm run serve 
+ 1498  npm run lint
+ 1499  npm run serve 
+ 1500  git branch 
+ 1501  git commit -m "save for backup"
+ 1502  git status
+ 1503  git add .
+ 1504  git commit -m "save for backup"
+ 1505  git push 
+ 1506  git push origin shrikant_home_5_8 
+ 1507  git checkout -b shrikant_new
+ 1508  git branch
+ 1509  git branch 
+ 1510  git status 
+ 1511  git add .
+ 1512  git commit -m "carousel working fine"
+ 1513  git push origin shrikant_new 
+ 1514  cd vueProjects/EdunozUI
+ 1515  git status
+ 1516  git stash
+ 1517  npm run serve
+ 1518  git pull
+ 1519  npm run serve
+ 1520  npm install --save vuetify vuetify/dist/vuetify.min.css
+ 1521  sudo npm install --save vuetify vuetify/dist/vuetify.min.css
+ 1522  vue add vuetify
+ 1523  sudo vue add vuetify
+ 1524  git diff
+ 1525  npm run serve
+ 1526  ls
+ 1527  git branch 
+ 1528  npm run serve
+ 1529  git stash
+ 1530  git status
+ 1531  npm run serve
+ 1532  git log
+ 1533  git checkout b99476f940c9cb6ff2d08ff9e5e2d4a41412bfa6
+ 1534  git checkout -b shri
+ 1535  npm run serve
+ 1536  git log
+ 1537  git log -all
+ 1538  git log -a
+ 1539  git checkout shrikant_new 
+ 1540  git log -a
+ 1541  git checkout c726d0c235c153b4ec60ca992728b3a0a69717b1
+ 1542  npm run serve
+ 1543  git checkout gaurav_login 
+ 1544  npm run serve
+ 1545  npm uninstall vuetify
+ 1546  sudo npm uninstall vuetify
+ 1547  npm run serve
+ 1548  vue remove vuetify
+ 1549  vue invoke vuetify
+ 1550  sudo vue invoke vuetify
+ 1551  ls
+ 1552  cat package.json 
+ 1553  npm run serve
+ 1554  sudo apt update
+ 1555  sudo apt upgrade
+ 1556  npm run serve
+ 1557  cd vueProjects/EdunozUI
+ 1558  npm run serve
+ 1559  git stash
+ 1560  git checkout shrikant_new 
+ 1561  npm run serve
+ 1562  vue add vue-cli-plugin-vuetify
+ 1563  sudo vue add vue-cli-plugin-vuetify
+ 1564  npm run serve
+ 1565  git status
+ 1566  git stash
+ 1567  git checkout shrikant_new 
+ 1568  git stash
+ 1569  git pull
+ 1570  npm run serve
+ 1571  git stash
+ 1572  git status
+ 1573  git pull
+ 1574  git merge --abort
+ 1575  git status
+ 1576  git pull
+ 1577  npm run serve
+ 1578  git status
+ 1579  git add .
+ 1580  git commit -m "style is changed"
+ 1581  git push
+ 1582  git commit -m "vuetify added"
+ 1583  git add .
+ 1584  git commit -m "vuetify added"
+ 1585  git checkout gaurav_login
+ 1586  git checkout gaurav_login 
+ 1587  npm run serve
+ 1588  git pull
+ 1589  git add .
+ 1590  git commit -m "merge confilict with local"
+ 1591  git push
+ 1592  git status
+ 1593  git log
+ 1594  git pull
+ 1595  git checkout ead116cd6a2acf22648af1458f9f216dc6fca0d7
+ 1596  npm run serve
+ 1597  git checkout shrikant_new_1
+ 1598  git checkout -b shrikant_new_1
+ 1599  npm run serve
+ 1600  git status
+ 1601  git add .
+ 1602  git commit -m "new branch created, vision carousel and webinar are resposive"
+ 1603  git push
+ 1604  git push --set-upstream origin shrikant_new_1
+ 1605  git status
+ 1606  git checkout gaurov_login
+ 1607  git checkout gaurav_login
+ 1608  git checkout gaurav_backup 
+ 1609  git checkout shri
+ 1610  git checkout shrikant_new_1 
+ 1611  sudo apt update
+ 1612  sudo apt upgrade
+ 1613  cd vueProjects/
+ 1614  git clone https://github.com/SSENSE/vue-carousel.git
+ 1615  ls
+ 1616  cd vue-carousel/
+ 1617  npm install
+ 1618  sudo npm install
+ 1619  npm run serve
+ 1620  npm run dev
+ 1621  ls
+ 1622  cat package.json 
+ 1623  npm run dev
+ 1624  ls
+ 1625  cd src/
+ 1626  ls
+ 1627  npm run play
+ 1628  npm i -g play
+ 1629  sudo npm i -g play
+ 1630  npm run play
+ 1631  git stash
+ 1632  cd ..
+ 1633  cd EdunozUI
+ 1634  git stash
+ 1635  git pull
+ 1636  npm run serve
+ 1637  git checkout -b contact us
+ 1638  git checkout -b contact_us
+ 1639  npm run serve
+ 1640  git status
+ 1641  git add src/components/Home/CantactUs.vue 
+ 1642  git status
+ 1643  git commit -m "contact us with fixed position added"
+ 1644  git push origin contact_us 
+ 1645  git branch -a
+ 1646  npm run serve
+ 1647  cd Downloads/
+ 1648  r
+ 1649  R
+ 1650  git status
+ 1651  git add .
+ 1652  git commit -m "component name changed from contact us to QuickMessage"
+ 1653  git push origin contact_us 
+ 1654  git status
+ 1655  git pull origin master
+ 1656  npm run serve
+ 1657  git add .
+ 1658  git commit -m "conflict resolved"
+ 1659  git push origin contact_us 
+ 1660  gedit x.txt
+ 1661  cd ..
+ 1662  git clone https://github.com/surmon-china/vue-awesome-swiper.git
+ 1663  cd vue-awesome-swiper/
+ 1664  npm run serve
+ 1665  npm run dev
+ 1666  cat package.json 
+ 1667  sudo npm install
+ 1668  npm run serve
+ 1669  npm run dev
+ 1670  cd ..
+ 1671  cd EdunozUI
+ 1672  git status
+ 1673  git add .
+ 1674  730-160
+ 1675  bc
+ 1676  git status
+ 1677  git add .
+ 1678  git status
+ 1679  git commit -m "card bar is done using vue-awesome-swiper"
+ 1680  git push origin card_bar
+ 1681  git push origin shrikant_cardbar 
+ 1682  git pull
+ 1683  git checkout ganesh_signup
+ 1684  npm run serve
+ 1685  cd vueProjects/EdunozUI
+ 1686  git pull
+ 1687  git status
+ 1688  git pull
+ 1689  git checkout master
+ 1690  git pull
+ 1691  npm run serve
+ 1692  git checkout -b shrikant_cardbar
+ 1693  vscode ../EdunozUI
+ 1694  npm run serve
+ 1695  git status
+ 1696  git add .
+ 1697  git commit -m "our branches done using vue-awesome-swiper"
+ 1698  git status
+ 1699  git push origin shrikant_cardbar 
+ 1700  gedit a.txt
+ 1701  npm run serve
+ 1702  npm install vue-awesome-swiper
+ 1703  sudo npm install vue-awesome-swiper --save
+ 1704  sudo npm install swiper
+ 1705  gedit a.txt
+ 1706  cd vueProjects/
+ 1707  cd EdunozUI
+ 1708  git branch -a
+ 1709  git checkout gaurav_vision 
+ 1710  npm run serve
+ 1711  git checkout roshani_enquiry 
+ 1712  npm run serve
+ 1713  cd vueProjects/EdunozUI
+ 1714  ls
+ 1715  git checkout roshani_enquiry 
+ 1716  npm run serve
+ 1717  vscode ../EdunozUId
+ 1718  git stash
+ 1719  git pull origin roshani_enquiry 
+ 1720  npm run serve
+ 1721  git stash
+ 1722  sudo apt update
+ 1723  npm run serve
+ 1724  cd vueProjects/
+ 1725  EdunozUI
+ 1726  cd EdunozUI
+ 1727  npm run serve
+ 1728  git stash
+ 1729  git pull
+ 1730  cd vueProjects/
+ 1731  EdunozUI
+ 1732  cd EdunozUI
+ 1733  git pull
+ 1734  git checkout master 
+ 1735  git pull origin master 
+ 1736  npm run serve
+ 1737  cd vueProjects/EdunozUI
+ 1738  git status
+ 1739  npm run serve
+ 1740  cd vueProjects/EdunozUI
+ 1741  npm run serve
+ 1742  status
+ 1743  git status
+ 1744  git checkout -b shrikant_moreaboutus
+ 1745  git status
+ 1746  git add .
+ 1747  git commit -m "more about grid set to 2-2"
+ 1748  git push origin shrikant_moreaboutus 
+ 1749  git pull
+ 1750  git fetch
+ 1751  git checkout master 
+ 1752  git pull
+ 1753  npm run serve
+ 1754  git log
+ 1755  git stash
+ 1756  git sta
+ 1757  git status 
+ 1758  git add .
+ 1759  git commit -m "grid layout of popular tech changes to 3-3-1"
+ 1760  git push origin shrikant_moreaboutus 
+ 1761  git stash
+ 1762  cd vueProjects/EdunozUI
+ 1763  npm run serve
+ 1764  git status
+ 1765  git stash
+ 1766  git status
+ 1767  git add .
+ 1768  git commit -m "more about now will have equal height depending on largest column height"
+ 1769  git push origin shrikant_moreaboutus 
+ 1770  cd vueProjects/
+ 1771  EdunozUI
+ 1772  npm run serve
+ 1773  cd EdunozUI
+ 1774  npm run serve
+ 1775  cd EdunozUI
+ 1776  git status
+ 1777  npm run serve
+ 1778  git status
+ 1779  git commit -m "more about us is done"
+ 1780  git log
+ 1781  git add .
+ 1782  git commit -m "more about us is done"
+ 1783  git push origin shrikant_cardbar 
+ 1784  git status
+ 1785  git add .
+ 1786  git status
+ 1787  git commit -m "polpular tech modifed"
+ 1788  git push origin shrikant_cardbar 
+ 1789  git pull
+ 1790  git push origin shrikant_cardbar 
+ 1791  git pull ...
+ 1792  git pull origin shrikant_cardbar 
+ 1793  git push origin shrikant_cardbar 
+ 1794  git log
+ 1795  git push origin shrikant_cardbar 
+ 1796  git pull--rebase
+ 1797  git pull --rebase
+ 1798  git push origin shrikant_cardbar
+ 1799  git checkout 6372657d4d2a65c6f99f6d9f826e09057d2198aa
+ 1800  git push
+ 1801  git checkout shrikant_cardbar 
+ 1802  git push
+ 1803  git push --set-upstream origin shrikant_cardbar
+ 1804  git push
+ 1805  git push --set-upstream origin shrikant_cardbar
+ 1806  git pull 
+ 1807  git status
+ 1808  cd ..
+ 1809  git clone https://github.com/sandeepsharma-kgp/EdunozUI.git
+ 1810  git status
+ 1811  git branch -a
+ 1812  cd EdunozUI
+ 1813  git branch -a
+ 1814  git checkout shrikant_cardbar 
+ 1815  git log
+ 1816  git branch -a
+ 1817  cd ..
+ 1818  cd EdunozUI1
+ 1819  git checkout shrikant_moreaboutus 
+ 1820  git status
+ 1821  git log
+ 1822  git push origin shrikant_moreaboutus 
+ 1823  cd ..
+ 1824  ls
+ 1825  cd EdunozUI/
+ 1826  git log
+ 1827  git status
+ 1828  git add .
+ 1829  git commit -m "changes made to popular tech"
+ 1830  git push origin shrikant_moreaboutus 
+ 1831  cd vueProjects/EdunozUI/
+ 1832  npm run serve
+ 1833  vscode ../EdunozUI/
+ 1834  git status
+ 1835  git add .
+ 1836  git commit -m "changed made in popular tech"
+ 1837  git push origin shrikant_moreaboutus 
+ 1838  git status
+ 1839  cd vueProjects/
+ 1840  ls
+ 1841  cd EdunozUI/
+ 1842  git pull
+ 1843  git checkout master 
+ 1844  npm run serve
+ 1845  git log
+ 1846  git log --graph --all
+ 1847  git checkout shrikant_moreaboutus 
+ 1848  git status
+ 1849  git add .
+ 1850  git commit -m "changes made to multicard"
+ 1851  git push 
+ 1852  git push origin shrikant_moreaboutus 
+ 1853  git pull
+ 1854  git push origin shrikant_moreaboutus 
+ 1855  git status
+ 1856  git push origin shrikant_moreaboutus 
+ 1857  git pull origin shrikant_moreaboutus 
+ 1858  git push origin 
+ 1859  git push origin shrikant_moreaboutus 
+ 1860  git log
+ 1861  cd vueProjects/EdunozUI/
+ 1862  npm run serve
+ 1863  git status
+ 1864  git commit -m "updated footer component and multi card"
+ 1865  git add .
+ 1866  git commit -m "updated footer component and multi card"
+ 1867  git push origin shrikant_moreaboutus 
+ 1868  git status
+ 1869  git add .
+ 1870  git commit -m "changes made in footer"
+ 1871  git push origin shrikant_moreaboutus 
+ 1872  git pull origin gaurav_vision 
+ 1873  git status
+ 1874  git reset --hard
+ 1875  git pull origin master 
+ 1876  git add .
+ 1877  git commit -m "merged with master"
+ 1878  git push origin shrikant_moreaboutus 
+ 1879  git checkout master 
+ 1880  git pull origin master
+ 1881  git checkout gaurav_vision 
+ 1882  git pull origin gaurav_vision 
+ 1883  git checkout master 
+ 1884  git checkout gaurav_vision 
+ 1885  cd vueProjects/EdunozUI/
+ 1886  git checkout master 
+ 1887  git checkout -b shrikant_multicard
+ 1888  git status
+ 1889  git add .
+ 1890  git commit -m "changes made in multicard"
+ 1891  git push origin shrikant_multicard 
+ 1892  git checkout gaurav_vision 
+ 1893  git checkout shrikant_multicard 
+ 1894  git pull origin gaurav_vision 
+ 1895  npm install --save firebase
+ 1896  sudo npm install --save firebase
+ 1897  git add .
+ 1898  git commit -m "merged with shrikant_multicard"
+ 1899  git push origin shrikant_multicard 
+ 1900  git pull origin master 
+ 1901  git stash
+ 1902  git checkout master 
+ 1903  git pull
+ 1904  git branch -a
+ 1905  git status
+ 1906  git ceckout -b shrikant_landing_page1
+ 1907  git checkout -b shrikant_landing_page1
+ 1908  git status
+ 1909  gedit a.txt
+ 1910  cd vueProjects/EdunozUI/
+ 1911  npm run serve
+ 1912  cd
+ 1913  gedit a.txt
+ 1914  cd vueProjects/EdunozUI/
+ 1915  ls
+ 1916  npm run serve
+ 1917  git status
+ 1918  git add .
+ 1919  git commit -m "landing page 1 is created"
+ 1920  cd vueProjects/
+ 1921  EdunozUI/
+ 1922  cd EdunozUI/
+ 1923  npm run serve
+ 1924  ifconfig
+ 1925  sudo apt update
+ 1926  sudo apt upgrade
+ 1927  cd vueProjects/EdunozUI/
+ 1928  npm run serve
+ 1929  git status
+ 1930  git add . 
+ 1931  git commit -m "landing page 1 changed"
+ 1932  git push origin shrikant_landing_page1 
+ 1933  npm run serve
+ 1934  git status
+ 1935  git checkout
+ 1936  git checkout master 
+ 1937  git checkout shrikant_landing_page1 
+ 1938  git status
+ 1939  git add .
+ 1940  git commit -m "changes made in footer vue text-align to center"
+ 1941  git push origin shrikant_landing_page1 
+ 1942  git pull origin master 
+ 1943  git status
+ 1944  git add .
+ 1945  git commit -m "merged with master"
+ 1946  git push origin shrikant_landing_page1 
+ 1947  git checkout master 
+ 1948  git pull origin master 
+ 1949  git status
+ 1950  git stash
+ 1951  sudo apt update
+ 1952  sudo apt upgrade
+ 1953  git stash
+ 1954  git status
+ 1955  git commit -m "overlay on carousel image added"
+ 1956  git add .
+ 1957  git commit -m "overlay on carousel image added"
+ 1958  git push origin shrikant_overlay 
+ 1959  vscode vueProjects/EdunozUI/
+ 1960  cd vueProjects/EdunozUI/
+ 1961  npm run serve
+ 1962  sudo apt update
+ 1963  sudo apt upgrade
+ 1964  htop
+ 1965  sudo apt  install htop
+ 1966  htop
+ 1967  ssh coep@10.1.101.27
+ 1968  cd vueProjects/EdunozUI/
+ 1969  l
+ 1970  vscode ../EdunozUI/
+ 1971  git pull
+ 1972  git checkout roshani_courses_new 
+ 1973  npm run serve
+ 1974  cd vueProjects/EdunozUI/
+ 1975  git status
+ 1976  git commit -m "changes made in shrikant_vision_goals_modal"
+ 1977  git add .
+ 1978  git status
+ 1979  git commit -m "changes made in shrikant_vision_goals_modal"
+ 1980  git push orign shrikant_vision_goals_modal 
+ 1981  git push origin shrikant_vision_goals_modal 
+ 1982  cd vueProjects/EdunozUI/
+ 1983  npm run serve
+ 1984  git status
+ 1985  git pull master
+ 1986  git pull origin master
+ 1987  git checkout shrikant_vision_goals_modal 
+ 1988  git status
+ 1989  git add .
+ 1990  git commit -m "css in footer component adjusted"
+ 1991  git push origin shrikant_vision_goals_modal 
+ 1992  git status
+ 1993  git add .
+ 1994  git commit -m "vision and goals are changed"
+ 1995  git push origin shrikant_vision_goals_modal 
+ 1996  cd vueProjects/EdunozUI/
+ 1997  npm run serve
+ 1998  history > l.txt

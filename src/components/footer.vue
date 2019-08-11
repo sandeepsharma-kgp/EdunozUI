@@ -1,39 +1,40 @@
 
 <template lang="en">
     <b-container fluid class="footer-container">
-        <b-row align-h = "center">
-            <b-col class="reach-us-box1" md="5">
+        <b-row align-self = "start">
+            <b-col class="reach-us-box1" md="6">
             <div class="reach-us-container">
-                <h4 style="font-weight: bold; text-align: center">Reach Us</h4>
+                <h4 class="reach-us">Reach Us</h4>
                 <a href="default.asp">
                 <img
                 src="@/assets/icons/google-plus.png"
                 alt="Get Details"
-                 style="width:48px;height:48px; margin: 5px;"
+                class="icons"          
                 />
              
                 </a><a href="default.asp">
                 <img
                 src="@/assets/icons/fb.png"
                 alt="Get Details"
-                style="width:48px;height:48px; margin: 5px"
+                class="icons"          
                 />
              
                 </a><a href="default.asp">
                 <img
                 src="@/assets/icons/linkedin.png"
                 alt="Get Details"
-                style="width:48px;height:48px; margin: 5px"
+                class="icons"          
                 />
               
                 </a><a href="default.asp">
                 <img
                 src="@/assets/icons/twitter.png"
                 alt="Get Details"
-                style="width:48px;height:48px; margin: 5px"
+                class="icons"          
                 />
               
                 </a>
+
                 <div>
                 <br>
                 <h4 class="text_align" style="font-weight: bold; padding-left: ca">Great Faculty</h4>
@@ -48,8 +49,8 @@
                 <br>
                 <br>
             </b-col>
-            <b-col md="7" align-self="start">
-                <google-map></google-map>
+            <b-col md="6" align-self="center">
+                <google-map style="height: 300px"></google-map>
             </b-col>            
         </b-row>
     </b-container>
@@ -70,6 +71,10 @@ export default {
 .reach-us-container {
   max-width: auto;
 }
+.reach-us{
+  font-weight: bold; 
+  text-align: left;
+}
 #t1{
     -moz-tab-size:3;
     -o-tab-size: 3;
@@ -83,13 +88,28 @@ export default {
 .text_align{
   text-align: left ;
 }
+.icons{
+    width:48px;
+    height:48px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
 @media (max-width: 414px) {
   .reach-us-box1 {
     padding-left: 0px;
     text-align: center;
   }
   .text_align{
+    text-align: left;
+    margin-left: 18px;
+  }
+  .reach-us{
     text-align: center;
+  }
+  .icons{
+    margin: 13px
   }
 }
 </style>
