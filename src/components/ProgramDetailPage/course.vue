@@ -5,19 +5,19 @@
         <b-tabs style="background: #2A326D;">
 
           <b-tab  title="Course Syllabus">
-            <b-card>
+            <b-card style="background:#f0f5f5;min-height:465px;border:none;">
               <Course_syllabus/>
             </b-card>
           </b-tab>
 
           <b-tab title="Instructors">
-            <b-card>
+            <b-card style="background:#f0f5f5;min-height:465px;border:none;">
               <Instructors/>
             </b-card>
           </b-tab>
 
           <b-tab title="FAQs">
-            <b-card>
+            <b-card style="background:#f0f5f5;min-height:465px;border:none;">
               <FAQ />
             </b-card>
           </b-tab>

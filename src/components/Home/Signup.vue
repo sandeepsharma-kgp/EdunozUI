@@ -65,12 +65,11 @@
       </div>
       <div class="form-group">
         <input
-        v-on:blur="validate"
-          
+        
+          id="p1"
           name="password"
           type="password"
           placeholder="Password"
-          ref="password"
           v-model.trim="signupForm.password"
           style="background: #FAF6F6; margin-bottom: 20px;"
           class="form-control"
@@ -81,21 +80,24 @@
       </div>
       <div class="form-group">
         <input
-        v-on:blur="validate"
+        
           
           name="confirmPassword"
           type="password"
           placeholder="confirm Password"
-           data-vv-as="password"
           v-model.trim="signupForm.confirmPassword"
           style="background: #FAF6F6;margin-bottom: 20px;"
           class="form-control"
           required="required"
           v-model="confirmPassword"
+          v-on:blur="validate"
           
         />
+        
+        
       </div>
-      <small v-if="showError">Passwords don't match!</small>
+      
+      
       <div class="form-group">
         <button
           @click="signup"
@@ -115,8 +117,9 @@
 </template>	  
 
 <script>
+import { messaging } from 'firebase';
 const fb = require("../../firebaseConfig.js");
-export default {
+export default  {
   data() {
     return {
       signupForm: {
@@ -131,11 +134,12 @@ export default {
     };
   },
   methods: {
-    validate() {
-        if(this.password != this.confirmPassword)
-        {
-          alert("password does not match");
-        }
+     validate() {
+       if(this.password !== this.confirmPassword)
+       {
+          alert("Password Doesn't Match, Please Enter Valid Password")
+          
+       }
     },
     signup() {
       fb.auth
@@ -183,5 +187,6 @@ export default {
   background: transparent !important;
   color: #ffffff;
 }
+  
 </style>
 
