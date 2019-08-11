@@ -2,6 +2,7 @@
   <div class="program_detail">
     <nav-bar></nav-bar>
     <Carousel />
+    <lgp1/>
     <FloatContactUs />
     <Enquire />
     <course />
@@ -11,6 +12,7 @@
 
 <script>
 // @ is an alias to /src
+import pg1 from "@/components/Home/landing_page1.vue";
 import footerBar from "../components/footer.vue";
 import Navbar from "../components/Navbar.vue";
 import FloatContactUs from "../components/FloatContactUs.vue";
@@ -24,7 +26,8 @@ export default {
     "nav-bar": Navbar,
     FloatContactUs,
     course,
-    Carousel
+    Carousel,
+    "lgp1": pg1,
   }
 };
 </script>

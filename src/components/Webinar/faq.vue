@@ -16,8 +16,7 @@
     <div id="bx1" class="p-1" style="border-bottom: 4px solid grey">
       <div>
         <h6
-          class
-          style="font-weight:bold; color:red; padding: 10px 0px 0px 40px;"
+          id="h_id"
           align="left"
         >Lorem ipsum doler sit amet ,consectuter adipsciling edit</h6>
       </div>
@@ -41,9 +40,8 @@
     </div>
     <div id="bx1" class="p-1" style="border-bottom: 4px solid grey ">
       <div>
-        <h6
-         
-          style="font-weight:bold; color:red; padding: 10px 0px 0px 40px;"
+        <h6 
+          id="h_id"
           align="left"
         >Lorem ipsum doler sit amet ,consectuter adipsciling edit</h6>
       </div>
@@ -70,9 +68,14 @@
 </template>
 
 <style scoped>
+#h_id{
+  font-weight:bold;
+ color:red;
+   padding: 10px 0px 0px 40px;
+}
 .img-fluid{
       max-width:200px;
-      height:200px
+      height:200px;
 }
 @media only screen and (max-width: 1250px) {
   #p1,
@@ -86,7 +89,36 @@
 }
 @media only screen and (max-width:575px){
   .img-fluid{
-    align-self: center;
+    align-self:right;
+    max-width:60px;
+    max-height:60px;
+
   }
+  #h_id{
+  font-weight:bold;
+  font-size: 12px;
+ color:red;
+   padding: 10px 0px 0px 40px;
+}
+#p1,
+  #p2 {
+    padding:0px 10px 0px 0px;
+  }
+p{
+  font-size: 12px;
+  margin-left:0px;
+  padding-left: 0px;
+}
+}
+@media only screen and (max-width: 768px) {
+  #p1,
+  #p2 {
+    padding-left:20px;
+  }
+.img-fluid{
+    align-self:right;
+    max-width:50px;
+    max-height:50px;
+}
 }
 </style>
