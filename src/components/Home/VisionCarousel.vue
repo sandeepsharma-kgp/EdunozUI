@@ -7,19 +7,24 @@
     <div>
 
       <div class="viscard" style="background-color:#eceef8;">
-        <h3 align="center">
-        <b-button  class="visible transparent" v-b-modal.modal-tall><h5>Vision & Goals<br>Read About It...</h5></b-button>
-        </h3>
         <b-modal id="modal-tall" title="Vision & Goals">
           <p class="my-4" >
             {{vision}}
           </p>
         </b-modal>
-         <div class="novisible">
-          <h4 align="center" >Vision & Goals</h4>
-          <p style="padding:10px;">{{vision}}
-          </p>
+         <div>
+          <h5 align="center" >Vision & Goals</h5>
+          <div class="content-of-vision">{{vision}}
+          </div>
         </div>
+        <button v-b-modal.modal-tall type="button" class="info" aria-label="Read More">
+          <span aria-hidden="true"><img
+                :src="require('@/assets/icons/more.png')"
+                alt="Vision and Goals"
+                style="height: 32px; width: 32px;"          
+                /><br>
+                More</span>
+        </button>
       </div>
     </div>
       <div class="bg"></div>
@@ -52,32 +57,22 @@ export default {
 </script>
 
 
-// <div style="background-color:#eceef8; width:900px; height:220px;margin-left:25%;margin-top:17%;">
-//       <h3 align="center" style="padding-top:20px; color:#394285">Vision & Goals</h3>
-//       <p style="padding:10px; color:#394285; font-weight:1000">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
-//  The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of 
-//  Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
-//  <div align="center" style="padding-bottom:15px;">
-//  <img :src="require('../../assets/icons/Group 73@2x.png')" ><h5>More</h5>
-//  </div>
-//     </div>
 
 <style scoped>
-.visible{
-  display: none;
-}
+
 div {
   position: relative;
 }
 .viscard {
+  padding-top: 10px;
   position: absolute;
-  top: 100%;
+  top: -15px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
   opacity: 0.95;
   padding: 5px;
-  border-radius: 12px;
+  border-radius: 5px;
   text-align: center;
 }
 .bg {
@@ -88,27 +83,15 @@ div {
   height: 80px;
   z-index: -1;
 }
+.content-of-vision{
+  padding: 15px;
+  height: 80px;
+  overflow: hidden;
+
+}
 @media only screen and (max-width: 570px) {
   .viscard{
     width: 100%;
-    position: relative;
-    opacity: 1;
-    color:violet;
-
-  }
-  .bg{
-    top: 80%;
-  }
-  .visible{
-    position: relative;
-    display: block;
-    text-align: center;
-    transform: translateX(-50%);
-    left: 50%;
-    color: black;
-  }
-  .novisible{
-    display: none;
   }
 }
 @media only screen and (max-width: 900px) {
