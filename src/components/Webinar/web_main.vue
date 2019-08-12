@@ -1,24 +1,24 @@
 <template>
   <div class="webinars" id="t1">
     <div>
-      <b-card-group >
-        <b-card  style=" max-width:1304px;height:auto;border:none;">
-          <b-tabs style="background: #2A326D;" >
-            <b-tab title="Overview">
-              <b-card style="background:#f0f5f5;min-height:465px;border:none;" >
+      <b-card-group>
+        <b-card  style=" max-width:1304px;height:auto;border:none">
+          <b-tabs style="background: #2A326D; border:none; border-radius:3px" >
+            <b-tab title="Overview" style="border:none;border-radius:0px;">
+              <b-card style="background:#f0f5f5;min-height:465px;border:none;border-radius:0px;" >
                 <Overview/>
               </b-card>
             </b-tab>
 
           
-            <b-tab class="speaker" title="About Speaker">
-              <b-card   style="background:#f0f5f5;height:465px;border:none;"  >
+            <b-tab class="speaker" title="About Speaker" style="border:none;border-radius:0px;">
+              <b-card   style="background:#f0f5f5;height:465px;border:none;border-radius:0px;"  >
                 <about_speaker/>
               </b-card>
             </b-tab>
            
-            <b-tab title="FAQs">
-              <b-card style="background:#f0f5f5;min-height:465px;border:none;" >
+            <b-tab title="FAQs" style="border:none;border-radius:0px;">
+              <b-card style="background:#f0f5f5;min-height:465px;border:none;border-radius:0px;" >
                 <faq/>
               </b-card>
             </b-tab>
@@ -107,6 +107,7 @@ export default {
    width:1304px;
    height:auto;
    border:none;
+  
 }
 
 .reg {

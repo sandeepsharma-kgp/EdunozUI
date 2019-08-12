@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     
       <b-img id="img1"
         :src="require('../../assets/images/aerial-desk-device-1011329.jpg')"
@@ -32,16 +32,16 @@
 #nm,#dt,#tm{
 font-size:18px;
 }
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 700px) {
   #img1{
-    width: 320px;
+    width: 340px;
     align-content: center;
     
   }
 }
 @media only screen and (max-width: 385px) {
   #img1{
-    width: 290px;
+    width: 295px;
     align-content: center;
     
   }
@@ -59,5 +59,12 @@ font-size:18px;
     
   }
   
+}
+@media only screen and (min-width: 760px) {
+  #img1{
+    width: 360px;
+    align-content: center;
+    
+  }
 }
 </style>

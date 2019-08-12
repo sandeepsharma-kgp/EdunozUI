@@ -1,6 +1,6 @@
 <template>
-  <div class="speaker">
-    <div >
+  <div class="speaker" >
+    <div>
       <b-img id="img1"
         :src="require('../../assets/images/aerial-desk-device-1011329.jpg')"
         class="img-fluid"
@@ -10,11 +10,11 @@
         rounded="circle"     
       ></b-img>
     </div>
-    <b-card-text > 
-        <div class="d1">
+    <b-card-text style="border-bottom: 4px solid grey " > 
+        <div class="d1" >
             <br> <br> <br>
       <label class="name">Name</label>   
-      <div>
+      <div >
         <h6
           class="cls_h"
         >Lorem ipsum doler sit amet sit amet,consectuter adipsciling edit</h6>
@@ -29,9 +29,8 @@
 
 <style  scoped>
 .img-fluid{
-  max-width:400px; 
-  height:400px;
-  margin:0px;
+  max-width:200px; 
+  max-height:200px;
 }
 .d1{
   padding:60px 30px  40px 80px;
@@ -66,7 +65,7 @@
 .name{
   font-weight:bold;
   font-size:15px;
-  margin-left: 110px;
+  margin-left: 115px;
 
 }
 .cls_h{
@@ -110,4 +109,36 @@
 }
 
 }
+@media only screen and (max-width:320px){
+  .speaker{
+     width:290px;
+     height:170px;
+   }
+  .img-fluid{
+    width: 101px;
+    height:101px;
+    align-content: left;
+    margin-right: 110px;
+  }
+  .d1{
+  margin-right:3px;
+  padding:0px 0px  10px 10px;
+}
+.name{
+  font-weight:bold;
+  font-size:15px;
+  margin-left: 95px;
+
+}
+.cls_h{
+  font-weight:bold;
+  font-size:11px;
+  color:red;
+}
+.para{
+  font-size:11px;
+}
+
+}
+
 </style>

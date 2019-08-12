@@ -93,7 +93,27 @@
 #nm,#dt,#tm{
 font-size:18px;
 }
-@media only screen and (max-width:400px){
+@media only screen and (min-width:330px){
+  #btn2{
+    width: 230px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left:0px;
+  }
+  .img-fluid{
+    height:150px ;
+  }
+  
+  #title,#date,#time{
+    font-size: 16px;
+  }
+  #nm,#dt,#tm{
+  font-size:14px;
+}
+}
+
+
+@media only screen and (min-width:411px){
   #btn2{
     width: 230px;
     height: 50px;
@@ -113,15 +133,15 @@ font-size:18px;
 }
 @media only screen and (max-width:320px){
   #btn2{
-    width: 180px;
+    width: 190px;
+    height: 50px;
     margin-top: 0px;
-    align-content: center;
-
-    
+    margin-left:0px;
   }
   .img-fluid{
-    height:150px;
+    height:150px ;
   }
+  
   #title,#date,#time{
     font-size: 16px;
   }
@@ -129,12 +149,11 @@ font-size:18px;
   font-size:14px;
 }
 }
-@media only screen and (max-width:768px){
+@media only screen and (min-width:760px){
   #btn2{
     width: 180px;
-    margin-top: 0px;
-    align-content: center;
-
+    margin-top:0px;
+    margin-left:0px
     
   }
   .img-fluid{
@@ -147,17 +166,16 @@ font-size:18px;
   font-size:14px;
 }
 }
-@media only screen and (max-width:411x){
+@media only screen and (min-width:1024px){
   #btn2{
-    width: 230px;
-    height: 50px;
-    margin-top: 0px;
-    margin-left:60px;
+    width: 180px;
+    margin-top:0px;
+    margin-left:30px
+    
   }
   .img-fluid{
-    height:150px ;
+    height:200px;
   }
-  
   #title,#date,#time{
     font-size: 16px;
   }
