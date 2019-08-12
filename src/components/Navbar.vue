@@ -1,6 +1,6 @@
 <template>
-  <div style="color:#000;">
-    <b-navbar toggleable="lg" type="dark" variant="info">
+  <div style="color:#000; height: 65px;" >
+    <b-navbar toggleable="lg" type="dark" variant="info" fixed="top">
       <div class="logo">
         <b-img :src="require('../assets/images/Logo.png')" fluid alt="Fluid image"></b-img>
       </div>
@@ -50,6 +50,7 @@
 button {
   background: transparent;
 }
+
 </style>
 
 <script>
