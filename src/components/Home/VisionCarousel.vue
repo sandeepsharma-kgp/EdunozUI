@@ -7,7 +7,9 @@
     <div>
 
       <div class="viscard" style="background-color:#eceef8;">
-        <b-modal id="modal-tall" title="Vision & Goals">
+        <b-modal id="modal-tall" title="Vision & Goals"
+        hide-footer
+        >
           <p class="my-4" >
             {{vision}}
           </p>
