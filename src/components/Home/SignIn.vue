@@ -91,14 +91,20 @@
           </div>
         </div>
         <div class="form-group" align="center">
+          <p
+            required="required"
+            
+            variant="outline"
+          >Don't have account?</p>
+        </div>
+        <div class="form-group" align="center">
           <b-button
+          class="btn text-info"
+          style="border:none"
             required="required"
             @click="$bvModal.show('bv-modal-signup'); $bvModal.hide('bv-modal-signin')"
             variant="outline"
-          >Don't have account?</b-button>
-        </div>
-        <div class="form-group" align="center">
-          <a href>SIGN UP NOW</a>
+          >SIGN UP NOW</b-button>
         </div>
       </div>
     </b-modal>

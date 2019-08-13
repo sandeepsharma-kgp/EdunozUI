@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="row" style="border-style: groove;margin:5%;padding:px">
-      <div class="col-sm-2">
+    <div class="row" style="margin:2%;padding:px ;border-bottom: 4px solid grey">
+      <div class="col-sm-2" >
         <b-img id="d2"
           :src="require('../../assets/images/aerial-desk-device-1011329.jpg')"
           class="img-fluid p-4"
@@ -18,7 +18,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum doler sit amet.</p>
       </div>
     </div>
-    <div class="row" style="border-style: groove;margin:5%;padding:px">
+    <div class="row" style="margin:2%;padding:px;border-bottom: 4px solid grey">
       <div class="col-sm-2">
         <b-img id="d2"
           :src="require('../../assets/images/aerial-desk-device-1011329.jpg')"
@@ -36,7 +36,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum doler sit amet.</p>
       </div>
     </div>
-    <div class="row" style="border-style: groove;margin:5%;padding:px">
+    <div class="row" style="margin:2%;padding:px;border-bottom: 4px solid grey">
       <div class="col-sm-2">
         <b-img id="d2"
           :src="require('../../assets/images/aerial-desk-device-1011329.jpg')"

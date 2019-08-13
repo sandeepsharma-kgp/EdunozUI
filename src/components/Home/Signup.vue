@@ -24,6 +24,7 @@
           name="username"
           required="required"
           placeholder="Full Name"
+          v-model="name"
         />
       </div>
       <div class="form-group">
@@ -35,37 +36,48 @@
           name="email"
           required="required"
           placeholder="Email"
+          v-model="email"
         />
       </div>
       <div class="form-group">
         <input
-          type="email"
+          on-focus=clear
+          type="text"
           style="background: #FAF6F6;margin-bottom: 20px;"
           class="form-control"
           name="contactno"
           required="required"
           placeholder="Phone No"
+          v-model="phone"
+          
         />
       </div>
-      <div style="padding-bottom:15px">
-        <b-dropdown
-          id="dropdown-1"
-          class="border info"
-          text="Select Location"
-          variant="light secondary"
-          style=" background:#000000;width:100%;"
+      <div>
+        <tr>
+          <td>
+        <label >Select&nbsp;Location:&nbsp;</label>
+        </td>
+        <td>
+        <select
+          id="course"
+          class="course"
+          name="course"
+          style="margin-bottom: 20px; background: #FAF6F6;height:35px"
+          v-model="location"
         >
-          <b-dropdown-item style="width:100%;">First Action</b-dropdown-item>
-          <b-dropdown-item>Second Action</b-dropdown-item>
-          <b-dropdown-item>Third Action</b-dropdown-item>
-          <b-dropdown-divider></b-dropdown-divider>
-          <b-dropdown-item active>Active action</b-dropdown-item>
-          <b-dropdown-item disabled>Disabled action</b-dropdown-item>
-        </b-dropdown>
+          <option value="default">Select location</option>
+          <option value="Course A">Wakad</option>
+          <option value="Course B">Pimpari</option>
+          <option value="Course C">Shivajinagar</option>
+          <option value="Course D">Hadpsar</option>
+          <option value="Course E">Pashan</option>
+        </select>
+        </td>
+        </tr>
       </div>
+
       <div class="form-group">
         <input
-        
           id="p1"
           name="password"
           type="password"
@@ -75,13 +87,12 @@
           class="form-control"
           required="required"
           v-model="password"
-          
         />
       </div>
+      
+
       <div class="form-group">
         <input
-        
-          
           name="confirmPassword"
           type="password"
           placeholder="confirm Password"
@@ -91,25 +102,19 @@
           required="required"
           v-model="confirmPassword"
           v-on:blur="validate"
-          
         />
-        
-        
       </div>
-      
-      
       <div class="form-group">
         <button
-          @click="signup"
-          
-          type="submit"
+          @click="vvalidate"
+          type="button"
           style="margin-bottom: 20px;background:#FF7340;"
           class="text-white btn-block btn-lg"
         >Create Account</button>
       </div>
       <div class="form-group">
         <label class="checkbox-inline">
-          <input type="checkbox" required="required" /> I accept all terms and conditions
+          <input type="checkbox" required ="required" name="terms"/> I accept all terms and conditions
         </label>
       </div>
     </b-modal>
@@ -117,9 +122,11 @@
 </template>	  
 
 <script>
-import { messaging } from 'firebase';
+import { messaging } from "firebase";
+import { required, email, minLength } from "vuelidate/lib/validators";
+import { isNull } from "util";
 const fb = require("../../firebaseConfig.js");
-export default  {
+export default {
   data() {
     return {
       signupForm: {
@@ -128,19 +135,34 @@ export default  {
         password: "",
         confirmPassword: "",
         location: "",
-        
+        phone: "",
+        terms:""
       },
       performingRequest: true
     };
   },
   methods: {
-     validate() {
-       if(this.password !== this.confirmPassword)
-       {
-          alert("Password Doesn't Match, Please Enter Valid Password")
-          
-       }
+    validate() {
+      if (this.password !== this.confirmPassword) {
+        alert("Password Doesn't Match, Please Enter Valid Password");
+      }
     },
+
+    vvalidate() {
+      if (
+        this.name == null ||
+        this.email == null ||
+        this.phone == null       
+      ) {
+        alert("All Fields Are Required");
+      }
+      if(!this.terms.checked) {
+      alert("Please indicate that you accept the Terms and Conditions");
+      signupForm.terms.focus();
+      return false;
+      }
+    },
+
     signup() {
       fb.auth
         .createUserWithEmailAndPassword(
@@ -177,7 +199,6 @@ export default  {
         });
     }
   }
-  
 };
 </script>
 
@@ -187,6 +208,15 @@ export default  {
   background: transparent !important;
   color: #ffffff;
 }
-  
+
+.course {
+  min-width: 370px;
+  border-style: solid;
+
+  padding: 1.3%;
+  border-radius: 3px;
+  background-color: #e7e6fa;
+  color: black;
+}
 </style>
 

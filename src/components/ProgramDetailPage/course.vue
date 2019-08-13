@@ -4,20 +4,20 @@
       <b-card>
         <b-tabs style="background: #2A326D;">
 
-          <b-tab  title="Course Syllabus">
-            <b-card style="background:#f0f5f5;min-height:465px;border:none;">
+          <b-tab  title="Course Syllabus" style="border:none;border-radius:0px;border-style:none;">
+            <b-card style="background:#f0f5f5;min-height:465px;border:none;border-radius:0px;">
               <Course_syllabus/>
             </b-card>
           </b-tab>
 
-          <b-tab title="Instructors">
-            <b-card style="background:#f0f5f5;min-height:465px;border:none;">
+          <b-tab title="Instructors" style="border:none;border-radius:0px;">
+            <b-card style="background:#f0f5f5;min-height:465px;border:none;border-radius:0px;">
               <Instructors/>
             </b-card>
           </b-tab>
 
-          <b-tab title="FAQs">
-            <b-card style="background:#f0f5f5;min-height:465px;border:none;">
+          <b-tab title="FAQs" style="border:none;border-radius:0px;">
+            <b-card style="background:#f0f5f5;min-height:465px;border:none;border-radius:0px;">
               <FAQ />
             </b-card>
           </b-tab>
