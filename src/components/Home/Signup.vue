@@ -48,25 +48,13 @@
         />
       </div>
       <div style="padding-bottom:15px">
-        <b-dropdown
-          id="dropdown-1"
-          class="border info"
-          text="Select Location"
-          variant="light secondary"
-          style=" background:#000000;width:100%;"
-        >
-          <b-dropdown-item style="width:100%;">First Action</b-dropdown-item>
-          <b-dropdown-item>Second Action</b-dropdown-item>
-          <b-dropdown-item>Third Action</b-dropdown-item>
-          <b-dropdown-divider></b-dropdown-divider>
-          <b-dropdown-item active>Active action</b-dropdown-item>
-          <b-dropdown-item disabled>Disabled action</b-dropdown-item>
-        </b-dropdown>
+        <label style="margin-right:20px;">Select Location</label>
+        <select class="branch" >
+                <option value="branch">Select Branch</option>
+         </select>
       </div>
       <div class="form-group">
         <input
-        v-on:blur="validate"
-          
           name="password"
           type="password"
           placeholder="Password"
@@ -76,30 +64,25 @@
           class="form-control"
           required="required"
           v-model="password"
-          
         />
       </div>
       <div class="form-group">
         <input
-        v-on:blur="validate"
-          
           name="confirmPassword"
           type="password"
           placeholder="confirm Password"
-           data-vv-as="password"
+          data-vv-as="password"
           v-model.trim="signupForm.confirmPassword"
           style="background: #FAF6F6;margin-bottom: 20px;"
           class="form-control"
           required="required"
           v-model="confirmPassword"
-          
         />
       </div>
       <small v-if="showError">Passwords don't match!</small>
       <div class="form-group">
         <button
-          @click="signup"
-          
+          @click="valid_data"
           type="submit"
           style="margin-bottom: 20px;background:#FF7340;"
           class="text-white btn-block btn-lg"
@@ -107,7 +90,7 @@
       </div>
       <div class="form-group">
         <label class="checkbox-inline">
-          <input type="checkbox" required="required" /> I accept all terms and conditions
+          <input type="checkbox" required="required" v-model="signupForm.selected"  /> I accept all terms and conditions
         </label>
       </div>
     </b-modal>
@@ -125,18 +108,12 @@ export default {
         password: "",
         confirmPassword: "",
         location: "",
-        
+        selected:""
       },
       performingRequest: true
     };
   },
   methods: {
-    validate() {
-        if(this.password != this.confirmPassword)
-        {
-          alert("password does not match");
-        }
-    },
     signup() {
       fb.auth
         .createUserWithEmailAndPassword(
@@ -171,9 +148,25 @@ export default {
           this.performingRequest = false;
           console.log(err);
         });
+    },
+    validate() {
+      if (this.password != this.confirmPassword) {
+        alert("password does not match");
+      } else if (this.password == this.confirmPassword) {
+        this.signup();
+      }
+    },
+    valid_data(){
+      if(!this.signupForm.name || !this.signupForm.email || !this.signupForm.password || !this.signupForm.confirmPassword  || !this.signupForm.selected )
+      {
+         alert("Please fill all the required field"); //location remained
+      }
+      else
+      {
+        this.validate();
+      }
     }
   }
-  
 };
 </script>
 
@@ -182,6 +175,15 @@ export default {
   border-block-color: black;
   background: transparent !important;
   color: #ffffff;
+}
+.branch{
+  width:75%;
+  border-style:solid;
+  padding:1.8%;
+  border-radius: 3px;
+  background-color:#F9F4F4;
+  color: gray;
+
 }
 </style>
 

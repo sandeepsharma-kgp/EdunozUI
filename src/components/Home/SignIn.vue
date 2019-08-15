@@ -93,12 +93,15 @@
         <div class="form-group" align="center">
           <b-button
             required="required"
-            @click="$bvModal.show('bv-modal-signup'); $bvModal.hide('bv-modal-signin')"
             variant="outline"
           >Don't have account?</b-button>
         </div>
         <div class="form-group" align="center">
-          <a href>SIGN UP NOW</a>
+          <b-button
+            required="required"
+            @click="$bvModal.show('bv-modal-signup'); $bvModal.hide('bv-modal-signin')"
+            variant="outline" style="color:#1E238F;text-decoration: underline; "
+          >SIGN UP</b-button>
         </div>
       </div>
     </b-modal>
