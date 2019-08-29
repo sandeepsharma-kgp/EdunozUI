@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <b-modal v-if="performingRequest" id="bv-modal-signin" hide-footer hide-header size="md"> -->
-      <div class="siginModal">
+      <div class="siginModal"  id="bv-modal-signin" hide-footer hide-header size="md">
         <div class="form-header">
           <p
             class="text-white"
