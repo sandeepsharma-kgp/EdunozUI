@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <!-- <b-modal v-if="performingRequest" id="bv-modal-signin" hide-footer hide-header size="md"> -->
-      <div class="siginModal"  id="bv-modal-signin" hide-footer hide-header size="md">
+<div id="bv-modal-signin___BV_modal_body_" class="modal-body">
+   <div class="siginModal">
         <div class="form-header">
           <p
             class="text-white"
@@ -65,7 +64,6 @@
             placeholder="Password"
           />
         </div>
-        
 
         <div class="form-group" align="center" text-align="center">
           <div class="btn-group" >
@@ -102,8 +100,7 @@
           <a href>SIGN UP NOW</a>
         </div>
       </div>
-    <!-- </b-modal> -->
-  </div>
+      </div>
 </template>
 
 <script>
