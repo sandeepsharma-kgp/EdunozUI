@@ -22,6 +22,8 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 import "vuetify/dist/vuetify.min.css";
 // main.styl
 // @import '~vuetify/src/stylus/main' // Ensure you are using stylus-loader
+import VModal from 'vue-js-modal'
+Vue.use(VModal)
 
 window.EventBus = new Vue({
   data(){

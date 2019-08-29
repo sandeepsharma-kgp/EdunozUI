@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-modal v-if="performingRequest" id="bv-modal-signin" hide-footer hide-header size="md">
+    <!-- <b-modal v-if="performingRequest" id="bv-modal-signin" hide-footer hide-header size="md"> -->
       <div class="siginModal">
         <div class="form-header">
           <p
@@ -101,13 +101,14 @@
           <a href>SIGN UP NOW</a>
         </div>
       </div>
-    </b-modal>
+    <!-- </b-modal> -->
   </div>
 </template>
 
 <script>
 const fb = require("../../firebaseConfig.js");
 export default {
+  name:"SignIn",
   data() {
     return {
       visible: false,

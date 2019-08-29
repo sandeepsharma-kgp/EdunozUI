@@ -20,13 +20,14 @@
         -->
         <b-navbar-nav class="ml-auto">
           <b-form-input size="sm" class="mr-sm-2" placeholder="Search Courses"></b-form-input>
-          <router-link to="/login" id="modalpop">
-            <b-button v-if="showitem === false" id="show-btn" @click="$bvModal.show('bv-modal-signin')">
+          <!-- <router-link to="/login" id="modalpop"> -->
+            <b-button v-if="showitem === false" id="show-btn" @click="show">
               <b-img :src="require('../assets/icons/man-user (1)@2x.png')"></b-img>
             </b-button>
-          </router-link>
+          <!-- </router-link> -->
           <b-nav-item v-if="showitem === true" href="#" @click.prevent="signout">Sign Out</b-nav-item>
         </b-navbar-nav>
+     <modals-container/>
       </b-collapse>
     </b-navbar>
   </div>
@@ -53,7 +54,13 @@ button {
 </style>
 
 <script>
-const fb = require("../firebaseConfig.js");
+const fb = require("../firebaseConfig.js"); 
+
+import Vue from 'vue';
+import VModal from 'vue-js-modal';
+Vue.use(VModal, { dynamic: true, dynamicDefaults: { clickToClose: false },injectModalsContainer: true })
+
+import SignIn from './Home/SignIn'
 export default {
   data() {
     return {
@@ -82,7 +89,13 @@ export default {
         return true;
       }
       return false
-    }
+    },
+   show () {
+    this.$modal.show(SignIn);
+  },
+  hide () {
+    this.$modal.hide(SignIn);
+  }
   }
 };
 </script>
