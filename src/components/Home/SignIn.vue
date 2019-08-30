@@ -150,6 +150,15 @@ display:none
 #ms1 {
 display:none
 }
+.v--modal-box.v--modal {
+    width: 498px !important;
+    height: 432px !important;
+    top:28px !important;
+    left:387px !important;
+border-bottom-left-radius: 5px !important;
+}
+
+
 @media only screen and (max-width: 420px) {
 #ms {
 display:block
