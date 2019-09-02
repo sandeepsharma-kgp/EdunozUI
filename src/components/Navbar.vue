@@ -1,4 +1,5 @@
 <template>
+<div>
   <div style="color:#000;">
     <b-navbar toggleable="lg" type="dark" variant="info">
       <div class="logo">
@@ -20,22 +21,23 @@
         -->
         <b-navbar-nav class="ml-auto">
           <b-form-input size="sm" class="mr-sm-2" placeholder="Search Courses"></b-form-input>
-          <router-link to="/login" id="modalpop">
             <b-button v-if="showitem === false" id="show-btn" @click="$bvModal.show('bv-modal-signin')">
               <b-img :src="require('../assets/icons/man-user (1)@2x.png')"></b-img>
             </b-button>
-          </router-link>
           <b-nav-item v-if="showitem === true" href="#" @click.prevent="signout">Sign Out</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+
+  </div>
+      <SignIn/>
+
   </div>
 </template>
 
+<style>
 
 
-
-<style scoped>
 .navbar {
   background-color: #2a326d !important;
 }
@@ -52,9 +54,14 @@ button {
 }
 </style>
 
-<script>
+<script scoped>
 const fb = require("../firebaseConfig.js");
+import SignIn from "../components/SignIn.vue";
+
 export default {
+  components: {
+    SignIn
+  },
   data() {
     return {
       showitem: this.checkIfIsLogged()

@@ -106,7 +106,7 @@
 </template>
 
 <script>
-const fb = require("../../firebaseConfig.js");
+const fb = require("../firebaseConfig.js");
 export default {
   data() {
     return {

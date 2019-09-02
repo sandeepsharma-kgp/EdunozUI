@@ -4,7 +4,6 @@ import firebase from "firebase";
 import Home from "@/views/Home";
 import ProgramDetailPage from "@/views/ProgramDetailPage";
 import NotLoggedInPage from "@/views/NotLoggedInPage";
-import SignIn from "@/components/Home/SignIn";
 import Webinar from "@/views/Webinar";
 
 Vue.use(Router);
