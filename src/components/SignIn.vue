@@ -12,26 +12,27 @@
           <div class="btn-group">
             <div>
               <div id="ms">
-                <button style="border:0;background: none; padding: 0;"> 
-                
-                  <b-img :src="require('@/assets/icons/fb.png')" rounded="" style="width: 70px;"></b-img>
-                
+                <button style="border:0;background: none; padding: 0;">
+                  <b-img :src="require('@/assets/icons/fb.png')" rounded style="width: 70px;"></b-img>
                 </button>
               </div>
-              <b-button id="fbtn"
+              <b-button
+                id="fbtn"
                 class="text-white btn-info pl-5 pr-5"
-                
-                
                 size="sm"
                 style=" height: 55px;border-radius: 5px;"
               >Sign in with facebook</b-button>
             </div>
             <div style="margin-left:30px;">
               <div id="ms1">
-                <a href="">
-                  <b-img :src="require('@/assets/icons/google-plus.png')" rounded="" style="width: 70px;"></b-img>
+                <a href>
+                  <b-img
+                    :src="require('@/assets/icons/google-plus.png')"
+                    rounded
+                    style="width: 70px;"
+                  ></b-img>
                 </a>
-              </div>  
+              </div>
               <b-button
                 class="btn-danger text-white pl-5 pr-5"
                 id="gbtn"
@@ -67,10 +68,10 @@
         </div>
 
         <div class="form-group" align="center" text-align="center">
-          <div class="btn-group" >
+          <div class="btn-group">
             <div style="margin-right:10px;">
               <button
-              id="cancelbtn"
+                id="cancelbtn"
                 @click="cancel"
                 type="submit"
                 class="btn-secondary text-white pl-5 pr-5"
@@ -78,27 +79,24 @@
               >Cancel</button>
             </div>
             <div>
-              <button id="signinbtn"
+              <button
+                id="signinbtn"
                 @click="login"
                 type="submit"
-                
                 text-align="center"
-                class="btn-warning text-white pl-5 pr-5 "
+                class="btn-warning text-white pl-5 pr-5"
                 style=" height:50px;border-radius: 5px; text-align:center"
-                
-              > Sign&nbsp;In</button>
+              >Sign&nbsp;In</button>
             </div>
           </div>
         </div>
+        <div class="form-group" align="center">Don't have account?</div>
         <div class="form-group" align="center">
           <b-button
             required="required"
             @click="$bvModal.show('bv-modal-signup'); $bvModal.hide('bv-modal-signin')"
             variant="outline"
-          >Don't have account?</b-button>
-        </div>
-        <div class="form-group" align="center">
-          <a href>SIGN UP NOW</a>
+          >SIGN UP NOW</b-button>
         </div>
       </div>
     </b-modal>
@@ -146,25 +144,25 @@ export default {
 </script>
 <style scopped>
 #ms {
-display:none
+  display: none;
 }
 #ms1 {
-display:none
+  display: none;
 }
 @media only screen and (max-width: 420px) {
-#ms {
-display:block
-}
-#ms1 {
-display:block;
-margin-left:50px;
-}
-#fbtn{
-  display: none;
-}
-#gbtn{
-  display: none;
-}
+  #ms {
+    display: block;
+  }
+  #ms1 {
+    display: block;
+    margin-left: 50px;
+  }
+  #fbtn {
+    display: none;
+  }
+  #gbtn {
+    display: none;
+  }
 }
 @media screen and (max-width: 320px) {
   #signinbtn {
@@ -172,12 +170,11 @@ margin-left:50px;
     vertical-align: middle;
     padding: 0px 0px 0px 0px;
     text-align: left;
-    border: none; 
+    border: none;
   }
-  #cancelbtn{
+  #cancelbtn {
     width: 120px;
     text-align: color;
-    
   }
 }
 </style>

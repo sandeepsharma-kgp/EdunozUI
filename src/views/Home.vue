@@ -12,7 +12,7 @@
     <FloatContactUs />
     <QuickMessage />
     <!-- <SignIn /> -->
-    <Signup />
+    <!-- <Signup /> -->
     <Enquire />
     
   </div>
@@ -32,7 +32,7 @@ import Webinar from "../components/Home/Webinar.vue";
 import FloatContactUs from "../components/FloatContactUs.vue";
 import QuickMessage from "../components/Home/QuickMessage.vue";
 // import SignIn from "../components/Home/SignIn.vue";
-import Signup from "../components/Home/Signup.vue";
+// import Signup from "../components/Home/Signup.vue";
 import Enquire from "../components/Enquire.vue";
 import MultiCard from "../components/Home/MultiCard.vue";
 
@@ -52,10 +52,10 @@ export default {
     
     FloatContactUs,
     // SignIn,
-    Signup,
+    // Signup,
     QuickMessage,
     Enquire,
-    MultiCard
+    MultiCard 
   }
 };
 </script>
