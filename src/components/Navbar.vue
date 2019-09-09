@@ -31,6 +31,7 @@
 
   </div>
       <SignIn/>
+      <Signup/>
 
   </div>
 </template>
@@ -57,10 +58,11 @@ button {
 <script scoped>
 const fb = require("../firebaseConfig.js");
 import SignIn from "../components/SignIn.vue";
-
+import Signup from "../components/Signup.vue";
 export default {
   components: {
-    SignIn
+    SignIn,
+    Signup,
   },
   data() {
     return {
@@ -93,4 +95,4 @@ export default {
   }
 };
 </script>
-
+ 
