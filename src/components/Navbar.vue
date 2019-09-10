@@ -16,7 +16,7 @@
           <b-nav-item href="#" to="/home/login">Get in touch</b-nav-item>
         </b-navbar-nav>
 
-        <!-- Right aligned nav items 
+        <!-- Right aligned nav items  
       Use &#128269 for search logo
         -->
         <b-navbar-nav class="ml-auto">

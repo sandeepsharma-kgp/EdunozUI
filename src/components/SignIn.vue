@@ -5,14 +5,14 @@
         <div class="form-header">
           <p
             class="text-white"
-            style="font-weight: bold; padding: 10px 10px 10px; border-radius: 5px; margin: -15px -15px 25px; color:#000000; font-size: 35px;background:#2A326d; text-align: center;font-family: 'Pacifico', sans-serif;"
+            style="font-weight: bold; padding: 5px 5px 5px; border-radius: 5px; margin: -15px -15px 25px; color:#000000; font-size: 35px;background:#2A326d; text-align: center;font-family: 'Pacifico', sans-serif;"
           >Sign In</p>
         </div>
         <div class="form-group" align="center">
           <div class="btn-group">
             <div>
               <div id="ms">
-                <button style="border:0;background: none; padding: 0;">
+                <button style="border:0;background: none; padding: 5;">
                   <b-img :src="require('@/assets/icons/fb.png')" rounded style="width: 70px;"></b-img>
                 </button>
               </div>
@@ -20,7 +20,7 @@
                 id="fbtn"
                 class="text-white btn-info pl-5 pr-5"
                 size="sm"
-                style=" height: 55px;border-radius: 5px;"
+                style=" height: 45px;border-radius: 5px;"
               >Sign in with facebook</b-button>
             </div>
             <div style="margin-left:30px;">

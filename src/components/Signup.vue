@@ -55,12 +55,15 @@
           variant="light secondary"
           style=" background:#000000;width:100%;"
         >
-          <b-dropdown-item style="width:100%;">First Action</b-dropdown-item>
-          <b-dropdown-item>Second Action</b-dropdown-item>
-          <b-dropdown-item>Third Action</b-dropdown-item>
+          <b-dropdown-item>Wakad</b-dropdown-item>
+          <b-dropdown-item>Pimpri Chinchwad</b-dropdown-item>
+          <b-dropdown-item>Aundh</b-dropdown-item>
+          <b-dropdown-item>Hinjewadi</b-dropdown-item>
+          <b-dropdown-item>Pimple Saudagar</b-dropdown-item>
+
           <b-dropdown-divider></b-dropdown-divider>
-          <b-dropdown-item active>Active action</b-dropdown-item>
-          <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+          <!-- <b-dropdown-item active>Active action</b-dropdown-item>
+          <b-dropdown-item disabled>Disabled action</b-dropdown-item> -->
         </b-dropdown>
       </div>
       <div class="form-group">
@@ -84,7 +87,7 @@
           
           name="confirmPassword"
           type="password"
-          placeholder="confirm Password"
+          placeholder="Confirm Password"
           v-model.trim="signupForm.confirmPassword"
           style="background: #FAF6F6;margin-bottom: 20px;"
           class="form-control"

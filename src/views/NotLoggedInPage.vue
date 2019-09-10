@@ -17,7 +17,7 @@ import Enquire from "@/components/Enquire.vue";
 export default {
   name: "ProgramDetailPage",
   components: {
-    "footer-bar": footerBar,
+    "footer-bar": footerBar, 
     "nav-bar": Navbar, 
     FloatContactUs,
     NotLoggedIn
