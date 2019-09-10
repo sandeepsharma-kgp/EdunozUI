@@ -72,6 +72,6 @@
 <style scoped>
 .enq {
   background-color: #455674;
-  opacity: 0.5 !important;
+  opacity: 0.5 !important; 
 }
 </style>
