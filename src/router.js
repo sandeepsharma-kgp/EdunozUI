@@ -9,7 +9,8 @@ import Webinar from "@/views/Webinar";
 Vue.use(Router);
 
 const router = new Router({
-  mode: "history",
+  mode: 'history',
+  hash: false,
   base: process.env.BASE_URL,
   routes: [
     {

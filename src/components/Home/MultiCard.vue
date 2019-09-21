@@ -12,209 +12,88 @@
       <swiper :options="swiperOption" style="padding:20px;">
         <swiper-slide >
           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/adult-connection-data-1181354.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
+          <b-img :src="require('../../assets/images/java_course.jpg')" style="width: 100%; height: 100%; "></b-img>
+          <!-- <div class="overlay">
           <a href="#" class="icon" title="Explore">
           <i class="fas fa-binoculars"></i>
           </a>
-          </div>
+          </div> -->
           </div>
         </swiper-slide>
         <swiper-slide >
           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
+          <b-img :src="require('../../assets/images/python_course.jpg')" style="width: 100%; height: 100%; "></b-img>
+          <!-- <div class="overlay">
           <a href="#" class="icon" title="Explore">
           <i class="fas fa-binoculars"></i>
           </a>
-          </div>
+          </div> -->
           </div>
         </swiper-slide>
         <swiper-slide>
           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/cheerful-colleagues-digital-device-1432942.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
+          <b-img :src="require('../../assets/images/dataScience_course.jpg')" style="width: 100%; height: 100%; "></b-img>
+          <!-- <div class="overlay">
           <a href="#" class="icon" title="Explore">
           <i class="fas fa-binoculars"></i>
           </a>
-          </div>
+          </div> -->
           </div>
         </swiper-slide>
         <swiper-slide>
            <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/adult-asian-caucasian-1153213.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
+          <b-img :src="require('../../assets/images/machineLearning_course.jpg')" style="width: 100%; height: 100%; "></b-img>
+          <!-- <div class="overlay">
           <a href="#" class="icon" title="Explore">
           <i class="fas fa-binoculars"></i>
           </a>
-          </div>
+          </div> -->
           </div>
           
         </swiper-slide>
         <swiper-slide>
            <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/ballpen-blur-close-up-461077.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
+          <b-img :src="require('../../assets/images/AI_course.jpeg')" style="width: 100%; height: 100%; "></b-img>
+          <!-- <div class="overlay">
           <a href="#" class="icon" title="Explore">
           <i class="fas fa-binoculars"></i>
           </a>
-          </div>
+          </div> -->
           </div>
         </swiper-slide>
         <swiper-slide>
            <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/code-coding-connection-943096.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
+          <b-img :src="require('../../assets/images/ceh_course.jpg')" style="width: 100%; height: 100%; "></b-img>
+          <!-- <div class="overlay">
           <a href="#" class="icon" title="Explore">
           <i class="fas fa-binoculars"></i>
           </a>
-          </div>
+          </div> -->
           </div>
         </swiper-slide>
         <swiper-slide>
            <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/art-artsy-bulb-1938318.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
+          <b-img :src="require('../../assets/images/aws_course.jpg')" style="width: 100%; height: 100%; "></b-img>
+          <!-- <div class="overlay">
           <a href="#" class="icon" title="Explore">
           <i class="fas fa-binoculars"></i>
           </a>
-          </div>
+          </div> -->
           </div>
         </swiper-slide>
         <swiper-slide>
            <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/businessmen-classroom-communication-267507.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
+          <b-img :src="require('../../assets/images/android_course.png')" style="width: 100%; height: 100%; "></b-img>
+          <!-- <div class="overlay">
           <a href="#" class="icon" title="Explore">
           <i class="fas fa-binoculars"></i>
           </a>
-          </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide >
-           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/get_certified.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
-          <a href="#" class="icon" title="Explore">
-          <i class="fas fa-binoculars"></i>
-          </a>
-          </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/online_tests.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
-          <a href="#" class="icon" title="Explore">
-          <i class="fas fa-binoculars"></i>
-          </a>
-          </div>
-          </div>
-        </swiper-slide>        
-        <swiper-slide >
-          <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/adult-connection-data-1181354.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
-          <a href="#" class="icon" title="Explore">
-          <i class="fas fa-binoculars"></i>
-          </a>
-          </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide >
-          <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/aerial-desk-device-1011329.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
-          <a href="#" class="icon" title="Explore">
-          <i class="fas fa-binoculars"></i>
-          </a>
-          </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/cheerful-colleagues-digital-device-1432942.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
-          <a href="#" class="icon" title="Explore">
-          <i class="fas fa-binoculars"></i>
-          </a>
-          </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/adult-asian-caucasian-1153213.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
-          <a href="#" class="icon" title="Explore">
-          <i class="fas fa-binoculars"></i>
-          </a>
-          </div>
-          </div>
-          
-        </swiper-slide>
-        <swiper-slide>
-           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/ballpen-blur-close-up-461077.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
-          <a href="#" class="icon" title="Explore">
-          <i class="fas fa-binoculars"></i>
-          </a>
-          </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/code-coding-connection-943096.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
-          <a href="#" class="icon" title="Explore">
-          <i class="fas fa-binoculars"></i>
-          </a>
-          </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/art-artsy-bulb-1938318.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
-          <a href="#" class="icon" title="Explore">
-          <i class="fas fa-binoculars"></i>
-          </a>
-          </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/businessmen-classroom-communication-267507.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
-          <a href="#" class="icon" title="Explore">
-          <i class="fas fa-binoculars"></i>
-          </a>
-          </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide >
-           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/get_certified.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
-          <a href="#" class="icon" title="Explore">
-          <i class="fas fa-binoculars"></i>
-          </a>
-          </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/online_tests.jpg')" style="width: 100%; height: 100%; "></b-img>
-          <div class="overlay">
-          <a href="#" class="icon" title="Explore">
-          <i class="fas fa-binoculars"></i>
-          </a>
-          </div>
+          </div> -->
           </div>
         </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
-        <div class="swiper-button-prev swiper-button-gray" slot="button-prev"></div>
-        <div class="swiper-button-next swiper-button-gray" slot="button-next"></div>
+        <!-- <div class="swiper-button-prev swiper-button-gray" slot="button-prev"></div> -->
+        <!-- <div class="swiper-button-next swiper-button-gray" slot="button-next"></div> -->
       </swiper>
     </md-card-media>
   </md-card>
@@ -229,7 +108,7 @@
           slidesPerColumn: 2,
           spaceBetween: 0,
           autoplay: {
-            delay: 2500,
+            delay: 2500000,
             disableOnInteraction: true
           },
           pagination: {

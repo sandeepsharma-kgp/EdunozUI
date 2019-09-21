@@ -3,10 +3,10 @@
     <nav-bar></nav-bar>
     <carousel-vis></carousel-vis>
     <MultiCard />
-    <webinar></webinar>
-    <card-bar></card-bar>
+    <!-- <webinar></webinar> -->
+    <!-- <card-bar></card-bar> -->
     <popular-tech></popular-tech>
-    <our-branches></our-branches>
+    <!-- <our-branches></our-branches> -->
     <more-about></more-about>
     <footer-bar></footer-bar>
     <FloatContactUs />

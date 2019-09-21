@@ -5,29 +5,28 @@
     </v-carousel>
 
     <div>
-
       <div class="viscard" style="background-color:#eceef8;">
-        <b-modal id="modal-tall" title="Vision & Goals">
-          <p class="my-4" >
-            {{vision}}
-          </p>
+        <b-modal id="modal-tall" title="Vision & Goals" hide-footer="true">
+          <p class="my-4">{{vision}}</p>
+          <template v-slot:modal-footer="{ ok, cancel, hide }"></template>
         </b-modal>
-         <div>
-          <h5 align="center" >Vision & Goals</h5>
-          <div class="content-of-vision">{{vision}}
-          </div>
+        <div>
+          <h5 align="center">Vision & Goals</h5>
+          <div class="content-of-vision">{{vision}}</div>
         </div>
-        <button v-b-modal.modal-tall type="button" class="info" aria-label="Read More">
-          <span aria-hidden="true"><img
-                :src="require('@/assets/icons/more.png')"
-                alt="Vision and Goals"
-                style="height: 32px; width: 32px;"          
-                /><br>
-                More</span>
+        <button v-b-modal.modal-tall type="button" aria-label="Read More">
+          <span aria-hidden="true">
+            <img
+              :src="require('@/assets/icons/more.png')"
+              alt="Vision and Goals"
+              style="height: 32px; width: 32px;"
+            />
+            <br />More
+          </span>
         </button>
       </div>
     </div>
-      <div class="bg"></div>
+    <div class="bg"></div>
   </div>
 </template>   
 
@@ -36,10 +35,14 @@ export default {
   data() {
     return {
       isActive: true,
-      vision: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.\
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.\
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      vision:
+        "Edunoz aspires of seeing our country utilize its potential to the best, by not just helping the Next Gen \
+realize their worth but also in guiding them to improve their caliber. We are dedicated towards \
+providing top quality IT training and hands-on learning experience to students and IT individuals, helping \
+them hone their skills to grab new opportunities. We keep them updated with all the newer \
+advancements and industry requirements to provide an upper hand in competition. With tireless efforts \
+from our side and the support of highly experienced industry professionals, we are sure to impart \
+knowledge and empower them with skills set to build their future.",
       items: [
         {
           src: require("../../assets/images/businessman-charts-close-up-1851448.jpg")
@@ -59,7 +62,6 @@ export default {
 
 
 <style scoped>
-
 div {
   position: relative;
 }
@@ -83,19 +85,18 @@ div {
   height: 80px;
   z-index: -1;
 }
-.content-of-vision{
+.content-of-vision {
   padding: 15px;
   height: 80px;
   overflow: hidden;
-
 }
 @media only screen and (max-width: 570px) {
-  .viscard{
+  .viscard {
     width: 100%;
   }
 }
 @media only screen and (max-width: 900px) {
-  .viscard{
+  .viscard {
     width: 95%;
   }
 }

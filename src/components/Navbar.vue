@@ -1,7 +1,7 @@
 <template>
 <div>
   <div style="color:#000;">
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar toggleable="lg" type="dark">
       <div class="logo">
         <b-img :src="require('../assets/images/Logo.png')" fluid alt="Fluid image"></b-img>
       </div>
@@ -9,38 +9,50 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
-          <b-nav-item href="#" to="/">Home</b-nav-item>
-          <b-nav-item href="#" to="/home/loign" @click.native="open = false">About Us</b-nav-item>
-          <b-nav-item href="#" to="/ProgramDetailPage/course">Courses</b-nav-item>
-          <b-nav-item href="#" to="/home/login">Get in touch</b-nav-item>
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item href="https://forms.gle/8PsGE3VerYoPedoC6">Demo Class</b-nav-item>
+          <b-nav-item href="https://forms.gle/5o5CFpbxJp1VoSpG7">Careers</b-nav-item>
+          <b-nav-item href="https://forms.gle/wn2JevdxpZo5Ugn28">Trainers</b-nav-item>
+          <b-nav-item href="https://forms.gle/W7sxuVibVVV8p2ZD7">Internships</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items  
       Use &#128269 for search logo
         -->
-        <b-navbar-nav class="ml-auto">
+        <!-- <b-navbar-nav class="ml-auto">
           <b-form-input size="sm" class="mr-sm-2" placeholder="Search Courses"></b-form-input>
             <b-button v-if="showitem === false" id="show-btn" @click="$bvModal.show('bv-modal-signin')">
               <b-img :src="require('../assets/icons/man-user (1)@2x.png')"></b-img>
             </b-button>
           <b-nav-item v-if="showitem === true" href="#" @click.prevent="signout">Sign Out</b-nav-item>
-        </b-navbar-nav>
+        </b-navbar-nav> -->
       </b-collapse>
     </b-navbar>
 
   </div>
-      <SignIn/>
-      <Signup/>
+      <!-- <SignIn/>
+      <Signup/> -->
 
   </div>
 </template>
 
 <style>
+.navbar-dark .navbar-nav .nav-link{
+      color:white!important
+    }
 
+.navbar-dark .navbar-nav .active a::after {
+  border-bottom: 5px solid #5bc0eb;
+  bottom: -10px;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+}
 
 .navbar {
   background-color: #2a326d !important;
+  padding-inline: 5%
 }
 .img {
   size: 20px;
