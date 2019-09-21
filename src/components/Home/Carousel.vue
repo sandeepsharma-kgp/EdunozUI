@@ -3,8 +3,9 @@
     <b-carousel
       id="carousel-1"
       v-model="slide"
-      :interval="100000"
+      :interval="1000"
       controls
+      autoplay="false"
       indicators
       background="#ababab"
       style="text-shadow: 1px 1px 2px #333;"

@@ -107,10 +107,11 @@
           slidesPerView: 4,
           slidesPerColumn: 2,
           spaceBetween: 0,
-          autoplay: {
-            delay: 2500000,
-            disableOnInteraction: true
-          },
+          // autoplay: {
+          //   delay: 2500000,
+          //   disableOnInteraction: true
+          // },
+          
           pagination: {
             el: '.swiper-pagination',
             clickable: true
