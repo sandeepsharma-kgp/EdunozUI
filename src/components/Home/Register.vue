@@ -51,7 +51,8 @@
   
 </template>
 <script>
-import db from '@/components/firebase_init';
+import { studentsCollection } from '../../firebaseConfig';
+
 export default {
     data()
     {
@@ -67,7 +68,7 @@ export default {
        saveDetails()
       {
         alert(this.courses);
-        db.collection('students').add({
+        studentsCollection.add({
           name : this.name,
           email : this.email,
           phone_no: this.phone_no,
