@@ -2,19 +2,22 @@
   <div class="home">
     <nav-bar></nav-bar>
     <carousel-vis></carousel-vis>
-    <MultiCard />
+    <register></register>
+    <MultiCard></MultiCard>
     <!-- <webinar></webinar> -->
     <!-- <card-bar></card-bar> -->
     <popular-tech></popular-tech>
     <!-- <our-branches></our-branches> -->
+     
     <more-about></more-about>
+    <register-as-trainer></register-as-trainer>
     <footer-bar></footer-bar>
     <FloatContactUs />
     <QuickMessage />
     <!-- <SignIn /> -->
     <!-- <Signup /> -->
     <Enquire />
-    
+   
   </div>
 </template>
 
@@ -35,8 +38,8 @@ import QuickMessage from "../components/Home/QuickMessage.vue";
 // import Signup from "../components/Home/Signup.vue";
 import Enquire from "../components/Enquire.vue";
 import MultiCard from "../components/Home/MultiCard.vue";
-
-
+import Register from "../components/Home/Register.vue";
+import Register_as_trainer from "../components/Home/Register-as-trainer.vue";
 export default {
   name: "home",
   components: {
@@ -46,6 +49,8 @@ export default {
     "more-about": moreAbout,
     "footer-bar": footerBar,
     "nav-bar": Navbar,
+    "register": Register,
+    "register-as-trainer": Register_as_trainer,
     // "vision-carousel": VisionCarousel,
     webinar: Webinar,
     "carousel-vis": VisionCarousel,
@@ -55,7 +60,7 @@ export default {
     // Signup,
     QuickMessage,
     Enquire,
-    MultiCard 
+    MultiCard
   }
 };
 </script>

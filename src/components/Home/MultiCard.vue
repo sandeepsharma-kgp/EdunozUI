@@ -1,12 +1,8 @@
 <template>
   <md-card> 
-      <br>
-      <br>
-      <br>
-      <br>
       <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
       <h5 style="font-weight: bold; color: #0e6251; 
-      padding-top: 20px; text-align: center;">Programs We Offer</h5>
+       text-align: center;">Programs We Offer</h5>
     <md-card-media>
       <!-- swiper -->
       <swiper :options="swiperOption" style="padding:20px;">
