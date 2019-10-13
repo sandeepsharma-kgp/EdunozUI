@@ -159,6 +159,7 @@ export default {
                 width: 400px;
              }
     .maincontainer1{
+               
                padding-bottom: 300px;
              }
    }

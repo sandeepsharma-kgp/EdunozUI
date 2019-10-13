@@ -4,7 +4,7 @@
       <v-form ref="form"
       v-model="valid"
       :lazy-validation="lazy"> 
-      <v-app class="changeheight">
+      
         <br>
         <br>
         <br>
@@ -59,7 +59,7 @@
 
           </v-layout>
         </v-container>  
-      </v-app>
+
       </v-form> 
     </div>  
 </template>
@@ -126,18 +126,14 @@ export default {
 </script>
 <style>
 
-  .changeheight{
-    max-height: 220px;
-    background-color: white; 
-  }
-
+  
    
     @media screen  and (max-width: 840px) {
      .mobile {
               width: 400px;
              }
     .maincontainer{
-      padding-bottom: 200px;
+      padding-bottom: 20px;
     }
   }
    

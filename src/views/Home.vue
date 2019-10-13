@@ -2,7 +2,8 @@
   <div class="home">
     <nav-bar></nav-bar>
     <carousel-vis></carousel-vis>
-    <register></register>
+    <v-app><register></register>
+    
     <MultiCard></MultiCard>
     <!-- <webinar></webinar> -->
     <!-- <card-bar></card-bar> -->
@@ -10,7 +11,9 @@
     <!-- <our-branches></our-branches> -->
      
     <more-about></more-about>
+    
     <register-as-trainer></register-as-trainer>
+    </v-app>
     <footer-bar></footer-bar>
     <FloatContactUs />
     <QuickMessage />
