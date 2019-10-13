@@ -1,86 +1,165 @@
 <template>
-    <div class="changeheight">  
-      <v-app  id="inspire">
-      <!-- <h5 style="font-weight: bold; color: #0e6251; 
-      padding-top: 20px; text-align: center;">JOIN US AS TRAINER</h5>
-      <v-container grid-list-md text-xs-center fluid>
-      <v-layout col wrap>
-       <v-flex class="mobile">
-        <v-text-field
-          v-model="Name"
-          label="Name"
-        ></v-text-field>
-       </v-flex>
-
-       <v-flex class="mobile" >
-         <v-text-field
-           v-model="Email"
-           label="Email"
-         ></v-text-field>
-       </v-flex>
-       <v-flex class="mobile" >
-         <v-text-field
-           v-model="PhoneNumber"
-           label="Phone Number"
-         ></v-text-field>
-
-       </v-flex>
-       <v-flex  class="mobile" >        
-         <v-select
-            v-model="courses"
-            :items="items"
-            :menu-props="{ maxHeight: '400'}"
-            label="Select"
-            multiple
-            hint="Select courses"
-            persistent-hint
-          ></v-select>          
-       </v-flex>
-       <v-flex class="mobile">
-            <v-btn>Register</v-btn>
-       </v-flex>
-       
-     </v-layout>
-     
-    </v-container>   -->
-  <v-file-input multiple label="File input"></v-file-input> 
-  <!-- <v-text-field
-    label="File input"
-    filled
-    prepend-icon="mdi-camera"
-  ></v-text-field> -->
-
-</v-app>
-  </div>
+    <div class="maincontainer1">  
+       <v-form ref="form"
+      v-model="valid"
+      :lazy-validation="lazy"> 
+      <v-app id="regtrainer" class="changeheight1">
+        <h5 style="font-weight: bold; color: #0e6251; 
+         padding-top: 20px; text-align: center;">JOIN US AS TRAINER</h5>
         
+          <v-container grid-list-md text-xs-center fluid >
+            <v-layout row wrap>
+              
+              <v-flex  class="mobile1">
+                <v-text-field 
+                  v-model="name_trainer"
+                  label="Name"
+                  :rules="nameRules"
+                ></v-text-field>
+                </v-flex>
 
+              <v-flex  class="mobile1">
+                <v-text-field 
+                  v-model="email_trainer"
+                  :rules="emailRules"
+                  label="Email"
+              ></v-text-field>
+              </v-flex>
+
+              <v-flex class="mobile1">
+                <v-text-field 
+                  v-model="phone_no_trainer"
+                  :rules="phonenoRules"
+                  label="Phone Number"
+                  type="integer"
+                ></v-text-field>
+              </v-flex>
+
+              <v-flex   class="mobile1">        
+                <v-select
+                  v-model="courses_trainer"
+                  :items="items_trainer"
+                  :menu-props="{ maxHeight: '400'}"
+                  label="Select"
+                  multiple
+                  hint="Select courses"
+                  persistent-hint
+                ></v-select>      
+              </v-flex>
+
+              <v-flex class="mobile1">
+                <div class="image-upload">
+                  <progress value="0" max="100" id="uploader"></progress>
+                  <label for="fileButton">
+                    <img src="https://goo.gl/pB9rpQ"/>
+                  </label>
+                  <input value="upload" id="fileButton" @change="onFileSelected" type="file"/>
+                </div>
+              </v-flex>
+       
+              <v-flex class="mobile1">
+                <v-btn  @click="saveDetailsTrainer()">Register</v-btn>
+              </v-flex>
   
+            </v-layout>
+          </v-container>
+        
+      </v-app>
+      </v-form>  
+    </div>
 </template>
-<script>
 
+<script>
+import firebase from 'firebase';
+import { trainersCollection, storageRef } from '../../firebaseConfig';
 export default {
+  
     data()
     {
         return{
-            courses: [],
-            items: ['Java', 'Python', 'Digital Marketing', 'Data Science'],            
+            valid: true,
+            
+            nameRules: [
+              v => !!v || 'Name is required',
+              v => (v && v.length <= 10) || 'Name must be less than 10 characters',
+            ],
+
+            
+            emailRules: [
+              v => !!v || 'E-mail is required',
+              v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+            ],
+
+            phonenoRules: [
+              v=>!!v|| 'Phone number is required',
+              v => (v || '').length ==10 || 'enter 10 digit number', 
+            ],
+
+            lazy: false,
+
+            name_trainer: null,
+            email_trainer:null,
+            phone_no_trainer:null,
+            courses_trainer: [],
+            items_trainer: ['Java', 'Python', 'Digital Marketing', 'Data Science'],
+            selected_file: null,            
         }
+    },
+    methods:{
+             
+             saveDetailsTrainer(event)
+              {
+                
+                var storageRef1 = firebase.storage().ref("Resume/"+this.selected_file.name);
+               var task= storageRef1.put(this.selected_file);
+               //Update progress bar
+               task.on('state_changed',
+                 function progress(snapshot)
+                  {
+                    var percentage = (snapshot.bytesTransferred / snapshot.totalBytes)*100;
+                    uploader.value = percentage;
+                  })
+               alert(result);
+                trainersCollection.add({
+                name : this.name_trainer,
+                email : this.email_trainer,
+                phone_no: this.phone_no_trainer,
+                courses: this.courses_trainer
+              }).then(this.$router.push('/'))
+               event.preventDefault()  
+              },
+              onFileSelected(event){
+                var sf = this.selected_file = event.target.files[0];
+              }
+
     }
-};
+
+} 
 </script>
 <style>
-  .changeheight{
+
+  .changeheight1{
     max-height: 220px;
     background-color: white; 
+   }
+
+ .image-upload > input
+  {
+    display: none;
   }
 
-   
-    @media screen  and (max-width: 840px) {
-     .mobile {
-              width: 400px;
-             }
-    .maincontainer{
-      padding-bottom: 200px;
-    }
+  .image-upload img
+  {
+    width: 80px;
+    cursor: pointer;
   }
+   
+  @media screen  and (max-width: 840px) {
+    .mobile1 {
+                width: 400px;
+             }
+    .maincontainer1{
+               padding-bottom: 300px;
+             }
+   }
 </style>
