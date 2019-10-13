@@ -49,15 +49,11 @@
 
               <v-flex class="mobile1">
                 <div class="image-upload">
-                  <progress value="0" max="100" id="uploader"></progress>
-                  <label for="fileButton">
-                    <img src="https://goo.gl/pB9rpQ"/>
-                  </label>
                   <input value="upload" id="fileButton" @change="onFileSelected" type="file"/>
                 </div>
               </v-flex>
        
-              <v-flex class="mobile1">
+              <v-flex class>
                 <v-btn  @click="saveDetailsTrainer()">Register</v-btn>
               </v-flex>
   
@@ -111,21 +107,13 @@ export default {
               {
                 
                 var storageRef1 = firebase.storage().ref("Resume/"+this.selected_file.name);
-               var task= storageRef1.put(this.selected_file);
-               //Update progress bar
-               task.on('state_changed',
-                 function progress(snapshot)
-                  {
-                    var percentage = (snapshot.bytesTransferred / snapshot.totalBytes)*100;
-                    uploader.value = percentage;
-                  })
-               alert(result);
+                storageRef1.put(this.selected_file);
                 trainersCollection.add({
                 name : this.name_trainer,
                 email : this.email_trainer,
                 phone_no: this.phone_no_trainer,
                 courses: this.courses_trainer
-              }).then(this.$router.push('/'))
+              }).then( this.$refs.form.reset()).then(this.$router.push('/'))
                event.preventDefault()  
               },
               onFileSelected(event){
@@ -144,15 +132,12 @@ export default {
    }
 
  .image-upload > input
-  {
-    display: none;
+  { 
+    padding-top: 20px;
+    max-width: 500px;
+    
   }
 
-  .image-upload img
-  {
-    width: 80px;
-    cursor: pointer;
-  }
    
   @media screen  and (max-width: 840px) {
     .mobile1 {
