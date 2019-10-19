@@ -15,18 +15,15 @@ firebase.initializeApp(config)
 const db = firebase.firestore()
 const auth = firebase.auth()
 const currentUser = auth.currentUser
-
-// date issue fix according to firebase
-const settings = {
-    timestampsInSnapshots: true
-}
-db.settings(settings)
+var storageRef = firebase.storage().ref();
 
 // firebase collections
 const usersCollection = db.collection('users')
 const postsCollection = db.collection('posts')
 const commentsCollection = db.collection('comments')
 const likesCollection = db.collection('likes')
+const studentsCollection = db.collection('students')
+const trainersCollection = db.collection('trainers')
 
 export {
     db,
@@ -35,5 +32,8 @@ export {
     usersCollection,
     postsCollection,
     commentsCollection,
-    likesCollection
+    likesCollection,
+    studentsCollection,
+    trainersCollection,
+    storageRef
 }

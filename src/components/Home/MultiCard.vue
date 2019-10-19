@@ -1,12 +1,8 @@
 <template>
   <md-card> 
-      <br>
-      <br>
-      <br>
-      <br>
       <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
       <h5 style="font-weight: bold; color: #0e6251; 
-      padding-top: 20px; text-align: center;">Programs We Offer</h5>
+       text-align: center;">Programs We Offer</h5>
     <md-card-media>
       <!-- swiper -->
       <swiper :options="swiperOption" style="padding:20px;">
@@ -22,7 +18,8 @@
         </swiper-slide>
         <swiper-slide >
           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/python_course.jpg')" style="width: 100%; height: 100%; "></b-img>
+          <a target="_blank" rel="noopener noreferrer" href="https://firebasestorage.googleapis.com/v0/b/vuegram-bcc16.appspot.com/o/courses%2Fbrochure%201%20(Python).pdf?alt=media&token=d37bdfad-0d25-492b-9c09-e58d405aceb4">
+          <b-img :src="require('../../assets/images/python_course.jpg')" style="width: 100%; height: 100%; "></b-img></a>
           <!-- <div class="overlay">
           <a href="#" class="icon" title="Explore">
           <i class="fas fa-binoculars"></i>
@@ -32,7 +29,8 @@
         </swiper-slide>
         <swiper-slide>
           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/dataScience_course.jpg')" style="width: 100%; height: 100%; "></b-img>
+             <a target="_blank" rel="noopener noreferrer" href="https://firebasestorage.googleapis.com/v0/b/vuegram-bcc16.appspot.com/o/courses%2Fbrochure%202%20(Data%20Science%20with%20Python).pdf?alt=media&token=eedce4f6-8c21-42d5-b13b-e6065e368cf6">
+                      <b-img :src="require('../../assets/images/dataScience_course.jpg')" style="width: 100%; height: 100%; "></b-img></a>
           <!-- <div class="overlay">
           <a href="#" class="icon" title="Explore">
           <i class="fas fa-binoculars"></i>
@@ -41,8 +39,9 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-           <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
-          <b-img :src="require('../../assets/images/machineLearning_course.jpg')" style="width: 100%; height: 100%; "></b-img>
+         <div class="img_container" style="margin: 28px; width: 80%; height: 80%;">
+          <a target="_blank" rel="noopener noreferrer" href="https://firebasestorage.googleapis.com/v0/b/vuegram-bcc16.appspot.com/o/courses%2Fbrochure%203%20(Machine%20Learning%20with%20Python).pdf?alt=media&token=e9474d76-2b95-4ea6-9f81-bb2aae7bfbae">
+          <b-img :src="require('../../assets/images/machineLearning_course.jpg')" style="width: 100%; height: 100%; "></b-img></a>
           <!-- <div class="overlay">
           <a href="#" class="icon" title="Explore">
           <i class="fas fa-binoculars"></i>
