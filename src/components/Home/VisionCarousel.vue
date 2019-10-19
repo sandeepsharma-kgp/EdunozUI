@@ -76,6 +76,7 @@ div {
   padding: 5px;
   border-radius: 5px;
   text-align: center;
+  z-index: 1;
 }
 .bg {
   position: absolute;
@@ -83,7 +84,6 @@ div {
   background-color: #5d6493;
   top: 100%;
   height: 80px;
-  z-index: -1;
 }
 .content-of-vision {
   padding: 15px;

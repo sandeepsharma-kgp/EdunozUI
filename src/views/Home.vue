@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <nav-bar></nav-bar>
-    <carousel-vis></carousel-vis>
-    <v-app><register></register>
+    <v-app><carousel-vis></carousel-vis>
+    <register></register>
     
     <MultiCard></MultiCard>
     <!-- <webinar></webinar> -->
@@ -13,14 +13,14 @@
     <more-about></more-about>
     
     <register-as-trainer></register-as-trainer>
-    </v-app>
+    
     <footer-bar></footer-bar>
     <FloatContactUs />
     <QuickMessage />
     <!-- <SignIn /> -->
     <!-- <Signup /> -->
     <Enquire />
-   
+   </v-app>
   </div>
 </template>
 

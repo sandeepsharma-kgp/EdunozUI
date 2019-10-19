@@ -3,7 +3,7 @@
        <v-form ref="form"
       v-model="valid"
       :lazy-validation="lazy"> 
-      <v-app id="regtrainer" class="changeheight1">
+      <div id="regtrainer" class="changeheight1">
         <h5 style="font-weight: bold; color: #0e6251; 
          padding-top: 20px; text-align: center;">JOIN US AS TRAINER</h5>
         
@@ -60,7 +60,7 @@
             </v-layout>
           </v-container>
         
-      </v-app>
+      </div>
       </v-form>  
     </div>
 </template>
