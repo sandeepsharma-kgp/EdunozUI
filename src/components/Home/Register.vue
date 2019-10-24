@@ -53,7 +53,7 @@
               ></v-select>        
             </v-flex>
 
-            <v-flex class="mobile">
+            <v-flex class="mobile" style="display: grid; padding: 10px">
               <v-btn  @click="saveDetails()">Register</v-btn>
             </v-flex>
 
