@@ -11,7 +11,7 @@
     <!-- <our-branches></our-branches> -->
      
     <more-about></more-about>
-    
+    <career-us></career-us>
     <register-as-trainer></register-as-trainer>
     
     <footer-bar></footer-bar>
@@ -31,6 +31,7 @@ import Carousel from "../components/Home/Carousel.vue";
 import popularTech from "../components/Home/popular-tech.vue";
 import ourBranches from "../components/Home/our-branches.vue";
 import moreAbout from "../components/Home/more-about-us.vue";
+import career from "../components/Home/career.vue";
 import footerBar from "../components/footer.vue";
 import Navbar from "../components/Navbar.vue";
 import VisionCarousel from "../components/Home/VisionCarousel.vue";
@@ -51,6 +52,7 @@ export default {
     "our-branches": ourBranches,
     "more-about": moreAbout,
     "footer-bar": footerBar,
+    "career-us": career,
     "nav-bar": Navbar,
     "register": Register,
     "register-as-trainer": Register_as_trainer,

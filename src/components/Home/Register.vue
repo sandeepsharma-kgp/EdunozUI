@@ -53,7 +53,7 @@
               ></v-select>        
             </v-flex>
 
-            <v-flex class="mobile" style="display: grid; padding: 10px">
+            <v-flex class="mobile register">
               <v-btn  @click="saveDetails()">Register</v-btn>
             </v-flex>
 
@@ -126,7 +126,10 @@ export default {
 </script>
 <style>
 
-  
+  .register{
+      display: grid; 
+      padding: 10px
+  }
    
     @media screen  and (max-width: 840px) {
      .mobile {

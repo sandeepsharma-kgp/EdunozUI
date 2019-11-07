@@ -49,11 +49,11 @@
 
               <v-flex class="mobile1" >
                 <div class="image-upload">
-                  <input value="upload" id="fileButton" @change="onFileSelected" type="file"/>
+                  <input value="upload"  id="fileButton" @change="onFileSelected" type="file"/>
                 </div>
               </v-flex>
        
-              <v-flex class style="display: inline-grid;padding: 10px;margin-left: -85px;">
+              <v-flex class style="display: inline-grid;padding: 10px;">
                 <v-btn  @click="saveDetailsTrainer()">Register</v-btn>
               </v-flex>
   

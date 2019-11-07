@@ -1,0 +1,138 @@
+$sfprodisplay: "SFProDisplay";
+
+// Default colors
+
+$white: #ffffff;
+$black: #000000;
+$f9-white: #f9f9f9;
+$f1-white: #f1f1f1;
+$de-white: #dee2e6;
+$ee-white: #eeeeee;
+$dd-white: #dddddd;
+
+// Theme colors
+$theme-red: #ff0000; 
+$text-light-color: #B4B4B4;
+$text-lighter-color: #b7b7b7;
+$theme-black: #3c3c3c;
+$theme-text-blue: #003366;
+$theme-back-blue: #007AFF;
+$theme-text-black: #696969;
+$profile-text-black: #1D1D1D; 
+$theme-title-blue: #003399;
+$theme-href-blue: #0119CC;
+$theme-light-black: #707070;   
+$theme-lighter-black: #898989;
+$theme-border-black: #A9A8A8;
+$theme-light-dark-black: #434343;
+$theme-dark-black: #333333;
+$theme-gray: #bababa;
+$theme-disable-gray: #cecece;
+$theme-light-gray: #dee2e6;
+$theme-lighter-gray: #acacac;
+$theme-white: #f2f2f2;
+$theme-light-white: #dee2e6;
+$border-gray: #e2e2e2;
+$border-input-gray: #979797;
+$input-gray-border: #6E6F71;
+$icon-gray: #8E8E93;
+$table-gray: #7e7e7e;
+$notification-gray: #d5d5d5;
+$head-black: #404040;
+$theme-green: #52d301;
+$theme-section-blue: #F4F7FA;
+$theme-selected-blue: #D3E9FD;
+$theme-light-blue: #00d8ff;
+$theme-blue: #023299;
+$theme-yellow: #ffba00;
+$theme-drgray: #5a5a5a;
+$theme-orange: #ff6600;
+$theme-home-yellow: #FF6633;
+$theme-home-orange: #FF9933;
+$theme-home-light-blue: #0099CC;
+$theme-home-dark-blue: #0066FF;
+$breakpoint-alpha: 1100px;
+$placeholder: #aaaaaa;
+$input-placeholder: rgba(110, 111, 113, 0.35);
+$theme-ultra-light-black: #939393;
+$theme-pink: #FFCC99;
+$progress-gray: #B0B0B0;
+$profile-gray: #F5F2F2;
+$link-color: #0000CC;
+$upload-text: #3E3E3E;
+$chat-border: #003299;
+$textarea-color: #ADADAD;
+$feedback-color: #BFBFBF;
+$theme-silver:#B2B2B2;
+$filled-silver:#B5B5B5;
+$theme-light-silver:#F7F7F7;
+$theme-green:#58D68D;
+$theme-light-pink:#FF733380;
+$theme-shadow-pink:#FF660074;
+$theme-faint-silver:#A4A4A4;
+$text-color-white:#C6C6C6;
+$edit-white:#F4F4F4;
+$progress-green:#6DD400;
+$theme-light-orange:#FF6733;
+$theme-border-black:#0000001A;
+$theme-lighter-brown:#FF66007D;
+$theme-dark-brown:#FF6F3388;
+
+//progress
+
+$progress-black : #6f6f6f;
+$progress-blue : #337ab7;
+$progress-dark-blue : #122a3f;
+$progress-light-blue : #5671d0;
+$progress-darker-blue : #1f306e;
+
+
+//gradient
+$gradient-orange-light :#FF9233;
+$gradient-orange :#FF6C33;
+$gradient-green-light :#58D68D77;
+$gradient-green :#58D68D;
+
+//Basic color
+$blue :#00d8ff; 
+$red : #f00000;
+
+//Box shadow
+
+$shadow-blue: rgba(0, 102, 255, 0.3);
+$shadow-black: rgba(0, 0, 0, 0.16);
+$shadow-box : rgba(0, 0, 0, 0.34);
+$dashed-border :rgba(112, 112, 112, 0.39);
+$theme-border-black-light-border: rgb(169, 168, 168 ,0.2);
+$theme-light-black-with-opacity : #70707020;
+$icon-shadow : #0000002B;
+$icon-orange-shadow : #FF660073;
+$footer-icon-shadow :#00000029;
+$button-shadow :#FF673358;
+$home-shadow :#0000003B;
+$blur-brown : #54545400;
+
+$sent-background : rgba(0, 102, 255, 0.15);
+$sent-shadow : rgba(255, 153, 51, 0.3);
+$received-background : rgba(0, 102, 255, 0.63);
+$received-shadow : rgba(0, 0, 0, 0.16);
+
+//circle
+$circle-width: 0.08em;
+$circle-width-hover: 0.04em;
+// colors default
+$primary-color: #307bbb;
+$secondary-color: #ccc;
+$bg-color: #f5f5f5;
+$primary-color-green: #4db53c;
+$primary-color-orange: #dd9d22;
+// colors dark skin
+$primary-color-dark: #c6ff00;
+$secondary-color-dark: #777;
+$bg-color-dark: #666;
+$primary-color-green-dark: #5fd400;
+$primary-color-orange-dark: #e08833;
+$black-faded : rgba(0,0,0,.2);
+
+// border
+$border-filter-box: #D3D3D3;
